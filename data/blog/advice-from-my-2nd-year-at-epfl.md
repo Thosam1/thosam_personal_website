@@ -6,7 +6,7 @@ tags: ['EPFL', 'Student', 'Advice']
 seo: "Advice, tips, tricks, my experience of my second year at EPFL. Read my blog post so that you don't make the same mistakes !"
 ---
 
-# Introduction 
+# Introduction
 
 Hey 🤙🏼, in this article I will talk about my second year at EPFL, how my 2nd year of Computer Science Bachelor went, what mistakes I made and how I could have done things differently.
 

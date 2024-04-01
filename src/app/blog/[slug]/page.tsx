@@ -1,4 +1,3 @@
-import Markdown from "react-markdown"
 import getPostMetadata from "@/utils/getPostMetadata"
 import React from 'react'
 import fs from 'fs'
@@ -9,6 +8,7 @@ import readingTime from "reading-time"; // to get reading time of the blog post 
 import { Wrapper } from "@/components/Wrapper"
 import { FULL_NAME } from "@/constants"
 import Image from "next/image"
+import Markdown from "react-markdown"
 
 const blogFolderPath = "data/blog"
 
@@ -47,11 +47,11 @@ export default function Blog(props: any) {
             <main>
                 <article>
                     <Wrapper>
-                        <h1 className="text-lg font-bold">
+                        <h1 className="text-4xl font-bold pb-6">
                         {post.data.title}
                         </h1>
 
-                        <div className="flex row justify-between items-center">
+                        <div className="flex row justify-between items-center pb-6">
                             <div className="flex row items-center">
                                 <img className="w-10 h-10 rounded-full" src="/home/thosam_auth_image.webp"
                                     alt="Thösam in Fribourg" />
@@ -67,7 +67,15 @@ export default function Blog(props: any) {
                             </div>
                         </div>
 
-                        <Markdown className="prose lg:prose-xl">
+                        <Markdown 
+                        className="prose"
+                        components={{
+                            h1: ({node, ...props}) => <h1 className="font-semibold pt-12" {...props} />,
+                            h2: ({node, ...props}) => <h2 className="font-semibold pt-12" {...props} />,  
+                            h3: ({node, ...props}) => <h3 className="font-semibold pt-12" {...props} />,  
+                    
+                        }}
+                        >
                             {post.content}
                         </Markdown>
                     </Wrapper>
