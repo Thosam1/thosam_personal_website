@@ -9,6 +9,7 @@ import { Wrapper } from "@/components/Wrapper"
 import { FULL_NAME } from "@/constants"
 import Image from "next/image"
 import Markdown from "react-markdown"
+import { Divider } from "@/components/Divider";
 
 const blogFolderPath = "data/blog"
 
@@ -47,40 +48,52 @@ export default function Blog(props: any) {
             <main>
                 <article>
                     <Wrapper>
-                        <h1 className="text-4xl font-bold pb-6">
-                        {post.data.title}
-                        </h1>
 
-                        <div className="flex row justify-between items-center pb-6">
-                            <div className="flex row items-center">
-                                <img className="w-10 h-10 rounded-full" src="/home/thosam_auth_image.webp"
-                                    alt="Thösam in Fribourg" />
-                                <div className="pl-2">
-                                    {FULL_NAME}
-                                    {` / `}
-                                    {format(parseISO(post.data.publishedAt), "MMMM dd, yyyy")}
-                                </div>
-
-                            </div>
-                            <div>
+                        <div className="text-center">
+                            <h1 className="font-md text-lg text-gray-700 py-4">
+                                {format(parseISO(post.data.publishedAt), "MMMM dd, yyyy")}
+                                {"   -   "}
                                 {readingTime(post.content).text}
-                            </div>
+                            </h1>
+                            <h1 className="text-4xl font-bold pb-14">
+                                {post.data.title}
+                            </h1>
                         </div>
 
-                        <Markdown 
-                        className="prose"
-                        components={{
-                            h1: ({node, ...props}) => <h1 className="font-semibold pt-12" {...props} />,
-                            h2: ({node, ...props}) => <h2 className="font-semibold pt-12" {...props} />,  
-                            h3: ({node, ...props}) => <h3 className="font-semibold pt-12" {...props} />,  
-                    
-                        }}
+                        <Divider />
+
+                        <Markdown
+                            className="prose max-w-none pt-4" // no need if appears in "Wrapper"
+                            components={{
+                                h1: ({ node, ...props }) => <h1 className="font-semibold pt-12" {...props} />,
+                                h2: ({ node, ...props }) => <h2 className="font-semibold pt-12" {...props} />,
+                                h3: ({ node, ...props }) => <h3 className="font-semibold pt-12" {...props} />,
+
+                            }}
                         >
                             {post.content}
                         </Markdown>
+
                     </Wrapper>
                 </article>
             </main>
         </>
     )
 }
+
+const SubHeadingIdea = (post: any) =>
+    <div className="flex row justify-between items-center pb-6">
+        <div className="flex row items-center">
+            <img className="w-10 h-10 rounded-full" src="/home/thosam_auth_image.webp"
+                alt="Thösam in Fribourg" />
+            <div className="pl-2">
+                {FULL_NAME}
+                {` / `}
+                {format(parseISO(post.data.publishedAt), "MMMM dd, yyyy")}
+            </div>
+
+        </div>
+        <div>
+            {readingTime(post.content).text}
+        </div>
+    </div>

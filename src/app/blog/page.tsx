@@ -9,11 +9,13 @@ export default function Blog() {
     return (
         <>
             <Heading />
+            <Wrapper>
             {postMetadata.map((post, postIndex) => {
                 return (
                     <PostCard key={postIndex} post={post} />
                 )
             })}
+            </Wrapper>
         </>
     )
 }
