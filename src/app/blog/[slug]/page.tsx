@@ -10,6 +10,7 @@ import { FULL_NAME } from "@/constants"
 import Image from "next/image"
 import Markdown from "react-markdown"
 import { Divider } from "@/components/Divider";
+import Link from "next/link";
 
 const blogFolderPath = "data/blog"
 
@@ -68,7 +69,7 @@ export default function Blog(props: any) {
                                 h1: ({ node, ...props }) => <h1 className="font-semibold pt-12" {...props} />,
                                 h2: ({ node, ...props }) => <h2 className="font-semibold pt-12" {...props} />,
                                 h3: ({ node, ...props }) => <h3 className="font-semibold pt-12" {...props} />,
-
+                                a: ({ node, ...props }) => <CustomLink {...props} />
                             }}
                         >
                             {post.content}
@@ -97,3 +98,18 @@ const SubHeadingIdea = (post: any) =>
             {readingTime(post.content).text}
         </div>
     </div>
+
+export function CustomLink(props : any){
+    const href = props.href;
+    const isInternalLink = href && (href.startsWith('/'));
+
+    if (isInternalLink) {
+      return (
+        <Link href={href}>
+          {props.children}
+        </Link>
+      );
+    }
+
+    return <a target="_blank" {...props} />;
+  };
