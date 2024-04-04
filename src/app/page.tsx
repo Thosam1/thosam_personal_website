@@ -16,10 +16,10 @@ const Home = () => (
 export default Home
 
 const Hero = () => (
-    <ZoomIntroAnimation>
-        <div className="min-h-screen flex items-center justify-center px-8">
-            <div className="max-w-[75rem] mt-10 md:-mt-36 lg:px-8 mx-auto">
-                <div className="sm:items-center md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32">
+    // <ZoomIntroAnimation>
+        <div className="min-h-screen-md flex items-center justify-center px-8 pt-36 pb-8 lg:py-20">
+            <div className="max-w-[75rem] lg:px-8 mx-auto">
+                <div className="items-center md:grid md:grid-cols-2 md:gap-12 xl:gap-32">
                     <div className="space-y-6 sm:space-y-8">
                         <div className="space-y-2 md:space-y-4">
                             <h2 className="font-bold text-3xl lg:text-4xl text-gray-800 dark:text-gray-200">
@@ -56,7 +56,7 @@ const Hero = () => (
                 </div>
             </div>
         </div>
-    </ZoomIntroAnimation>
+    // </ZoomIntroAnimation>
 )
 
 const AboutMe = () => (

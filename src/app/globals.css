@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* For the Navbar */
+@layer components {
+    .hamburger div:first-child {
+        @apply rotate-45 translate-y-1.5;
+    }
+
+    .hamburger div:last-child {
+        @apply -rotate-45 -translate-y-1;
+    }
+}
