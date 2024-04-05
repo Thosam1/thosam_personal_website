@@ -83,6 +83,7 @@ const Navbar: React.FC = () => {
                           initial="initial"
                           animate="animate"
                           variants={fadeUpVariant(0.2 * index + 0.1)}
+                          key={index}
                         >
                           <Link className={styles.project} href={link.href} key={index} onClick={toggleNav}>
                             <h2 className="text-xl">

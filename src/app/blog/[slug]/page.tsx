@@ -9,7 +9,7 @@ import { Wrapper } from "@/components/Wrapper"
 import { FULL_NAME } from "@/constants"
 import Markdown from "react-markdown"
 import { Divider } from "@/components/Divider";
-import Link from "next/link";
+import { CustomLink } from "@/components/markdown/CustomLink";
 
 const blogFolderPath = "data/blog"
 
@@ -97,18 +97,3 @@ const SubHeadingIdea = (post: any) =>
             {readingTime(post.content).text}
         </div>
     </div>
-
-export function CustomLink(props : any){
-    const href = props.href;
-    const isInternalLink = href && (href.startsWith('/'));
-
-    if (isInternalLink) {
-      return (
-        <Link href={href}>
-          {props.children}
-        </Link>
-      );
-    }
-
-    return <a target="_blank" {...props} />;
-  };

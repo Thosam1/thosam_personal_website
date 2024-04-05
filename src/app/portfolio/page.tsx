@@ -27,7 +27,7 @@ const Hero = () => (
                 <div className="space-y-6 sm:space-y-8">
                     <div className="space-y-2 md:space-y-4">
                         <h2 className="font-bold text-3xl lg:text-4xl text-gray-800 dark:text-gray-200">
-                            Hi everyone 👋, I'm Thösam
+                            Hi everyone 👋, I&apos;m Thösam
                         </h2>
                         <p className="text-gray-500">
                             I am a software engineer, creator and student living in Switzerland.
@@ -71,7 +71,7 @@ const AboutMe = () => (
         </FadeInAnimation>
         <FadeInAnimation>
             <p className="mt-2 text-lg text-gray-400 py-2">
-                Hi everyone 👋, I'm Thösam Norlha-Tsang. I go to EPFL where I study computer science. My personal website is where I showcase my projects, writing, statistics, experience, and more. Feel free to reach out via email or any social media. or subscribe to my newsletter !
+                Hi everyone 👋, I&apos;m Thösam Norlha-Tsang. I go to EPFL where I study computer science. My personal website is where I showcase my projects, writing, statistics, experience, and more. Feel free to reach out via email or any social media. or subscribe to my newsletter !
             </p>
         </FadeInAnimation>
     </Wrapper>

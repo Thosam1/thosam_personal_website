@@ -35,7 +35,7 @@ const Heading = () => (
             </div> */}
             <div className="text-left">
                 <p className="text-4xl font-light">
-                    "Write the kind of story you would like to read. People will give you all sorts of advice about writing, but if you are not writing something you like, no one else will like it either."
+                    &quot;Write the kind of story you would like to read. People will give you all sorts of advice about writing, but if you are not writing something you like, no one else will like it either.&quot;
                 </p>
                 <p className="text-right text-2xl">
                     Meg Cabot
