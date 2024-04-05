@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { FULL_NAME, NAV_LINKS } from "@/constants"
 import { AnimatePresence, motion } from "framer-motion";
 import styles from './navbar.module.css'
+import { fadeUpVariant } from "@/animations/animations";
 
 const Navbar: React.FC = () => {
   const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
@@ -11,18 +12,6 @@ const Navbar: React.FC = () => {
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
   };
-
-  const staggerVariants = (delayTime: number) => ({
-    initial: { opacity: 0, y: 50 },
-    animate: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.5,
-        delay: delayTime, // Delay between each link appearing
-      },
-    },
-  })
 
   return (
     <>
@@ -93,7 +82,7 @@ const Navbar: React.FC = () => {
                         <motion.div
                           initial="initial"
                           animate="animate"
-                          variants={staggerVariants(0.2 * index + 0.1)}
+                          variants={fadeUpVariant(0.2 * index + 0.1)}
                         >
                           <Link className={styles.project} href={link.href} key={index} onClick={toggleNav}>
                             <h2 className="text-xl">

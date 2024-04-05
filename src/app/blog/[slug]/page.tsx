@@ -7,7 +7,6 @@ import readingTime from "reading-time"; // to get reading time of the blog post 
 
 import { Wrapper } from "@/components/Wrapper"
 import { FULL_NAME } from "@/constants"
-import Image from "next/image"
 import Markdown from "react-markdown"
 import { Divider } from "@/components/Divider";
 import Link from "next/link";
