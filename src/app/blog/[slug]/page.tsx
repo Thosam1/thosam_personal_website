@@ -8,7 +8,7 @@ import readingTime from "reading-time"; // to get reading time of the blog post 
 import { Wrapper } from "@/components/Wrapper"
 import { FULL_NAME } from "@/constants"
 import { Divider } from "@/components/Divider";
-import MarkdownRenderer from "@/components/Markdown/MarkdownRenderer";
+import { MarkdownRenderer } from "@/components/markdown/MarkdownRenderer";
 
 const blogFolderPath = "data/blog"
 

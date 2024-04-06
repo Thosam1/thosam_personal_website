@@ -8,7 +8,7 @@ type MarkdownRendererProps = {
     children: string;
 };
 
-const MarkdownRenderer = ({ children: markdown }: MarkdownRendererProps) => {
+export const MarkdownRenderer = ({ children: markdown }: MarkdownRendererProps) => {
     return (
         <Markdown
             className="prose prose-pre:none max-w-none pt-4 leading-10 bg-white" // no need if appears in "Wrapper"
@@ -29,5 +29,3 @@ const MarkdownRenderer = ({ children: markdown }: MarkdownRendererProps) => {
         </Markdown>
     );
 }
-
-export default MarkdownRenderer;
