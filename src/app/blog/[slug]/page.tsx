@@ -9,7 +9,8 @@ import { Wrapper } from "@/components/Wrapper"
 import { FULL_NAME } from "@/constants"
 import Markdown from "react-markdown"
 import { Divider } from "@/components/Divider";
-import { CustomLink } from "@/components/markdown/CustomLink";
+
+import { MarkdownRenderer } from "@/components/Markdown/Markdown";
 
 const blogFolderPath = "data/blog"
 
@@ -50,30 +51,21 @@ export default function Blog(props: any) {
                     <Wrapper>
 
                         <div className="text-center">
-                            <h1 className="font-md text-lg text-gray-700 py-4">
+                            <h1 className="text-md text-gray-700 py-4">
                                 {format(parseISO(post.data.publishedAt), "MMMM dd, yyyy")}
                                 {"   -   "}
                                 {readingTime(post.content).text}
                             </h1>
-                            <h1 className="text-4xl font-bold pb-14">
+                            <h1 className="text-4xl font-semibold pb-14">
                                 {post.data.title}
                             </h1>
                         </div>
 
                         <Divider />
 
-                        <Markdown
-                            className="prose max-w-none pt-4" // no need if appears in "Wrapper"
-                            components={{
-                                h1: ({ node, ...props }) => <h1 className="font-semibold pt-12" {...props} />,
-                                h2: ({ node, ...props }) => <h2 className="font-semibold pt-12" {...props} />,
-                                h3: ({ node, ...props }) => <h3 className="font-semibold pt-12" {...props} />,
-                                a: ({ node, ...props }) => <CustomLink {...props} />
-                            }}
-                        >
+                        <MarkdownRenderer>
                             {post.content}
-                        </Markdown>
-
+                        </MarkdownRenderer>
                     </Wrapper>
                 </article>
             </main>
