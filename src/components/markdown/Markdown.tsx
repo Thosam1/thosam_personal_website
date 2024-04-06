@@ -1,11 +1,7 @@
 import React from 'react';
 import Markdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-// import rehypeRaw from 'rehype-raw';
-// import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-// import { dracula, oneLight } from 'react-syntax-highlighter/dist/cjs/styles/prism';
 import { CustomLink } from './CustomLink';
-import { highlight } from 'sugar-high';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import {
     materialDark,
