@@ -1,7 +1,7 @@
-import { Wrapper } from "@/components/Wrapper"
+import {Wrapper} from "@/components/Wrapper"
 import getPostMetadata from "@/utils/getPostMetadata"
 import PostCard from "@/components/PostCard"
-import { Divider } from "@/components/Divider"
+import {Divider} from "@/components/Divider"
 
 export default function Blog() {
 
@@ -9,12 +9,12 @@ export default function Blog() {
 
     return (
         <>
-            <Heading />
-            <Divider />
+            <Heading/>
+            <Divider/>
             <Wrapper>
-                {postMetadata.map((post, postIndex) => {
+                {postMetadata.map((post) => {
                     return (
-                        <PostCard key={postIndex} post={post} />
+                        <PostCard key={post.slug} post={post}/>
                     )
                 })}
             </Wrapper>
@@ -35,7 +35,8 @@ const Heading = () => (
             </div> */}
             <div className="text-left">
                 <p className="text-4xl font-light">
-                    &quot;Write the kind of story you would like to read. People will give you all sorts of advice about writing, but if you are not writing something you like, no one else will like it either.&quot;
+                    &quot;Write the kind of story you would like to read. People will give you all sorts of advice about
+                    writing, but if you are not writing something you like, no one else will like it either.&quot;
                 </p>
                 <p className="text-right text-2xl">
                     Meg Cabot

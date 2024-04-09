@@ -85,9 +85,9 @@ const TeckStack = () => (
         </FadeInAnimation>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-2">
             {
-                skillsList().map((item, index) =>
-                    <FadeInAnimation key={index}>
-                        <SkillCard key={index} name={item.name} image={item.image} link={item.link} description={item.description} />
+                skillsList().map((item) =>
+                    <FadeInAnimation key={item.name}>
+                        <SkillCard name={item.name} image={item.image} link={item.link} description={item.description} />
                     </FadeInAnimation>
                 )
             }
@@ -103,8 +103,8 @@ const Projects = () => (
             </h1>
         </FadeInAnimation>
         {
-            projectsList().map((item, index) =>
-                <FadeInAnimation key={index}>
+            projectsList().map((item) =>
+                <FadeInAnimation key={item.title}>
                     <Divider />
                     <div className="flex justify-center items-center flex-col py-12">
                         <img className="rounded-lg max-w" src={item.images[0]} alt={item.title} />

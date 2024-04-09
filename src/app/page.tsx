@@ -1,13 +1,13 @@
 "use client";
-import { EMAIL, EMAIL_LINK } from '@/constants'
+import {EMAIL_LINK} from '@/constants'
 import Link from 'next/link'
-import { Wrapper } from "@/components/Wrapper";
+import {Wrapper} from "@/components/Wrapper";
 import FadeInAnimation from "@/animations/FadeInAnimation";
 
 const Home = () => (
     <main>
         {/*<NextSeo {...SEO}/>*/}
-        <Hero />
+        <Hero/>
         {/* <AboutMe /> */}
         {/* <ContactMe /> */}
     </main>
@@ -27,20 +27,22 @@ const Hero = () => (
                             I am a software engineer, creator and student living in Switzerland.
                         </p>
                         <p>
-                            On this website, you can find useful resources on topics like : coding, study, life, guitar, books, ... Feel free to check out my Blog if you like reading, otherwise you can check my Projects I have been working on. Or learn more about me.
+                            On this website, you can find useful resources on topics like : coding, study, life, guitar,
+                            books, ... Feel free to check out my Blog if you like reading, otherwise you can check my
+                            Projects I have been working on. Or learn more about me.
                         </p>
                     </div>
 
                     <div className="flex justify-start pb-10 md:pb-0">
-                        <Link href="/portfolio" style={{ marginRight: '16px' }}>
+                        <Link href="/portfolio" style={{marginRight: '16px'}}>
                             <button type="button"
-                                className="py-2 px-2 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-500 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+                                    className="py-2 px-2 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-500 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
                                 My Portfolio
                             </button>
                         </Link>
                         <Link href={EMAIL_LINK}>
                             <button type="button"
-                                className="py-2 px-2 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-500 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+                                    className="py-2 px-2 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-500 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
                                 Contact me
                             </button>
                         </Link>
@@ -49,7 +51,7 @@ const Hero = () => (
 
                 <div className="flex justify-center items-center flex-col">
                     <img className="max-h-[35rem]" src="/home/thosam_auth_image.webp"
-                        alt="Thösam in Fribourg" />
+                         alt="Thösam in Fribourg"/>
                     <div className='flex items-right'>
                         <p className='py-3 font-light text-sm text-zinc-600'>Thösam Norlha-Tsang 2023</p>
                     </div>
@@ -68,12 +70,13 @@ const AboutMe = () => (
         </FadeInAnimation>
         <FadeInAnimation>
             <p className="mt-2 text-lg text-gray-400 py-2">
-                Hi everyone 👋, I&apos;m Thösam Norlha-Tsang. I go to EPFL where I study computer science. My personal website is where I showcase my projects, writing, statistics, experience, and more. Feel free to reach out via email or any social media. or subscribe to my newsletter !
+                Hi everyone 👋, I&apos;m Thösam Norlha-Tsang. I go to EPFL where I study computer science. My personal
+                website is where I showcase my projects, writing, statistics, experience, and more. Feel free to reach
+                out via email or any social media. or subscribe to my newsletter !
             </p>
         </FadeInAnimation>
     </Wrapper>
 )
-
 
 
 const ContactMe = () => (
@@ -88,7 +91,7 @@ const ContactMe = () => (
                 <p className="mt-2 text-lg text-gray-400 py-2">
                     <Link href={EMAIL_LINK}>
                         <button type="button"
-                            className="py-2 px-2 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-500 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+                                className="py-2 px-2 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-500 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
                             Contact me
                         </button>
                     </Link>

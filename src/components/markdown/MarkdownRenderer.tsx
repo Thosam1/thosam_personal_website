@@ -1,7 +1,7 @@
 import React from 'react';
 import Markdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import { CustomLink } from './CustomLink';
+import CustomLink from './CustomLink';
 import CodeBlock from './CodeBlock';
 
 type MarkdownRendererProps = {
@@ -21,7 +21,7 @@ export const MarkdownRenderer = ({ children: markdown }: MarkdownRendererProps) 
                 h3: ({ node, ...props }) => <h3 className="font-semibold pt-12" {...props} />,
                 // p: ({ node, ...props }) => <p className="text-md " {...props} />,
                 p: ({ node, ...props }) => <p className="font-light" style={{ fontSize: '18px' }} {...props} />,
-                a: ({ node, ...props }) => <CustomLink {...props} />,
+                a: ({ node, ...props }) => <CustomLink  href={props?.href || '/'}>{props.children}</CustomLink>,
                 code: ({ node, ...props }) => <CodeBlock {...props} />,
             }}
         >
