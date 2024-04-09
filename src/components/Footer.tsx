@@ -9,7 +9,7 @@ import {
   FiMail,
 } from "react-icons/fi";
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <footer className="w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto">
 

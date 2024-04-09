@@ -3,7 +3,6 @@ import { EMAIL, EMAIL_LINK } from '@/constants'
 import Link from 'next/link'
 import { Wrapper } from "@/components/Wrapper";
 import FadeInAnimation from "@/animations/FadeInAnimation";
-import ZoomIntroAnimation from "@/animations/ZoomIntroAnimation";
 
 const Home = () => (
     <main>
@@ -16,7 +15,6 @@ const Home = () => (
 export default Home
 
 const Hero = () => (
-    // <ZoomIntroAnimation>
     <div className="min-h-screen-md flex items-center justify-center px-8 pt-36 pb-8 lg:py-20">
         <div className="max-w-[75rem] lg:px-8 mx-auto">
             <div className="items-center md:grid md:grid-cols-2 md:gap-12 xl:gap-32">
@@ -59,7 +57,6 @@ const Hero = () => (
             </div>
         </div>
     </div>
-    // </ZoomIntroAnimation>
 )
 
 const AboutMe = () => (

@@ -5,7 +5,6 @@ import SkillCard from "@/components/SkillCard";
 import projectsList from "../../../data/portfolio/projectsList";
 import Link from "next/link";
 import { Divider } from "@/components/Divider";
-import ZoomIntroAnimation from "@/animations/ZoomIntroAnimation";
 import { EMAIL_LINK } from "@/constants";
 
 
