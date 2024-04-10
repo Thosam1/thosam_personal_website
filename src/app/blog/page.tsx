@@ -1,5 +1,5 @@
 import {Wrapper} from "@/components/Wrapper"
-import getAllPostsMetadata from "@/utils/blog/utils"
+import { getAllPostsMetadata } from '@/utils/blog/utils'
 import PostCard from "@/components/PostCard"
 import {Divider} from "@/components/Divider"
 import type { Metadata } from 'next';
