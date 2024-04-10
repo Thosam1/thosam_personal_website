@@ -15,4 +15,4 @@ export const LINKEDIN_LINK = 'https://www.linkedin.com/in/thösam-n-328932236/'
 export const EMAIL_LINK = "mailto:" + EMAIL
 
 // todo - to change after buying domain name
-export const WEBSITE_URL = "https://thosam-personal-website.vercel.app/"
+export const WEBSITE_URL = "https://thosam-personal-website.vercel.app"
