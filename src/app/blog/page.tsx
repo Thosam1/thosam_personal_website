@@ -1,11 +1,40 @@
 import {Wrapper} from "@/components/Wrapper"
-import getPostMetadata from "@/utils/getPostMetadata"
+import getAllPostsMetadata from "@/utils/blog/utils"
 import PostCard from "@/components/PostCard"
 import {Divider} from "@/components/Divider"
+import type { Metadata } from 'next';
+import { FULL_NAME, WEBSITE_URL } from '@/constants';
+
+const title = 'Blog | Thösam Norlha-Tsang'
+const description = 'Hello there 👋, this is my blog where I write articles 😄'
+const url = `${WEBSITE_URL}/blog`;
+export const metadata: Metadata = {
+    title,
+    description,
+    verification: { google: process.env.GOOGLE_SEO_CODE },
+    alternates: {
+        canonical: url,
+    },
+    openGraph: {
+        type: 'website',
+        locale: 'en_IE',
+        url,
+        siteName: FULL_NAME,
+        title,
+        description,
+        images: [`${WEBSITE_URL}/website_thumbnail.png`]
+    },
+    twitter: {
+        title,
+        description,
+        card: 'summary_large_image', // summary_large_image
+        images: [`${WEBSITE_URL}/website_thumbnail.png`]
+    },
+}
 
 export default function Blog() {
 
-    const postMetadata = getPostMetadata('data/blog')
+    const postMetadata = getAllPostsMetadata('data/blog')
 
     return (
         <>

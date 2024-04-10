@@ -5,8 +5,35 @@ import SkillCard from "@/components/SkillCard";
 import projectsList from "../../../data/portfolio/projectsList";
 import Link from "next/link";
 import { Divider } from "@/components/Divider";
-import { EMAIL_LINK } from "@/constants";
+import { EMAIL_LINK, FULL_NAME, WEBSITE_URL } from '@/constants';
+import type { Metadata } from 'next';
 
+const title = 'Portfolio | Thösam Norlha-Tsang'
+const description = 'Hello there 👋, this is my portfolio where you can learn more about my work'
+const url = `${WEBSITE_URL}/portfolio`;
+export const metadata: Metadata = {
+    title,
+    description,
+    verification: { google: process.env.GOOGLE_SEO_CODE },
+    alternates: {
+        canonical: url,
+    },
+    openGraph: {
+        type: 'website',
+        locale: 'en_IE',
+        url,
+        siteName: FULL_NAME,
+        title,
+        description,
+        images: [`${WEBSITE_URL}/website_thumbnail.png`]
+    },
+    twitter: {
+        title,
+        description,
+        card: 'summary_large_image', // summary_large_image
+        images: [`${WEBSITE_URL}/website_thumbnail.png`]
+    },
+}
 
 export default function Portfolio() {
     return (

@@ -1,71 +1,76 @@
-import getPostMetadata from "@/utils/getPostMetadata"
+import { getPostContent, getPostMetadata } from '@/utils/blog/utils'
 import React from 'react'
-import fs from 'fs'
-import matter from "gray-matter"
-import {format, parseISO} from "date-fns";
-import readingTime from "reading-time"; // to get reading time of the blog post based how many words there are
-import {Wrapper} from "@/components/Wrapper"
-import {Divider} from "@/components/Divider";
-import {MarkdownRenderer} from "@/components/markdown/MarkdownRenderer";
+import matter from 'gray-matter'
+import { format, parseISO } from 'date-fns';
+import readingTime from 'reading-time'; // to get reading time of the blog post based how many words there are
+import { Wrapper } from '@/components/Wrapper'
+import { Divider } from '@/components/Divider';
+import { MarkdownRenderer } from '@/components/markdown/MarkdownRenderer';
+import type { Metadata } from 'next'
+import { IBlogPostMetadata } from '@/utils/interfaces';
+import { WEBSITE_URL } from '@/constants';
 
-const blogFolderPath = "data/blog"
-
-function getPostContent(slug: String) {
-    const folder = blogFolderPath + '/'
-    const file = folder + `${slug}.md`
-    const content = fs.readFileSync(file, 'utf8')
-
-    return matter(content)
+// Generate metadata for SEO
+interface IProps {
+	params: { slug: string },
+	searchParams: { [key: string]: string | string[] | undefined }
 }
 
-export const generateStaticParams = async () => {
-    const posts = getPostMetadata(blogFolderPath)
-    return posts.map((post) => ({slug: post.slug}))
-}
-
-// todo
-// metadata for the page
-export async function generateMetadata({params, searchParams}: any) {
-    const id = params?.slug ? ' ⋅ ' + params?.slug : ''
-    return {
-        title: `Blog ${id.replaceAll('-', ' ')}`
-    }
+export async function generateMetadata({ params }: IProps): Promise<Metadata | undefined> {
+	const currentPostMetaData: IBlogPostMetadata = getPostMetadata(params.slug)
+	let title = currentPostMetaData.title
+	let description = currentPostMetaData.summary
+	return {
+		title,
+		description,
+		openGraph: {
+			title,
+			description,
+			type: 'article',
+			url: `${WEBSITE_URL}${currentPostMetaData.slug}`,
+			images: [`${WEBSITE_URL}/website_thumbnail.png`],
+		},
+		twitter: {
+			card: 'summary_large_image',
+			title,
+			description,
+			images: [`${WEBSITE_URL}/website_thumbnail.png`],
+		},
+	}
 }
 
 interface IBlogProps {
-    params: {
-        slug: string;
-    };
+	params: {
+		slug: string;
+	};
 }
 
 const Blog: React.FC<IBlogProps> = (props: IBlogProps) => {
 
-    const slug: string = props.params.slug
+	const slug: string = props.params.slug
 
-    const post: matter.GrayMatterFile<string> = getPostContent(slug)
+	const post: matter.GrayMatterFile<string> = getPostContent(slug)
 
-    return (
-        <main>
-            <article>
-                <Wrapper>
-                    <div className="text-center">
-                        <h1 className="text-md text-gray-700 py-4">
-                            {format(parseISO(post.data.publishedAt), "MMMM dd, yyyy")}
-                            {"   -   "}
-                            {readingTime(post.content).text}
-                        </h1>
-                        <h1 className="text-4xl font-semibold pb-14">
-                            {post.data.title}
-                        </h1>
-                    </div>
-                    <Divider/>
-                    <MarkdownRenderer>
-                        {post.content}
-                    </MarkdownRenderer>
-                </Wrapper>
-            </article>
-        </main>
-    )
+	return (
+		<main>
+			<article>
+				<Wrapper>
+					<div className="text-center">
+						<h1 className="text-md text-gray-700 py-4">
+							{format(parseISO(post.data.publishedAt), 'MMMM dd, yyyy')}
+							{'   -   '}
+							{readingTime(post.content).text}
+						</h1>
+						<h1 className="text-4xl font-semibold pb-14">
+							{post.data.title}
+						</h1>
+					</div>
+					<Divider/>
+					<MarkdownRenderer content={post.content}/>
+				</Wrapper>
+			</article>
+		</main>
+	)
 }
 
 export default Blog;
