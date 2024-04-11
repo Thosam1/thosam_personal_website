@@ -16,7 +16,7 @@ export default function PostCard(props : any) {
             variants={fadeUpVariant()}
         >
             <Link className="unstyled" href={`/blog/${post.slug}`}>
-                <div className="flex flex-col gap-2 p-5 mb-5 rounded-lg hover:bg-gray-100 transition-transform ease-out hover:scale-95">
+                <div className="flex flex-col gap-2 p-5 mb-5 rounded-lg hover:bg-gray-100">
                     <div className="font-semibold text-xl">{post.title}</div>
                     <p className="font-sm">{post.summary}</p>
                     <div className="w-full text-right">
