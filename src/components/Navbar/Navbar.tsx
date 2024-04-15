@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
 	};
 
 	return (
-		<header className={`flex justify-center w-full top-0 ${isNavOpen ? "fixed" : "relative"}`}>
+		<header className={`flex justify-center w-full top-0`}>
 			<nav className="flex justify-between items-center py-2 lg:py-6 px-8 w-full max-w-screen-md ">
 				<Link className="flex items-center cursor-pointer" href={'/'}>
             <span className="font-semibold">
@@ -22,10 +22,10 @@ const Navbar: React.FC = () => {
 				</Link>
 
 				{/* What we see on larger screen */}
-				<div className="lg:flex hidden gap-12 text-md text-zinc-100">
+				<div className="lg:flex hidden gap-12 text-md">
 					{NAV_LINKS.map((link) => (
 						<Link href={link.href} key={link.key}
-							  className="font-medium text-gray-500 hover:text-gray-400 py-3 md:py-6 dark:text-gray-400 dark:hover:text-gray-500 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+							  className="font-medium hover:text-gray-600 py-3 md:py-6">
 							{link.label}
 						</Link>
 					))}

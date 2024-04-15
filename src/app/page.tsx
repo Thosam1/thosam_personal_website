@@ -3,6 +3,7 @@ import {EMAIL_LINK} from '@/constants'
 import Link from 'next/link'
 import {Wrapper} from "@/components/Wrapper";
 import FadeInAnimation from "@/animations/FadeInAnimation";
+import CustomLink from "@/components/markdown/CustomLink";
 
 const Home = () => (
     <main>
@@ -23,13 +24,14 @@ const Hero = () => (
                         <h2 className="font-bold text-3xl lg:text-4xl text-gray-800 dark:text-gray-200">
                             Hi everyone 👋, I&apos;m Thösam
                         </h2>
-                        <p className="text-gray-500">
-                            I am a software engineer, creator and student living in Switzerland.
+                        <p>
+                            I am a software engineer, content creator and student living in Switzerland.
                         </p>
                         <p>
                             On this website, you can find useful resources on topics like : coding, study, life, guitar,
-                            books, ... Feel free to check out my Blog if you like reading, otherwise you can check my
-                            Projects I have been working on. Or learn more about me.
+                            books, ... Feel free to check out my <CustomLink href="/blog">blog</CustomLink> if you like
+                            reading, otherwise you can check the <CustomLink href="/portfolio">projects</CustomLink> I
+                            have been working on !
                         </p>
                     </div>
 

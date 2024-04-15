@@ -1,20 +1,6 @@
 export default function projectsList(): Project[] {
     return [
         {
-            title: 'TalkZone - for university students',
-            description: "Coded a social network application (with a friend) for our own and neighboring universities. Allowing students to express themselves about courses and campus life. Frontend coded in VueJS and backend in Java Spring.",
-            githubLink: 'https://github.com/talkzone-ch',
-            demoLink: 'https://talkzone.ch/',
-            tags: [
-                'WebDev',
-                'VueJs',
-                'Java Spring'
-            ],
-            images: [
-                '/portfolio/projects/talkzone_image.png'
-            ]
-        },
-        {
             title: 'ConnectOut',
             description: "Connect Out is a social activity platform that enables users to join and discover new activities based on their interests. It fosters social interaction and community engagement, making it easier to meet like-minded people and discover new hobbies. ",
             githubLink: 'https://github.com/ConnectOut-sdp/sdp2023',
@@ -40,6 +26,20 @@ export default function projectsList(): Project[] {
             ],
             images: [
                 '/portfolio/projects/bachelor_project.png'
+            ]
+        },
+        {
+            title: 'TalkZone - for university students',
+            description: "Coded a social network application (with a friend) for our own and neighboring universities. Allowing students to express themselves about courses and campus life. Frontend coded in VueJS and backend in Java Spring.",
+            githubLink: 'https://github.com/talkzone-ch',
+            demoLink: 'https://talkzone.ch/',
+            tags: [
+                'WebDev',
+                'VueJs',
+                'Java Spring'
+            ],
+            images: [
+                '/portfolio/projects/talkzone_image.png'
             ]
         },
         {
