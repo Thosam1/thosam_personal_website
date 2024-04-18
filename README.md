@@ -1,6 +1,4 @@
 <div align="center">
-
-  <img src="./public/logo.png" alt="Thösam's logo" width="350" height="150">
   
 # Thösam's Personal Website
 
@@ -9,6 +7,10 @@ Welcome to my personal website! This website serves as a platform to showcase my
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=Thosam1_thosam_personal_website&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=Thosam1_thosam_personal_website)
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=Thosam1_thosam_personal_website&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=Thosam1_thosam_personal_website)
 [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=Thosam1_thosam_personal_website&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=Thosam1_thosam_personal_website)
+
+<br />
+  <img src="./public/website_pic.png" alt="Website's thumbnail" width="800" height="450">
+<br />
 
 </div>
 
