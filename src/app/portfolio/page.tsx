@@ -62,10 +62,10 @@ const Hero = () => (
                     </div>
 
                     <div className="flex justify-start pb-10 md:pb-0">
-                        <Link href="/portfolio" style={{marginRight: '16px'}}>
+                        <Link href="/portfolio/cv/CV_Developer_Thosam.pdf" download="CV_Developer_Thosam" target="_blank" style={{ marginRight: '16px' }}>
                             <button type="button"
                                     className="py-2 px-2 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-500 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
-                                My Portfolio
+                                Download my CV
                             </button>
                         </Link>
                         <Link href={EMAIL_LINK}>
@@ -102,20 +102,20 @@ const Hero = () => (
 //     </Wrapper>
 // )
 
-const TeckStack = () => (
-    <Wrapper>
-        <h1 className="font-semibold text-2xl py-6">
-            Tech Stack
-        </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-2">
-            {
-                skillsList().map((item) =>
-                    <SkillCard name={item.name} image={item.image} link={item.link} description={item.description}/>
-                )
-            }
-        </div>
-    </Wrapper>
-)
+//const TeckStack = () => (
+//    <Wrapper>
+//        <h1 className="font-semibold text-2xl py-6">
+//            Tech Stack
+//        </h1>
+//        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-2">
+//            {
+//                skillsList().map((item) =>
+//                    <SkillCard name={item.name} image={item.image} link={item.link} key={item.name} description={item.description}/>
+//                )
+//            }
+//        </div>
+//    </Wrapper>
+//)
 
 const Projects = () => (
     <Wrapper>
