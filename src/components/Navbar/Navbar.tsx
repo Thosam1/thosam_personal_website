@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
 
 	return (
 		<header className={`flex justify-center w-full top-0`}>
-			<nav className="flex justify-between items-center py-2 lg:py-6 px-8 w-full max-w-screen-md ">
+			<nav className="flex justify-between items-center py-2 lg:py-6 px-8 w-full max-w-[75rem]">
 				<Link className="flex items-center cursor-pointer" href={'/'}>
             <span className="font-semibold">
               {FULL_NAME}

@@ -40,13 +40,22 @@ export default function Blog() {
         <>
             <Heading/>
             <Divider/>
-            <Wrapper>
-                {postMetadata.map((post) => {
-                    return (
-                        <PostCard key={post.slug} post={post}/>
-                    )
-                })}
-            </Wrapper>
+            <div className="container max-w-screen-md mx-auto pt-16 pb-8 px-8">
+                <div className="items-center flex flex-wrap">
+                    <div className="w-full ml-auto mr-auto text-left no-underline">
+
+                        {/*<Wrapper>*/}
+                        {/*<div className="grid grid-cols-1 lg:grid-cols-2 gap-y-0 gap-x-4">*/}
+                        {postMetadata.map((post) => {
+                            return (
+                                <PostCard key={post.slug} post={post}/>
+                            )
+                        })}
+                        {/*</div>*/}
+                        {/*</Wrapper>*/}
+                    </div>
+                </div>
+            </div>
         </>
     )
 }

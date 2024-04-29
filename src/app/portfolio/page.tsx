@@ -77,12 +77,10 @@ const Hero = () => (
                     </div>
                 </div>
 
-                <div className="flex justify-center items-center flex-col">
+                <div className="flex items-center md:items-end flex-col">
                     <img className="max-h-[35rem]" src="/home/thosam_auth_image.webp"
                          alt="Thösam in Fribourg"/>
-                    <div className='flex items-right'>
-                        <p className='py-3 font-light text-sm text-zinc-600'>Thösam Norlha-Tsang 2023</p>
-                    </div>
+                    <p className='py-3 font-light text-sm text-zinc-600'>Thösam Norlha-Tsang 2023</p>
                 </div>
             </div>
         </div>
@@ -122,27 +120,30 @@ const Projects = () => (
         <h1 className="font-semibold text-2xl py-6">
             My Projects
         </h1>
-        {
-            projectsList().map((item) =>
-                <>
-                    <div className="flex justify-center items-left flex-col py-12">
-                        <img className="max-w" src={item.images[0]} alt={item.title}/>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-0 gap-x-4">
 
-                        <div className="flex flex-col gap-4 text-left">
-                            <div className="font-bold text-2xl pt-6">
-                                {item.title}
-                            </div>
-                            <div>
-                                {item.description}
-                            </div>
-                            <div className="flex flex-row gap-5">
-                                <Link href={item.demoLink} className="hover:underline">View Demo</Link>
-                                <Link href={item.githubLink} className="hover:underline">View Source</Link>
+            {
+                projectsList().map((item) =>
+                    <>
+                        <div className="flex justify-center items-left flex-col py-12">
+                            <img className="max-w" src={item.images[0]} alt={item.title}/>
+
+                            <div className="flex flex-col gap-4 text-left">
+                                <div className="font-bold text-2xl pt-6">
+                                    {item.title}
+                                </div>
+                                <div>
+                                    {item.description}
+                                </div>
+                                <div className="flex flex-row gap-5">
+                                    <Link href={item.demoLink} className="hover:underline">View Demo</Link>
+                                    <Link href={item.githubLink} className="hover:underline">View Source</Link>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </>
-            )
-        }
+                    </>
+                )
+            }
+        </div>
     </Wrapper>
 )

@@ -51,12 +51,10 @@ const Hero = () => (
                     </div>
                 </div>
 
-                <div className="flex justify-center items-center flex-col">
+                <div className="flex items-center md:items-end flex-col">
                     <img className="max-h-[35rem]" src="/home/thosam_auth_image.webp"
                          alt="Thösam in Fribourg"/>
-                    <div className='flex items-right'>
                         <p className='py-3 font-light text-sm text-zinc-600'>Thösam Norlha-Tsang 2023</p>
-                    </div>
                 </div>
             </div>
         </div>
