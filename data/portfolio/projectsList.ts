@@ -1,4 +1,4 @@
-export default function projectsList(): Project[] {
+export default function projectsList(): IProject[] {
     return [
         {
             title: 'ConnectOut',
@@ -163,7 +163,7 @@ export default function projectsList(): Project[] {
     ];
 }
 
-interface Project {
+export interface IProject {
     title: string;
     description: string;
     githubLink: string;

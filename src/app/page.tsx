@@ -1,22 +1,16 @@
-"use client";
 import {EMAIL_LINK} from '@/constants'
 import Link from 'next/link'
-import {Wrapper} from "@/components/Wrapper";
-import FadeInAnimation from "@/animations/FadeInAnimation";
 import CustomLink from "@/components/markdown/CustomLink";
 
 const Home = () => (
     <main>
-        {/*<NextSeo {...SEO}/>*/}
         <Hero/>
-        {/* <AboutMe /> */}
-        {/* <ContactMe /> */}
     </main>
 )
 export default Home
 
 const Hero = () => (
-    <div className="min-h-screen-md flex items-center justify-center px-8 pt-36 pb-8 lg:py-20">
+    <div className="min-h-screen-md flex items-center justify-center px-8 pt-36 pb-8 lg:py-8">
         <div className="max-w-[75rem] lg:px-8 mx-auto">
             <div className="items-center md:grid md:grid-cols-2 md:gap-12 xl:gap-32">
                 <div className="space-y-6 sm:space-y-8">
@@ -59,44 +53,4 @@ const Hero = () => (
             </div>
         </div>
     </div>
-)
-
-const AboutMe = () => (
-    <Wrapper>
-        <FadeInAnimation>
-            <h1 className="font-semibold text-2xl">
-                About Me
-            </h1>
-        </FadeInAnimation>
-        <FadeInAnimation>
-            <p className="mt-2 text-lg text-gray-400 py-2">
-                Hi everyone 👋, I&apos;m Thösam Norlha-Tsang. I go to EPFL where I study computer science. My personal
-                website is where I showcase my projects, writing, statistics, experience, and more. Feel free to reach
-                out via email or any social media. or subscribe to my newsletter !
-            </p>
-        </FadeInAnimation>
-    </Wrapper>
-)
-
-
-const ContactMe = () => (
-    <Wrapper>
-        <div>
-            <FadeInAnimation>
-                <h1 className="font-semibold text-2xl">
-                    Contact Me
-                </h1>
-            </FadeInAnimation>
-            <FadeInAnimation>
-                <p className="mt-2 text-lg text-gray-400 py-2">
-                    <Link href={EMAIL_LINK}>
-                        <button type="button"
-                                className="py-2 px-2 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-500 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
-                            Contact me
-                        </button>
-                    </Link>
-                </p>
-            </FadeInAnimation>
-        </div>
-    </Wrapper>
 )
