@@ -2,6 +2,8 @@ import {EMAIL_LINK} from '@/constants'
 import Link from 'next/link'
 import CustomLink from "@/components/markdown/CustomLink";
 
+// https://github.com/stevenvachon/broken-link-checker
+
 const Home = () => (
     <main>
         <Hero/>
