@@ -10,6 +10,12 @@ import { tag } from 'postcss-selector-parser';
 import ProjectCard from '@/components/ProjectCard';
 import BA1List from '../../../data/portfolio/education/BA1List';
 import CourseCard from '@/components/CourseCard';
+import BA2List from '../../../data/portfolio/education/BA2List';
+import BA3List from '../../../data/portfolio/education/BA3List';
+import BA4List from '../../../data/portfolio/education/BA4List';
+import BA5List from '../../../data/portfolio/education/BA5List';
+import BA6List from '../../../data/portfolio/education/BA6List';
+import MA1List from '../../../data/portfolio/education/MA1List';
 
 const title = 'Portfolio | Thösam Norlha-Tsang'
 const description = 'Hello there 👋, this is my portfolio where you can learn more about my work'
@@ -135,18 +141,64 @@ const Projects = () => (
 
 const Education = () => (
 	<Wrapper>
-		<h1 className="font-semibold text-2xl py-6">
-			Education
-		</h1>
-		<h1 className="font-semibold text-2xl py-6">
-			EPFL - Bachelor of Computer Science
-		</h1>
-		<h1 className="font-semibold text-2xl py-6">
-			EPFL - Year 1 - Semester 1
-		</h1>
+		<div className="md:text-center">
+			<h1 className="font-semibold text-4xl py-4">
+				Education
+			</h1>
+			<h1 className="font-semibold text-2xl py-4">
+				EPFL - Bachelor of Computer Science
+			</h1>
+			<h1 className="font-semibold text-xl py-6">
+				EPFL - Year 1 - Semester 1
+			</h1>
+			<div className="grid md:grid-cols-2 gap-6 text-left pb-12">
+				{BA1List().map((course) => <CourseCard course={course} key={course.code}/>)}
+			</div>
 
-		<div className="grid gap-6">
-			{BA1List().map((course) => <CourseCard course={course} key={course.code} />)}
+			<h1 className="font-semibold text-xl py-6">
+				EPFL - Year 1 - Semester 2
+			</h1>
+			<div className="grid md:grid-cols-2 gap-6 text-left pb-12">
+				{BA2List().map((course) => <CourseCard course={course} key={course.code}/>)}
+			</div>
+
+			<h1 className="font-semibold text-xl py-6">
+				EPFL - Year 2 - Semester 1
+			</h1>
+			<div className="grid md:grid-cols-2 gap-6 text-left pb-12">
+				{BA3List().map((course) => <CourseCard course={course} key={course.code}/>)}
+			</div>
+
+			<h1 className="font-semibold text-xl py-6">
+				EPFL - Year 2 - Semester 2
+			</h1>
+			<div className="grid md:grid-cols-2 gap-6 text-left pb-12">
+				{BA4List().map((course) => <CourseCard course={course} key={course.code}/>)}
+			</div>
+
+			<h1 className="font-semibold text-xl py-6">
+				EPFL - Year 3 - Semester 1
+			</h1>
+			<div className="grid md:grid-cols-2 gap-6 text-left pb-12">
+				{BA5List().map((course) => <CourseCard course={course} key={course.code}/>)}
+			</div>
+
+			<h1 className="font-semibold text-xl py-6">
+				EPFL - Year 3 - Semester 2
+			</h1>
+			<div className="grid md:grid-cols-2 gap-6 text-left pb-12">
+				{BA6List().map((course) => <CourseCard course={course} key={course.code}/>)}
+			</div>
+
+			<h1 className="font-semibold text-2xl py-4 pt-12">
+				ETHZ - Master of Computer Science
+			</h1>
+			<h1 className="font-semibold text-xl py-6">
+				ETHZ - Year 1 - Semester 1
+			</h1>
+			<div className="grid md:grid-cols-2 gap-6 text-left pb-12">
+				{MA1List().map((course) => <CourseCard course={course} key={course.code}/>)}
+			</div>
 		</div>
 	</Wrapper>
 )
