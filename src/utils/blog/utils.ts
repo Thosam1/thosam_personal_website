@@ -2,14 +2,14 @@ import fs from 'fs'
 import matter from 'gray-matter'
 import { IBlogPostMetadata } from '@/utils/interfaces';
 
-const blogFolderPath = "data/blog"
+const BLOG_FOLDER_PATH = "data/blog"
 
 export function getPostMetadata(filename: string): IBlogPostMetadata {
     // if filename is only the slug
     if(!filename.endsWith('.md')) {
         filename = filename + '.md'
     }
-    const fileContents = fs.readFileSync(`${blogFolderPath}/${filename}`, 'utf8')
+    const fileContents = fs.readFileSync(`${BLOG_FOLDER_PATH}/${filename}`, 'utf8')
     const matterResult = matter(fileContents)
 
     // object that is passed on
@@ -23,7 +23,7 @@ export function getPostMetadata(filename: string): IBlogPostMetadata {
     }
 }
 
-export function getAllPostsMetadata(blogFolderPath: string): IBlogPostMetadata[] {
+export function getAllPostsMetadata(blogFolderPath: string = BLOG_FOLDER_PATH): IBlogPostMetadata[] {
     const folder: string = blogFolderPath + '/'
     const files: string[] = fs.readdirSync(folder)
 
@@ -39,9 +39,6 @@ export function getPostContent(filename: string): matter.GrayMatterFile<string> 
     if(!filename.endsWith('.md')) {
         filename = filename + '.md'
     }
-
-    const folder = blogFolderPath + '/'
-    const file = folder + filename
-    const content = fs.readFileSync(file, 'utf8')
+    const content = fs.readFileSync(`${BLOG_FOLDER_PATH}/${filename}`, 'utf8')
     return matter(content)
 }

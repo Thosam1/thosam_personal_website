@@ -34,7 +34,7 @@ export const metadata: Metadata = {
 
 export default function Blog() {
 
-    const postMetadata = getAllPostsMetadata('data/blog')
+    const postMetadata = getAllPostsMetadata()
 
     return (
         <>
