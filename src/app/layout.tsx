@@ -3,6 +3,7 @@ import './globals.css';
 import Navbar from '@/components/Navbar/Navbar';
 import Footer from '@/components/Footer';
 import { FULL_NAME, WEBSITE_URL } from '@/constants';
+import Newsletter from '@/components/Newsletter';
 
 /* Default SEO */
 const title = 'Home | Thösam Norlha-Tsang'
@@ -43,7 +44,8 @@ export default function RootLayout({
 		<main>
 			{children}
 		</main>
-		<Footer/>
+		{/*<Newsletter />*/}
+		<Footer />
 		</body>
 		</html>
 	);
