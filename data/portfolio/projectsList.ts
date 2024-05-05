@@ -29,6 +29,37 @@ export default function projectsList(): IProject[] {
 			]
 		},
 		{
+			title: 'UniSublet',
+			description: 'A mobile application built using react native with expo cli and typescript, coupled with a backend' +
+				' in node and mongoDb. The mission of this project is to allow students to sublet their rooms during holidays.',
+			githubLink: 'https://github.com/Thosam1/UniHousing',
+			demoLink: '',
+			tags: [
+				'React Native',
+				'Typescript',
+				'Expo',
+				'NodeJS',
+				'MongoDB'
+			],
+			images: [
+				'/portfolio/projects/UniHousing_mockup.png',
+			]
+		},
+		{
+			title: 'Personal Web App 🔥',
+			description: 'Past personal website made using Next.js and Chakra UI, merged my portfolio and my blog in a single' +
+				' place.',
+			githubLink: 'https://github.com/Thosam1/thosam_personal_blog',
+			demoLink: 'https://thosam.vercel.app/',
+			tags: [
+				'WebDev',
+				'NextJs'
+			],
+			images: [
+				'/portfolio/projects/bg_personal_website.png'
+			]
+		},
+		{
 			title: 'TalkZone - for university students',
 			description: 'Coded a social network application (with a friend) for our own and neighboring universities. Allowing students to express themselves about courses and campus life. Frontend coded in VueJS and backend in Java Spring.',
 			githubLink: 'https://github.com/talkzone-ch',
@@ -78,36 +109,6 @@ export default function projectsList(): IProject[] {
 			],
 			images: [
 				'/portfolio/projects/pacman_lv2.png',
-			]
-		},
-		{
-			title: 'UniSublet',
-			description: 'A mobile application built using react native with expo cli and typescript, coupled with a backend' +
-				' in node and mongoDb. The mission of this project is to allow students to sublet their rooms during holidays.',
-			githubLink: 'https://github.com/Thosam1/UniHousing',
-			demoLink: '',
-			tags: [
-				'React Native',
-				'Typescript',
-				'Expo',
-				'NodeJS',
-				'MongoDB'
-			],
-			images: [
-				'/portfolio/projects/UniHousing_mockup.png',
-			]
-		},
-		{
-			title: 'Personal Web App 🔥',
-			description: 'Current website made using Next.js and Chakra UI, merged my portfolio and my blog in a single place.',
-			githubLink: 'https://github.com/Thosam1/thosam_personal_blog',
-			demoLink: 'https://thosam.vercel.app/',
-			tags: [
-				'WebDev',
-				'NextJs'
-			],
-			images: [
-				'/portfolio/projects/bg_personal_website.png'
 			]
 		},
 		{
