@@ -9,8 +9,10 @@ export default function ProjectCard({ project }: { project: IProject }) {
 				<div className="font-bold text-xl mb-2">{project.title}</div>
 				<p className="text-gray-700 text-base">{project.description}</p>
 				<div className="pt-4 flex flex-row gap-5">
-					<CustomLink href={project.demoLink} >View Demo</CustomLink>
-					<CustomLink href={project.githubLink} >View Source</CustomLink>
+					{project.demoLink !== '' &&
+						<CustomLink href={project.demoLink}>View Demo</CustomLink>
+					}
+					<CustomLink href={project.githubLink}>View Source</CustomLink>
 				</div>
 				{/*<div className="pt-4 pb-2">*/}
 				{/*    {project.tags.map((tag) =>*/}
