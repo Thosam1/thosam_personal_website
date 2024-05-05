@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from 'react';
+import * as EmailValidator from 'email-validator';
 
 const Newsletter: React.FC = () => {
 	const [email, setEmail] = useState('');
@@ -14,8 +15,7 @@ const Newsletter: React.FC = () => {
 	const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
 		event.preventDefault();
 		// Simple email validation
-		const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-		if (!emailRegex.test(email)) {
+		if (!EmailValidator.validate(email)) {
 			setIsValid(false);
 			return;
 		}
