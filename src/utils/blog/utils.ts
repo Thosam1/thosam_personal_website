@@ -5,12 +5,7 @@ import { IBlogPostMetadata } from '@/utils/interfaces';
 const BLOG_FOLDER_PATH = "data/blog"
 
 export function getPostMetadata(filename: string): IBlogPostMetadata {
-    // if filename is only the slug
-    if(!filename.endsWith('.md')) {
-        filename = filename + '.md'
-    }
-    const fileContents = fs.readFileSync(`${BLOG_FOLDER_PATH}/${filename}`, 'utf8')
-    const matterResult = matter(fileContents)
+    const matterResult = getPostContent(filename);
 
     // object that is passed on
     return {
