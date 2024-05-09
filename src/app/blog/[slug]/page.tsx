@@ -4,7 +4,7 @@ import fs from 'fs'
 
 const BLOG_FOLDER_PATH = "data/blog"
 
-export function getPostContent(filename: string): matter.GrayMatterFile<string> {
+function getPostContent(filename: string): matter.GrayMatterFile<string> {
     // if filename is only the slug
     if(!filename.endsWith('.md')) {
         filename = filename + '.md'
