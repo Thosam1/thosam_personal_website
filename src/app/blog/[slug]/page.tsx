@@ -1,5 +1,18 @@
-"use client";
-import {getPostContent, getPostMetadata} from '@/utils/blog/utils'
+//import {getPostContent, getPostMetadata} from '@/utils/blog/utils'
+
+import fs from 'fs'
+
+const BLOG_FOLDER_PATH = "data/blog"
+
+export function getPostContent(filename: string): matter.GrayMatterFile<string> {
+    // if filename is only the slug
+    if(!filename.endsWith('.md')) {
+        filename = filename + '.md'
+    }
+    const content = fs.readFileSync(`${BLOG_FOLDER_PATH}/${filename}`, 'utf8')
+    return matter(content)
+}
+
 import React from 'react'
 import matter from 'gray-matter'
 import {format, parseISO} from 'date-fns';
