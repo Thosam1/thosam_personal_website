@@ -1,3 +1,4 @@
+"use client";
 import {getPostContent, getPostMetadata} from '@/utils/blog/utils'
 import React from 'react'
 import matter from 'gray-matter'
@@ -16,28 +17,28 @@ interface IProps {
     searchParams: { [key: string]: string | string[] | undefined }
 }
 
-export async function generateMetadata({params}: IProps): Promise<Metadata | undefined> {
-    const currentPostMetaData: IBlogPostMetadata = getPostMetadata(params.slug)
-    let title = currentPostMetaData.title
-    let description = currentPostMetaData.summary
-    return {
-        title,
-        description,
-        openGraph: {
-            title,
-            description,
-            type: 'article',
-            url: `${WEBSITE_URL}${currentPostMetaData.slug}`,
-            images: [`${WEBSITE_URL}/website_thumbnail.png`],
-        },
-        twitter: {
-            card: 'summary_large_image',
-            title,
-            description,
-            images: [`${WEBSITE_URL}/website_thumbnail.png`],
-        },
-    }
-}
+//export async function generateMetadata({params}: IProps): Promise<Metadata | undefined> {
+//    const currentPostMetaData: IBlogPostMetadata = getPostMetadata(params.slug)
+//    let title = currentPostMetaData.title
+//    let description = currentPostMetaData.summary
+//    return {
+//        title,
+//        description,
+//        openGraph: {
+//            title,
+//            description,
+//            type: 'article',
+//            url: `${WEBSITE_URL}${currentPostMetaData.slug}`,
+//            images: [`${WEBSITE_URL}/website_thumbnail.png`],
+//        },
+//        twitter: {
+//            card: 'summary_large_image',
+//            title,
+//            description,
+//            images: [`${WEBSITE_URL}/website_thumbnail.png`],
+//        },
+//    }
+//}
 
 interface IBlogProps {
     params: {
