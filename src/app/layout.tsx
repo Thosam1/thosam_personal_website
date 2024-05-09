@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import Navbar from '@/components/Navbar/Navbar';
+import Navbar from '@/components/navbar/Navbar';
 import Footer from '@/components/Footer';
 import { FULL_NAME, WEBSITE_URL } from '@/constants';
 import Newsletter from '@/components/Newsletter';
