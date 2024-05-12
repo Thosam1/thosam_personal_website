@@ -3,11 +3,11 @@ import { getAllPostsMetadata } from '@/utils/blog/utils'
 import PostCard from '@/components/PostCard'
 import { Divider } from '@/components/Divider'
 import type { Metadata } from 'next';
-import { FULL_NAME, WEBSITE_URL } from '@/constants';
+import { FULL_NAME } from '@/constants';
 
 const title = 'Blog | Thösam Norlha-Tsang'
 const description = 'Hello there 👋, this is my blog where I write articles 😄'
-const url = `${WEBSITE_URL}/blog`;
+const url = `${process.env.WEBSITE_URL}/blog`;
 export const metadata: Metadata = {
 	title,
 	description,
@@ -22,13 +22,13 @@ export const metadata: Metadata = {
 		siteName: FULL_NAME,
 		title,
 		description,
-		images: [`${WEBSITE_URL}/website_thumbnail.png`]
+		images: [`${process.env.WEBSITE_URL}/website_thumbnail.png`]
 	},
 	twitter: {
 		title,
 		description,
 		card: 'summary_large_image', // summary_large_image
-		images: [`${WEBSITE_URL}/website_thumbnail.png`]
+		images: [`${process.env.WEBSITE_URL}/website_thumbnail.png`]
 	},
 }
 

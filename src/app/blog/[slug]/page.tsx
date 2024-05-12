@@ -8,7 +8,7 @@ import { Divider } from '@/components/Divider';
 import { MarkdownRenderer } from '@/components/markdown/MarkdownRenderer';
 import type { Metadata } from 'next'
 import { IBlogPostMetadata } from '@/utils/interfaces';
-import { WEBSITE_URL } from '@/constants';
+import { FULL_NAME } from '@/constants';
 
 // Generate metadata for SEO
 interface IProps {
@@ -20,21 +20,28 @@ export async function generateMetadata({ params }: IProps): Promise<Metadata | u
 	const currentPostMetaData: IBlogPostMetadata = getPostMetadata(params.slug)
 	let title = currentPostMetaData.title
 	let description = currentPostMetaData.summary
+	let url = `${process.env.WEBSITE_URL}/${currentPostMetaData.slug}`
+
 	return {
 		title,
 		description,
+		verification: { google: process.env.GOOGLE_SEO_CODE },
+		alternates: {
+			canonical: url,
+		},
 		openGraph: {
 			title,
 			description,
+			url,
 			type: 'article',
-			url: `${WEBSITE_URL}${currentPostMetaData.slug}`,
-			images: [`${WEBSITE_URL}/website_thumbnail.png`],
+			siteName: FULL_NAME,
+			images: [`${process.env.WEBSITE_URL}/website_thumbnail.png`],
 		},
 		twitter: {
-			card: 'summary_large_image',
 			title,
 			description,
-			images: [`${WEBSITE_URL}/website_thumbnail.png`],
+			card: 'summary_large_image',
+			images: [`${process.env.WEBSITE_URL}/website_thumbnail.png`],
 		},
 	}
 }

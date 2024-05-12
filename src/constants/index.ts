@@ -13,6 +13,3 @@ export const INSTAGRAM_LINK = 'https://www.instagram.com/tho_norlha/'
 export const GITHUB_LINK = 'https://github.com/Thosam1'
 export const LINKEDIN_LINK = 'https://www.linkedin.com/in/thösam-n-328932236/'
 export const EMAIL_LINK = "mailto:" + EMAIL
-
-// todo - to change after buying domain name
-export const WEBSITE_URL = "https://thosam-personal-website.vercel.app"

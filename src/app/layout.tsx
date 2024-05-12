@@ -2,8 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import Navbar from '@/components/Navbar/Navbar';
 import Footer from '@/components/Footer';
-import { FULL_NAME, WEBSITE_URL } from '@/constants';
-import Newsletter from '@/components/Newsletter';
+import { FULL_NAME } from '@/constants';
 
 /* Default SEO */
 const title = 'Home | Thösam Norlha-Tsang'
@@ -13,22 +12,22 @@ export const metadata: Metadata = {
 	description,
 	verification: { google: process.env.GOOGLE_SEO_CODE },
 	alternates: {
-		canonical: WEBSITE_URL,
+		canonical: `${process.env.WEBSITE_URL}/`,
 	},
 	openGraph: {
 		type: 'website',
 		locale: 'en_IE',
-		url: WEBSITE_URL,
+		url: process.env.WEBSITE_URL,
 		siteName: FULL_NAME,
 		title,
 		description,
-		images: [`${WEBSITE_URL}/website_thumbnail.png`]
+		images: [`${process.env.WEBSITE_URL}/website_thumbnail.png`]
 	},
 	twitter: {
 		title,
 		description,
 		card: 'summary_large_image', // summary_large_image
-		images: [`${WEBSITE_URL}/website_thumbnail.png`]
+		images: [`${process.env.WEBSITE_URL}/website_thumbnail.png`]
 	},
 }
 
@@ -44,7 +43,6 @@ export default function RootLayout({
 		<main>
 			{children}
 		</main>
-		{/*<Newsletter />*/}
 		<Footer />
 		</body>
 		</html>

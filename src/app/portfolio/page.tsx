@@ -1,12 +1,8 @@
 import { Wrapper } from '@/components/Wrapper';
-import skillsList from '../../../data/portfolio/skillsList';
-import SkillCard from '@/components/SkillCard';
 import projectsList from '../../../data/portfolio/projectsList';
 import Link from 'next/link';
-import { EMAIL_LINK, FULL_NAME, WEBSITE_URL } from '@/constants';
+import { EMAIL_LINK, FULL_NAME } from '@/constants';
 import type { Metadata } from 'next';
-import CustomLink from '@/components/markdown/CustomLink';
-import { tag } from 'postcss-selector-parser';
 import ProjectCard from '@/components/ProjectCard';
 import BA1List from '../../../data/portfolio/education/BA1List';
 import CourseCard from '@/components/CourseCard';
@@ -19,7 +15,7 @@ import MA1List from '../../../data/portfolio/education/MA1List';
 
 const title = 'Portfolio | Thösam Norlha-Tsang'
 const description = 'Hello there 👋, this is my portfolio where you can learn more about my work'
-const url = `${WEBSITE_URL}/portfolio`;
+const url = `${process.env.WEBSITE_URL}/portfolio`;
 export const metadata: Metadata = {
 	title,
 	description,
@@ -34,13 +30,13 @@ export const metadata: Metadata = {
 		siteName: FULL_NAME,
 		title,
 		description,
-		images: [`${WEBSITE_URL}/website_thumbnail.png`]
+		images: [`${process.env.WEBSITE_URL}/website_thumbnail.png`]
 	},
 	twitter: {
 		title,
 		description,
 		card: 'summary_large_image', // summary_large_image
-		images: [`${WEBSITE_URL}/website_thumbnail.png`]
+		images: [`${process.env.WEBSITE_URL}/website_thumbnail.png`]
 	},
 }
 
