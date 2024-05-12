@@ -1,6 +1,7 @@
 import fs from 'fs'
 import matter from 'gray-matter'
 import { IBlogPostMetadata } from '@/utils/interfaces';
+import path from 'path';
 
 const BLOG_FOLDER_PATH = "data/blog"
 
@@ -34,6 +35,9 @@ export function getPostContent(filename: string): matter.GrayMatterFile<string> 
     if(!filename.endsWith('.md')) {
         filename = filename + '.md'
     }
-    const content = fs.readFileSync(`${BLOG_FOLDER_PATH}/${filename}`, 'utf8')
+
+    // using process.cwd() is needed to make it work locally AND in production !!!
+    const content = fs.readFileSync(path.join(process.cwd(), BLOG_FOLDER_PATH, filename), 'utf8');
+
     return matter(content)
 }
