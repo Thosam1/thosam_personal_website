@@ -27,7 +27,7 @@ Apart from that I don’t think there are any other interesting thing worth ment
 
  
 
-![Untitled](../../static/images/advice-from-my-2nd-year-at-epfl/Untitled.png)
+![Untitled](./blog/advice-from-my-2nd-year-at-epfl/Untitled.png)
 
 If you plan on taking about 38 credits, I advise you to watch past lectures on SwitchTube or go to the respective moodle page. If you don’t find them, just ask on Telegram, go to the 3rd year group and ask there, someone will help you. You should also do all the exercise sets.
 
