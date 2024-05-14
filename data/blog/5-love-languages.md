@@ -24,7 +24,7 @@ In this chapter, the author explains that similar to having spoken languages: Fr
 
 People tend to speak generally in their own native language because it is the language we feel the most comfortable in, and thus communicate with the love language they are the most familiar with.
 
-The author argues that one of the main reason why love fade after a marriage is because couples fail to understand each other’s love language and thus fail to communicate love in a way that is appreciated and felt by the spouse. 
+The author argues that one of the main reason why love fade after a marriage is because couples fail to understand each other’s love language and thus fail to communicate love in a way that is appreciated and felt by the spouse. What makes one person feel loved emotionally is not always the thing that makes another person feel loved emotionally.
 
 Therefore, we must put in the effort to learn to communicate and understand other people’s love language.
 
@@ -113,6 +113,8 @@ To help getting started with practicing, we can start by expressing  verbal appr
 
 In addition to that, don’t forget that you can just thank your mate for something they do routinely and wouldn’t expect to be complimented for !
 
+---
+
 > *What would you most like your spouse to say to you ?*
 > 
 
@@ -121,6 +123,109 @@ This question is actually very interesting.
 I would like to feel appreciated. Appreciated for the efforts I make to show love, to become a better person. I would like to receive constructive feedback. I realize that I am not good at communicating my appreciation towards other people. I am not fluent in this language. Most of the time I really do feel grateful inside but it’s only painted in my mind. Sadly, other people cannot read my mind. Therefore, I also need to work on those aspects. By practicing every day at communicating love through my words.
 
 # Love language #2: Quality time
+
+Quality time means to focus on the other person, to give someone our ***undivided attention***, looking at each other and talking with devices put away, doing an activity together that the other person enjoys (and doing it *wholeheartedly*). Just being in the same room with someone is not enough, our attention should be focused on that one person we are spending time with, only then can we call it “being together”. 
+
+Spending time on an activity together while focused on each other is what creates the sense of togetherness. The activity is not what matters, **what matters is that in this moment, we are spending time with each other** → We must see the bigger picture ! 
+
+Time is a precious commodity. When we sit down with our partner, and give each other our undivided attention. We are giving each other minutes of life ! We will never have those minutes again. Therefore, we are giving our lives to each other ! Quality time takes a whole other meaning, we can communicate love through quality time. It communicates that we care about each other, that we enjoy being with each other, that we like to do things together !
+
+## Quality Conversations
+
+For someone whose primary love language is quality time, having a sympathetic dialogue where both individuals share their respective **experiences**, **thoughts**, **feelings** and **desires** in a friendly and **uninterrupted context** is crucial to his or her emotional sense of being loved.
+
+Words of affirmation focus on what we are saying, whereas quality conversations focus on what we are hearing.
+
+When we share love through means of quality time - conversations - we must listen well, because the goal is to understand the other person’s **thoughts**, **feelings** and **desires**. We want to communicate love by focusing on the other person, *understanding them* and showing them that we understand their perspective.
+
+### Learning how to listen
+
+We must learn to listen well. In today’s world, we are trained to analyze problems and create solutions. We sometimes make the mistake of only listening long enough to hear the problem and formulate a solution. However, a relationship is not a project or a problem to solve. A relationship requires sympathetic listening with a genuine desire to understand the other person’s **thoughts**, **feelings** and **desires**.
+
+We should only give advice when it is requested and only in a kind manner.
+
+### Learning how to talk
+
+Quality conversation not only requires sympathetic listening but also self-revelation. For intimacy to happen, we must share what we are thinking or feeling to our mate. For many people, especially those who grew up in homes where expressing thoughts, feelings and desires where not encouraged, this does not come naturally. Because we have learned to deny our feelings and thus are no longer in touch with our emotional selves.
+
+However, to have intimacy, we must learn to reveal ourselves, to get in touch with our own feelings. “What emotions have I felt in the last 3 hours ?” We can recall an event and the feelings associated with it.
+
+Self-revelation is the act of showing your private thoughts, opinions, or feelings. By communicating regularly to your mate about your own feelings and thoughts, this process will come more naturally.
+
+## Quality Activities
+
+These are activities that generally interests one or both of the partners. However, the emphasis is not on what we are doing but on *why* *we are doing it*.
+
+The purpose is to experience something together, to walk away from it feeling like “he cares about me”. He is willing to do something with me that I enjoy and he did it with a *positive attitude*.
+
+By sharing quality activities, it provides us with a **memory bank** from which to draw in the future. Those are **memories of love**, especially for someone whose primary love language is quality time.
+
+## Practice
+
+### Conversations
+
+- Listening for feelings.
+
+What is the other person thinking ? feeling ? what are their desires ?
+
+What emotion is he/she experiencing ?
+
+When we have an idea, we can confirm it: “It sounds to me like you are feeling disappointed because I forgot xxx”
+
+Or we can ask questions for clarification to make sure that we know what they are thinking / feeling.
+
+This allows the other person to clarify his/her feelings but also communicates that we are actively listening to what they are saying and that we are trying to understand them. This is great because we communicate that we understand their feelings.
+
+- Observing body language
+
+We can pay attention to their body language, tone of voice, facial expressions, eye brows, eye movements, hands, legs. Observing the person while listening to them can give us clues as to what they are feeling. Because sometimes, words can speak one message while body language speaks another.
+
+- Offering non verbal cues
+
+Likewise, we can also offer them non verbal cues to communicate that we are listening and giving them our full undivided attention. This can be done via: regular eye contact, nodding, attentive posture (facing towards them), eye brows, mouth (eg: open), hands (eg: hands over the head).
+
+- Refuse to interrupt
+
+This means that we should listen, while the other person is talking. We should not think about what we are going to say while they are still talking. We should refrain from defending ourselves, stating our position or hurling accusations at him/her while they are talking. **The objective is to first seek and discover their thoughts and feelings**. Only then, can there be a constructive discussion. 
+
+- Get rid of distractions
+
+Don’t listen to them while doing something else. You want to give them full attention. If you are doing something else, you could say: “I know that you are trying to talk to me, I am interested but right now I cannot give you my full attention. If you give me 10 minutes to finish what I am doing, I will sit down and listen to you”. 
+
+### Awareness
+
+“What emotions have I felt in the last 3 hours ?” 
+
+We can recall an event and the feelings associated with it, then write it down somewhere or communicate those to someone.
+
+If we do this 3 times a day, after a few weeks, we will become comfortable expressing our emotions with our partner.
+
+→ eg: every day, each talk about 3 things that happened and how they feel about them, this could be done during dinner for example.
+
+### Activities
+
+This can be done through activities such as: taking a walk, going out to eat, looking at each other and talking. It’s important to plan those times together.
+
+- Spending a weekend in the mountains
+- Meeting for lunch
+- In the evening, sitting down together and talk about each other’s day
+- Going on a picnic
+- Taking a vacation together
+- Going for a walk and talk
+- …
+
+What is essential is that: 
+
+1. At least one of us wants to do it (we can set time aside  to do something they enjoy/interests them ^^)
+2. The other is willing to do it
+3. Both of us know why we are doing it (to express love by being together)
+
+---
+
+> What in your marriage detracts from spending quality time ?
+> 
+
+I think what prevents me personally is that I have some progress to do in communicating/sharing my emotions, thoughts, feelings and desire. To open up faster but also formulate them in a kind manner. I realize that I tend to go back into my shell and raise walls. This I think would be what prevents quality time.
 
 # Love language #3: Receiving gifts
 

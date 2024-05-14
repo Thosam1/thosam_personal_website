@@ -11,7 +11,7 @@ type MarkdownRendererProps = {
 let components = {
 	h1: ({ ...props }) => <h1 className="font-semibold pt-12" {...props}>{props.children}</h1>,
 	h2: ({ ...props }) => <h2 className="font-semibold pt-12" {...props}>{props.children}</h2>,
-	h3: ({ ...props }) => <h3 className="font-semibold pt-12" {...props}>{props.children}</h3>,
+	h3: ({ ...props }) => <h3 className="font-semibold" {...props}>{props.children}</h3>,
 	//p: ({ ...props }) => <p className="text-md " {...props} />,
 	p: ({ ...props }) => <p className="font-light" style={{ fontSize: '18px' }} {...props} />,
 	a: ({ ...props }) => <CustomLink href={props?.href || '/'}>{props.children}</CustomLink>,
