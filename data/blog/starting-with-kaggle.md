@@ -14,6 +14,8 @@ Here is the link of the website : [https://www.kaggle.com/](https://www.kaggle.c
 
 If you want to checkout my profile there 😀 : [https://www.kaggle.com/wintercloud](https://www.kaggle.com/wintercloud)
 
+# Table of contents
+
 # My story
 
 Growing up, I was very curious about everything and especially, with the idea of intelligence. How do we define intelligence ? In the past, I have heard about machines, robots and computers replacing humans. I thought to myself that it was fascinating, not about the fact of people losing their jobs but more about how could the machine replace humans in more complex behaviors such as self driving cars. 

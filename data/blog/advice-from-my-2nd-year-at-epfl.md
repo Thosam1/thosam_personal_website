@@ -13,6 +13,8 @@ Hey 🤙🏼, in this article I will talk about my second year at EPFL, how my 2
 My goal by writing this article is mainly to give you insights and some direction.
 Leeeet's gooo 🚀 !!!
 
+# Table of contents
+
 # Chapter 1 : my summer of 2021
 
 Nothing much to say here, I went out for runs, walks, worked out and spent time with my family and friends.

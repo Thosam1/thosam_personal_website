@@ -18,6 +18,8 @@ I hope that you will enjoy reading this book as much as I did and will grow into
 
 This book helps you better understand the people around you and yourself.
 
+# Table of contents
+
 # What happens to love after the wedding
 
 In this chapter, the author explains that similar to having spoken languages: French, English, German, … There are 5 love languages (with their respective dialects 😆).
