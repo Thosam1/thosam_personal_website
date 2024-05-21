@@ -3,6 +3,7 @@ import './globals.css';
 import Navbar from '@/components/Navbar/Navbar';
 import Footer from '@/components/Footer';
 import { FULL_NAME } from '@/constants';
+import ScrollToTopButton from '@/components/ScrollToTopButton';
 
 /* Default SEO */
 const title = 'Home | Thösam Norlha-Tsang'
@@ -43,6 +44,7 @@ export default function RootLayout({
 		<main>
 			{children}
 		</main>
+		<ScrollToTopButton />
 		<Footer />
 		</body>
 		</html>
