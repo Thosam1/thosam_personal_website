@@ -62,6 +62,8 @@ Words of affirmation are basically ways to formulate *verbally* our love. They a
 
 “I want you to know that I really appreciate you doing this for me.”
 
+“Oh, that is so sweet of you !” (+hug)
+
 There are 4 main dialects in which we can communicate words of affirmation:
 
 - verbal compliments
@@ -113,8 +115,6 @@ To help getting started with practicing, we can start by expressing  verbal appr
 
 In addition to that, don’t forget that you can just thank your mate for something they do routinely and wouldn’t expect to be complimented for !
 
----
-
 > *What would you most like your spouse to say to you ?*
 > 
 
@@ -132,7 +132,7 @@ Time is a precious commodity. When we sit down with our partner, and give each o
 
 ## Quality Conversations
 
-For someone whose primary love language is quality time, having a sympathetic dialogue where both individuals share their respective **experiences**, **thoughts**, **feelings** and **desires** in a friendly and **uninterrupted context** is crucial to his or her emotional sense of being loved.
+For someone whose primary love language is quality time, having a sympathetic dialogue where both individuals share their respective **experiences**, **thoughts**, **feelings** and **desires** in a friendly and **uninterrupted** ****context** is crucial to his or her emotional sense of being loved.
 
 Words of affirmation focus on what we are saying, whereas quality conversations focus on what we are hearing.
 
@@ -159,6 +159,11 @@ These are activities that generally interests one or both of the partners. Howev
 The purpose is to experience something together, to walk away from it feeling like “he cares about me”. He is willing to do something with me that I enjoy and he did it with a *positive attitude*.
 
 By sharing quality activities, it provides us with a **memory bank** from which to draw in the future. Those are **memories of love**, especially for someone whose primary love language is quality time.
+
+> What in your marriage detracts from spending quality time ?
+> 
+
+I think what prevents me personally is that I have some progress to do in communicating/sharing my emotions, thoughts, feelings and desire. To open up faster but also formulate them in a kind manner. I realize that I tend to go back into my shell and raise walls. This I think would be what prevents quality time.
 
 ## Practice
 
@@ -220,26 +225,152 @@ What is essential is that:
 2. The other is willing to do it
 3. Both of us know why we are doing it (to express love by being together)
 
----
-
-> What in your marriage detracts from spending quality time ?
-> 
-
-I think what prevents me personally is that I have some progress to do in communicating/sharing my emotions, thoughts, feelings and desire. To open up faster but also formulate them in a kind manner. I realize that I tend to go back into my shell and raise walls. This I think would be what prevents quality time.
-
 # Love language #3: Receiving gifts
+
+Gifts are fundamental expression of love. Gifts are reminder of love, good gifts often have emotional value. They are *visual* symbols of love.
+
+The gift itself is a symbol that we were thinking of that person. It’s something that he/she can hold in his/her hand and think, “Look, he was thinking of me” “She remembered me”. The price is not important, what matters is that we were thinking of that person.
+
+## Best Investment
+
+We all have different views on how to spend money. If we are a spender, we will spend money easily on gifts, but in the other hand, if we are a saver, we might feel emotional resistance to the idea of spending money as “an expression of love”. We don’t even purchase things for ourselves, why would we purchase something for our spouse ? 
+
+But this view is narrow minded, by saving money we care for our own emotional needs. We are not meeting the emotional needs of our spouse (especially in the case where his/her primary love language is receiving gifts). We must realise that this is the best investment we can make: investing in the relationship.
+
+## Gift of self
+
+There is a gift that speaks more loudly than a gift that can be held in one’s hand. It is called the gift of self, the gift of presence.
+
+Being there for someone when they need you is important. For some people being there for them is more important than anything else in their mind. Physical presence in the time of crisis is the most powerful gift we can give to someone’s whose primary language is receiving gifts. Our body / presence becomes the symbol of our love.
+
+If the physical presence of your mate is important to you, it is important to verbalise it, do not expect them to read your mind. On the other hand, we should take those requests seriously because otherwise it might be misunderstood and communicate a message that we do not intend.
+
+## Practice
+
+- Gifts can be purchased, found or made
+- Important thing to remember: don’t wait for special occasions to give gifts !
+- Writing I love you on a piece of paper or gratitude (↔ words of appreciation)
+- Gift of memory, new experience (↔ quality time)
+- Giving something that recalls a shared memory, a place we have been to (specific to it)
+- Giving something that interests the person
+- Grabbing something to drink for our mate when we grab one for ourselves -> gift/token of love, we thought of them
+- Gift of presence - Gift of self
+- We can make a list of gifts our mate has expressed excitement about receiving through the years, we can ask family members or friends. This will give us an idea of what he/she enjoy receiving.
+- Something handmade - scrapbook, painting, wood carving, ceramics, …
+- Nature (stone, …)
+- Gift idea notebook: every time our mate says “I like xxx” “I would enjoy having xxx” → write it down in a notebook
+- Book (that interests him/her) and read it to him/her weekly and discuss
+
+Some additional ideas:
+
+- dinner
+- trip
+- potted plant
+- rose, flowers
+- little card, little notes
+- cookies, ice cream
 
 # Love language #4: Acts of service
 
+Expressing love by doing things for someone. I mean, this is pretty straightforward:
+
+- Cleaning
+- Groceries shopping
+- Cooking
+- Setting the table
+- Emptying the dishwasher
+- Paying the bills
+- Walking the dog
+
+Those things require thought, planning, time, effort and energy. Done with a **positive spirit**, they are expressions of love. 
+
+“*I was thinking of you, you were with me even when you were gone.*”
+
+No one likes to be forced to do anything. Love cannot be demanded, it is freely given. We can make requests to each other but we can never demand anything. Because requests give direction to love whereas demand stops the flow of love.
+
+## Practice
+
+- “**Request list**” - make a list of services we would like to feel loved, it’s important to formulate good requests that do not come off as nags or put downs - the wording is important. Ask your mate to communicate it to you. Try to answer those requests in the following days, months.
+- We can serve someone our spouse loves (parent, etc…)
+- We can turn those acts as “surprises”, especially if they are away for some time or we haven’t seen each other for a while. (Eg: preparing dinner, making the table and bed ready, and so on. It could be a whole planned trip or vacation too !!!)
+
 # Love language #5: Physical touch
 
+There are many forms of physical touch: holding hands, kissing, embracing, sexual intercourse… those are all ways to communicate emotional love to your partner.
+
+Physical is not limited to one localized area of the body. We have many tiny receptors that when touched will communicate signals to the brain. Those signals can cause pain or pleasure and we might interpret them as loving or hostile.
+
+The main purpose of physical touch is its **psychological importance**. Lovingly touching our partner anywhere can be an expression of love. Some touches will bring them more pleasure than other, but what is important is to learn their dialect. Understand what they enjoy. We must be sensible to their needs and care about their perception of what is pleasant. Everyone is different and what we might perceive as pleasant might be uncomfortable or even irritating to our partner. The key is to communicate love through physical touch in a way that they perceive as loving.
+
+This display of love touch can be explicit: massage, sexual intercourse, … Or it can be implicit, putting a hand on their shoulder as we go grab a cup of coffee, kissing/hugging them as we leave for work or even just as we pass near them, when we return home, grabbing their hand on a walk or during a family dinner, sitting close to each other while watching a movie, touching them under the table: foot against foot when sitting in front, a hand in their lap when sitting next to each other, a kiss after getting into the car… those implicit love touches, although they last a very brief moment, they require thought.
+
+Obviously, if we haven’t grown up in a “touchy” family, those displays of affection might not come up naturally to us. However, it can be learned !
+
+In our society, shaking hands communicate openness to another individual, by refusing to shake hands, we communicate that there is something wrong in the relationship. This is the same in a love relationship, we must remember that “To touch my body is to touch me, to **withdraw** from my body is to distance yourself from me emotionally”. 
+
+## Practice
+
+- Trying out new touches in new places and ask for feedback
+- Holding him/her when they cry: words may mean little, but physical touch will communicate that we care
+- Giving gifts that appeals their tactile nature: blanket, plush
+- Hug them more often + couple with words of appreciation
+- Massage, cuddles
+- Putting a hand on their shoulder as we go grab a cup of coffee
+- Kissing/hugging them as we leave for work or even just as we pass near them, when we return home
+- Grabbing their hand on a walk
+- Running a hand along his/her arm, putting our arm around them as we speak during a family dinner. It communicates: “Even with all those people in our house, I still see you”.
+- Sitting close to each other while watching a movie
+- Touching them under the table: foot against foot when sitting in front, a hand in their lap when sitting next to each other
+- Kiss after getting into the car
+- When there is distance, we can send handwritten letters: this is something tangible. Sending a picture of ourselves works great or we can give them something we wear often, symbolically it can communicate that we are here with them.
+
 # Discovering your primary love language
+
+For some people, they can know easily whaat their love language is. For others, it might be a little bit complicated.
+
+A common mistake is to assume our primary love language is physical touch because of our desire for sexual intercourse. For men, this desire has mostly a *physical* root. For women, this desire is mostly influenced by her emotions, so their biological sexual drive is closely tied to their emotional need for love. In most marriages, sexual problems have more to do with *meeting emotional needs*.
+
+## 3 questions to help us discover our love language
+
+“**What does our partner do or fail to do that hurts us most deeply ?**”
+
+A way to find out our love language is to look back on our own experiences and study times when we got hurt by the other person, or we can imagine the opposite. How much would it hurt if the other person give us the silent treatment, what if they don’t put much effort into giving us a gift, what if they don’t do something to us that they always have done in the past ? What if they do stop initiating physical touch ?
+
+“**What have I most often requested of my spouse ?**”
+
+We can reflect on what we have been mostly asking our partner. 
+
+This might give us a clearer indication on how we have been guiding our partner into communicating love to us in a way that we feel loved. (Remember: requests give guidance)
+
+“**How do I regularly express my love to my spouse ?**”
+
+Other than remembering what we have been asking, we can also look into how we have been communicating our love to our partner. Maybe, what we are doing things for him/her is what we wish they would do for us 🤯.
+
+But be careful, you might be doing those things because you have been raised this way and have picked up the same habits. The main thing is that it should resonate with you internally.
+
+## Practice
+
+- “Tank Check”: 3 times a week for 3 weeks, ask each other: “On a scale from 0 to 10, how is your love tank tonight ?” “What could I do yo help fill it ?” This way, we can open up the discussion for suggestions and help each other to feel loved.
 
 # Love is a choice
 
 # Loving the unlovely
 
 # Conclusion
+
+### Work in progress (don’t know where to integrate those parts -.-)
+
+We might enjoy all of them but there are some that communicates love louder to us than others. The key is to give feedback to our spouse on what we prefer.
+
+If we feel unloved, we can make request to our mate to let them know how we feel. We can guide them into being better lovers. We cannot expect them to read our mind, we often see the worlds through our own perception and sometimes what our partner see as a problem might not even come up in our mind.
+
+Without feeling appreciated, we feel taken for granted, used and unappreciated.
+
+Love calls for understanding, compassion and giving wholeheartedly.
+
+What is important is to understand our mate and realise what specifically is important to them. We might speak the same love language but a different dialect.
+
+It is not how fast we learn, but how how well we learn that matters.
 
 ## Side Note
 
