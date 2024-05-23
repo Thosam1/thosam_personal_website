@@ -1,11 +1,6 @@
 import db from '../../../../../lib/firebase';
-import { NextApiRequest } from 'next';
 
-export type ResponseData = {
-	total: number
-}
-
-export async function GET(req: NextApiRequest, { params }: { params: { slug: string } }) {
+export async function GET(req: Request, { params }: { params: { slug: string } }) {
 	if (req.method === 'GET') {
 		const snapshot = await db.ref('views').child(params.slug).once('value')
 		const views = snapshot.val()
@@ -13,7 +8,7 @@ export async function GET(req: NextApiRequest, { params }: { params: { slug: str
 	}
 }
 
-export async function POST(req: NextApiRequest, { params }: { params: { slug: string } }) {
+export async function POST(req: Request, { params }: { params: { slug: string } }) {
 	console.log('Post request is : ', req)
 	console.log('Slug is : ', params.slug)
 	if (req.method === 'POST') {
