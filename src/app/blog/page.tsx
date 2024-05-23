@@ -36,7 +36,6 @@ export default function Blog() {
 
 	const postMetadata = getAllPostsMetadata()
 
-
 	return (
 		<>
 			<Heading/>
