@@ -58,6 +58,8 @@ const Blog: React.FC<IBlogProps> = (props: IBlogProps) => {
 
 	const slug: string = props.params.slug
 
+	//getBlogPostViews(slug).then(views => console.log("fetched count : ", views))
+
 	const post: matter.GrayMatterFile<string> = getPostContent(slug)
 
 	return (
@@ -74,9 +76,9 @@ const Blog: React.FC<IBlogProps> = (props: IBlogProps) => {
 									{'   -   '}
 									{readingTime(post.content).text}
 									{'   -   '}
-									<Suspense>
-										{Views(slug)}
-									</Suspense>
+									{/*<Suspense>*/}
+									{/*	{Views(slug)}*/}
+									{/*</Suspense>*/}
 								</h1>
 								<h1 className="text-4xl font-semibold pb-14">
 									{post.data.title}
