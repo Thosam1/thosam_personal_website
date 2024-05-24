@@ -8,6 +8,9 @@ import { MarkdownRenderer } from '@/components/markdown/MarkdownRenderer';
 import { Metadata } from 'next'
 import { IBlogPostMetadata } from '@/utils/interfaces';
 import { FULL_NAME } from '@/constants';
+import ViewCounter from '@/components/ViewCounter';
+import { Suspense } from 'react';
+import { getBlogPostViews, incrementBlogPostViews } from '@/app/db/utils';
 
 // Generate metadata for SEO
 interface IProps {
@@ -57,13 +60,6 @@ const Blog: React.FC<IBlogProps> = (props: IBlogProps) => {
 
 	const post: matter.GrayMatterFile<string> = getPostContent(slug)
 
-	const registerView = () => {
-		fetch(`${process.env.WEBSITE_URL}/api/views/${slug}`, {
-			method: 'POST',
-		}).then(r => r.json().then());
-	};
-	registerView();
-
 	return (
 		<main>
 			<article>
@@ -77,6 +73,10 @@ const Blog: React.FC<IBlogProps> = (props: IBlogProps) => {
 									{format(parseISO(post.data.publishedAt), 'MMMM dd, yyyy')}
 									{'   -   '}
 									{readingTime(post.content).text}
+									{'   -   '}
+									<Suspense>
+										{Views(slug)}
+									</Suspense>
 								</h1>
 								<h1 className="text-4xl font-semibold pb-14">
 									{post.data.title}
@@ -93,3 +93,11 @@ const Blog: React.FC<IBlogProps> = (props: IBlogProps) => {
 }
 
 export default Blog;
+
+async function Views(slug: string) {
+	let views = await getBlogPostViews(slug);
+	await incrementBlogPostViews(slug);
+	return (
+		<ViewCounter views={views} />
+	);
+}

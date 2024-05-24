@@ -4,6 +4,9 @@ import PostCard from '@/components/PostCard'
 import { Divider } from '@/components/Divider'
 import type { Metadata } from 'next';
 import { FULL_NAME } from '@/constants';
+import { getBlogPostViews } from '@/app/db/utils';
+import { Suspense } from 'react';
+import { IBlogPostMetadata } from '@/utils/interfaces';
 
 const title = 'Blog | Thösam Norlha-Tsang'
 const description = 'Hello there 👋, this is my blog where I write articles 😄'
@@ -46,9 +49,13 @@ export default function Blog() {
 
 						{/*<Wrapper>*/}
 						{/*<div className="grid grid-cols-1 lg:grid-cols-2 gap-y-0 gap-x-4">*/}
-						{postMetadata.map((post) => {
+						{postMetadata
+							.sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
+							.map((post) => {
 							return (
-								<PostCard key={post.slug} post={post}/>
+								<Suspense key={post.slug} >
+									<PostCardWithViews post={post}/>
+								</Suspense>
 							)
 						})}
 						{/*</div>*/}
@@ -99,3 +106,10 @@ const Heading = () => (
 //         </Wrapper>
 //     </div>
 // )
+
+async function PostCardWithViews({ post }: { post: IBlogPostMetadata }) {
+    let views = await getBlogPostViews(post.slug);
+	return (
+			<PostCard key={post.slug} post={post} views={views}/>
+		);
+}
