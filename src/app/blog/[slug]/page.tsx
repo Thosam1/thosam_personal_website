@@ -58,7 +58,7 @@ const Blog: React.FC<IBlogProps> = (props: IBlogProps) => {
 
 	const slug: string = props.params.slug
 
-	//getBlogPostViews(slug).then(views => console.log("fetched count : ", views))
+	getBlogPostViews(slug).then(views => console.log("fetched count : ", views))
 
 	const post: matter.GrayMatterFile<string> = getPostContent(slug)
 
@@ -96,10 +96,10 @@ const Blog: React.FC<IBlogProps> = (props: IBlogProps) => {
 
 export default Blog;
 
-async function Views(slug: string) {
-	let views = await getBlogPostViews(slug);
-	await incrementBlogPostViews(slug);
-	return (
-		<ViewCounter views={views} />
-	);
-}
+//async function Views(slug: string) {
+//	let views = await getBlogPostViews(slug);
+//	await incrementBlogPostViews(slug);
+//	return (
+//		<ViewCounter views={views} />
+//	);
+//}
