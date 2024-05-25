@@ -4,8 +4,9 @@ export async function GET(req: Request, { params }: { params: { slug: string } }
 	if (req.method === 'GET') {
 		//const snapshot = await db.ref('views').child(params.slug).once('value')
 		//const views = snapshot.val() || 0;
-		const views = 10
-		return Response.json({ total: views })
+		const views = 12
+		//return Response.json({ total: views })
+		return new Response(JSON.stringify({ total: views }), { status: 200, headers: { 'Content-Type': 'application/json' } });
 	}
 }
 
