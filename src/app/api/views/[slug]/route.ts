@@ -3,7 +3,9 @@ import db from '../../../../../lib/firebase';
 export async function GET(req: Request, { params }: { params: { slug: string } }) {
 	if (req.method === 'GET') {
 		const snapshot = await db.ref('views').child(params.slug).once('value')
-		const views = snapshot.val()
+		let views = snapshot.val()
+		console.log("snapshot : ", views)
+		if(views == null) { views = 0; }
 		return Response.json({ total: views })
 	}
 }
