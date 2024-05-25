@@ -13,40 +13,40 @@ import { Suspense } from 'react';
 import { getBlogPostViews, incrementBlogPostViews } from '@/app/db/utils';
 
 // Generate metadata for SEO
-//interface IProps {
-//	params: { slug: string },
-//	searchParams: { [key: string]: string | string[] | undefined }
-//}
-//
-//export async function generateMetadata({ params }: IProps): Promise<Metadata | undefined> {
-//	const currentPostMetaData: IBlogPostMetadata = getPostMetadata(params.slug)
-//	let title = currentPostMetaData.title
-//	let description = currentPostMetaData.summary
-//	let url = `${process.env.WEBSITE_URL}/${currentPostMetaData.slug}`
-//
-//	return {
-//		title,
-//		description,
-//		verification: { google: process.env.GOOGLE_SEO_CODE },
-//		alternates: {
-//			canonical: url,
-//		},
-//		openGraph: {
-//			title,
-//			description,
-//			url,
-//			type: 'article',
-//			siteName: FULL_NAME,
-//			images: [`${process.env.WEBSITE_URL}/website_thumbnail.png`],
-//		},
-//		twitter: {
-//			title,
-//			description,
-//			card: 'summary_large_image',
-//			images: [`${process.env.WEBSITE_URL}/website_thumbnail.png`],
-//		},
-//	}
-//}
+interface IProps {
+	params: { slug: string },
+	searchParams: { [key: string]: string | string[] | undefined }
+}
+
+export async function generateMetadata({ params }: IProps): Promise<Metadata | undefined> {
+	const currentPostMetaData: IBlogPostMetadata = getPostMetadata(params.slug)
+	let title = currentPostMetaData.title
+	let description = currentPostMetaData.summary
+	let url = `${process.env.WEBSITE_URL}/${currentPostMetaData.slug}`
+
+	return {
+		title,
+		description,
+		verification: { google: process.env.GOOGLE_SEO_CODE },
+		alternates: {
+			canonical: url,
+		},
+		openGraph: {
+			title,
+			description,
+			url,
+			type: 'article',
+			siteName: FULL_NAME,
+			images: [`${process.env.WEBSITE_URL}/website_thumbnail.png`],
+		},
+		twitter: {
+			title,
+			description,
+			card: 'summary_large_image',
+			images: [`${process.env.WEBSITE_URL}/website_thumbnail.png`],
+		},
+	}
+}
 
 interface IBlogProps {
 	params: {
