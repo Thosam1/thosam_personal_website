@@ -3,8 +3,8 @@ export async function getBlogPostViews(slug: string) {
 	await fetch(`${process.env.WEBSITE_URL}/api/views/${slug}`, {
 		method: 'GET',
 	})
-		.then(r => r.json())
-		.then(data => viewCount = data.total);
+		//.then(r => r.json())
+		//.then(data => viewCount = data.total);
 	console.log("after getting blog post view count : ", slug, viewCount)
 	return viewCount;
 }

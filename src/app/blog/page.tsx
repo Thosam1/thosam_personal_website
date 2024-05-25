@@ -54,7 +54,7 @@ export default function Blog() {
 							.map((post) => {
 							return (
 								<Suspense key={post.slug} >
-									{/*<PostCardWithViews post={post}/>*/}
+									<PostCardWithViews post={post}/>
 								</Suspense>
 							)
 						})}
