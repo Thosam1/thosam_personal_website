@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import * as EmailValidator from 'email-validator';
+import {log} from "node:util";
 
 const Newsletter: React.FC = () => {
 	const [email, setEmail] = useState('');
@@ -20,17 +21,34 @@ const Newsletter: React.FC = () => {
 			return;
 		}
 
+		console.log(email)
 		setIsSubmitting(true);
 
 		// Simulate API call or perform actual submission
 		try {
 			// Mocking API call delay
-			await new Promise(resolve => setTimeout(resolve, 1000));
+			// await new Promise(resolve => setTimeout(resolve, 1000));
+			const response = await fetch("/api/subscribe", {
+				method: "POST",
+				body: JSON.stringify({ email }),
+				headers: {
+					"Content-Type": "application/json",
+				},
+			});
 
-			// Handle valid email submission here
-			console.log('Submitted email:', email);
+			if(response.status == 400) {
+				console.log("Hey you already joined the mailing list! 😎")
+			} else if (response.status != 200) {
+				// some internal error
+				console.log("Oh no an error occured! 😢 Please try again later.")
+				return;
+			} else {
+				console.log("Thanks for signing up. If you don't receive an email shortly, double check your spam box 🙂!")
+			}
+
 			setIsSubmitting(false);
 			setEmail(''); // Clear the email input
+
 		} catch (error) {
 			console.error('Error submitting email:', error);
 			setIsSubmitting(false);
@@ -39,7 +57,7 @@ const Newsletter: React.FC = () => {
 
 	return (
 		<div className="w-full flex justify-center text-center py-16">
-			<div className="max-w-screen-sm rounded overflow-hidden shadow-md">
+			<div className="max-w-screen-sm bg-slate-50 rounded-md border-2 border-slate-200">
 				<div className="px-6 py-4">
 					<div className="font-bold text-2xl mb-2">💌 Subscribe to my Newsletter</div>
 					<p className="text-gray-700 text-base">Sign up for my monthly newsletter, I will send you interesting ideas and what I have been working on 🙂</p>

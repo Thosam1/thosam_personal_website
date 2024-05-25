@@ -4,6 +4,7 @@ import PostCard from '@/components/PostCard'
 import { Divider } from '@/components/Divider'
 import type { Metadata } from 'next';
 import { FULL_NAME } from '@/constants';
+import Newsletter from "@/components/Newsletter";
 
 const title = 'Blog | Thösam Norlha-Tsang'
 const description = 'Hello there 👋, this is my blog where I write articles 😄'
@@ -58,6 +59,8 @@ export default function Blog() {
 					</div>
 				</div>
 			</div>
+
+			<Newsletter />
 		</>
 	)
 }
