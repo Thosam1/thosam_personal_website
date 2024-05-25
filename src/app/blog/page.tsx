@@ -46,7 +46,9 @@ export default function Blog() {
 
 						{/*<Wrapper>*/}
 						{/*<div className="grid grid-cols-1 lg:grid-cols-2 gap-y-0 gap-x-4">*/}
-						{postMetadata.map((post) => {
+						{postMetadata
+							.sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
+							.map((post) => {
 							return (
 								<PostCard key={post.slug} post={post}/>
 							)
