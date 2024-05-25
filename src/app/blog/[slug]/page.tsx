@@ -58,7 +58,7 @@ const Blog: React.FC<IBlogProps> = (props: IBlogProps) => {
 
 	const slug: string = props.params.slug
 
-	getBlogPostViews(slug).then(views => console.log("fetched count : ", views))
+	//getBlogPostViews(slug).then(views => console.log("fetched count : ", views))
 
 	const post: matter.GrayMatterFile<string> = getPostContent(slug)
 
