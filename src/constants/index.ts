@@ -3,6 +3,7 @@ export const NAV_LINKS = [
 	{ href: '/', key: 'home', label: 'Home' },
 	{ href: '/portfolio', key: 'portfolio', label: 'Portfolio' },
 	{ href: '/blog', key: 'blog', label: 'Blog' },
+	{ href: '/sports', key: 'sport', label: 'Sports' },
 ];
 
 export const FULL_NAME = 'Thösam Norlha-Tsang'
