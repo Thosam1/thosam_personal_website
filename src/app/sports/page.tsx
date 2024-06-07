@@ -2,10 +2,10 @@ import { Wrapper } from '@/components/Wrapper';
 import { FULL_NAME } from '@/constants';
 import type { Metadata } from 'next';
 
-import WorkoutCard from '@/components/WorkoutCard';
 import workoutList from '../../../data/sports/workoutsList';
 import { Divider } from '@/components/Divider';
 import AnimatedCounter from '@/components/AnimatedCounter';
+import Workouts from '@/components/Workouts';
 
 const title = 'Portfolio | Thösam Norlha-Tsang'
 const description = 'Hello there 👋, this is my fitness page where I log my fitness journey'
@@ -35,43 +35,30 @@ export const metadata: Metadata = {
 }
 
 export default function Sports() {
+
 	return (
 		<>
-			{/*<Hero/>*/}
+			<Heading/>
+			<Divider/>
 			<Workouts/>
 		</>
 	)
 }
 
-const Workouts = () => (
-	<>
-		<div className="py-6 flex items-center">
-			<Wrapper>
-				<div className="text-center">
-					<h1 className="font-semibold text-4xl">
-						My Workout Journal 🏋️‍♂️
-					</h1>
-					<p className="mt-4 text-2xl py-4">
-						Tracking my fitness journey !
-					</p>
-					<p className="my-4">Currently, there are {' '}<span className="text-xl font-semibold"><AnimatedCounter
-						from={0} to={workoutList().length}/></span> {' '} workouts logged !</p>
-				</div>
-			</Wrapper>
-		</div>
-
-		<Divider/>
-
-		<div className="container max-w-screen-md mx-auto pt-16 pb-8 px-8">
-			<div className="items-center flex flex-wrap">
-				<div className="w-full text-left no-underline flex flex-col gap-5">
-					{
-						workoutList().map((item) =>
-							<WorkoutCard workout={item} key={item.title}/>
-						)
-					}
-				</div>
+const Heading = () => (
+	<div className="py-6 flex items-center">
+		<Wrapper>
+			<div className="text-center">
+				<h1 className="font-semibold text-4xl">
+					My Workout Journal 🏋️‍♂️
+				</h1>
+				<p className="mt-4 text-2xl py-4">
+					Tracking my fitness journey !
+				</p>
+				<p className="my-4">Currently, there are {' '}<span className="text-xl font-semibold"><AnimatedCounter
+					from={0} to={workoutList().length}/></span> {' '} workouts logged !</p>
 			</div>
-		</div>
-	</>
+		</Wrapper>
+	</div>
 )
+

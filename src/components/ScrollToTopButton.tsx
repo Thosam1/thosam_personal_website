@@ -26,7 +26,7 @@ const ScrollToTopButton: React.FC = () => {
 	return (
 		<AnimatePresence>
 			{scrollPosition > 100 && (
-				<div className="fixed bottom-12 right-12 lg:right-24 z-50">
+				<div className="fixed bottom-12 right-12 lg:right-24 z-20">
 					<motion.button
 						onClick={scrollToTop}
 						className="flex items-center justify-center w-12 h-12 bg-blue-950 text-slate-200 rounded-full shadow-lg"
