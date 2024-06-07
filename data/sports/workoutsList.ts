@@ -1,11 +1,11 @@
-interface Set {
+export interface Set {
 	weight?: string;
 	reps?: number;
 	distance?: number;
 	time?: string;
 }
 
-interface Exercise {
+export interface Exercise {
 	name: string;
 	sets: Set[];
 }
@@ -21,7 +21,7 @@ export default function workoutList(): Workout[] {
 	return [
 		{
 			date: "2024-06-05",
-			title: "Evening Workout",
+			title: "Evening Run",
 			exercises: [
 				{
 					name: "Running",
@@ -199,7 +199,7 @@ export default function workoutList(): Workout[] {
 				{
 					name: 'Running',
 					sets: [
-						{ distance: 4.5 }
+						{ distance: 4.5, time: "30:00"  }
 					]
 				}
 			],
