@@ -48,7 +48,7 @@ export default function WorkoutModal({ workout, onClose }: Readonly<WorkoutModal
 	}
 
 	return (
-		<div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 p-20">
+		<div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 p-8 md:p-20">
 			<div className="modal-content bg-white p-10 w-full h-full overflow-auto">
 				<div className="flex justify-end">
 					<p className="text-gray-600 text-sm font-sm">{format(parseISO(workout.date), 'MMMM dd, yyyy')}</p>
@@ -70,7 +70,7 @@ export default function WorkoutModal({ workout, onClose }: Readonly<WorkoutModal
 
 				<div className="py-8 bg-white" />
 
-				<div className="absolute bottom-20 left-20 right-20 flex flex-row justify-end p-4 gap-4 bg-white">
+				<div className="absolute bottom-8 left-8 right-8 md:bottom-20 md:left-20 md:right-20 flex flex-row justify-end p-4 gap-4 bg-white">
 					<button
 						type="button"
 						className="py-2 px-4 inline-flex items-center gap-x-2 text-sm font-medium border border-gray-200 bg-white text-gray-500 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
