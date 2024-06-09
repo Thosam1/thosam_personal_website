@@ -20,6 +20,84 @@ export interface Workout {
 export default function workoutList(): Workout[] {
 	return [
 		{
+			date: "2024-06-07",
+			title: "Push / Pull",
+			exercises: [
+				{
+					name: "Pull Up",
+					sets: [
+						{ weight: "+12 kg", reps: 4 },
+						{ weight: "+12 kg", reps: 4 },
+						{ reps: 4 },
+						{ reps: 5 },
+						{ reps: 5 },
+						{ reps: 5 },
+						{ reps: 5 }
+					]
+				},
+				{
+					name: "Chest Dip",
+					sets: [
+						{ weight: "+12 kg", reps: 6 },
+						{ weight: "+12 kg", reps: 6 },
+						{ reps: 6 },
+						{ reps: 3 }
+					]
+				},
+				{
+					name: "Plank",
+					sets: [
+						{ time: "2:00" },
+						{ time: "2:00" },
+						{ time: "2:00" }
+					]
+				},
+				{
+					name: "Push Up",
+					sets: [
+						{ reps: 5 },
+						{ reps: 5 },
+						{ reps: 5 }
+					]
+				}
+			],
+			url: "https://strong.app.link/fgwWsl2eiKb"
+		},
+		{
+			date: "2024-06-06",
+			title: "Push / Pull",
+			exercises: [
+				{
+					name: "Pull Up",
+					sets: [
+						{ reps: 5 },
+						{ reps: 5 },
+						{ reps: 5 },
+						{ reps: 5 },
+						{ weight: "+12 kg", reps: 3 },
+						{ reps: 5 },
+						{ reps: 5 },
+						{ reps: 5 },
+						{ weight: "+12 kg", reps: 2 },
+						{ reps: 2 },
+						{ reps: 4 },
+						{ reps: 5 }
+					]
+				},
+				{
+					name: "Chest Dip",
+					sets: [
+						{ weight: "+12 kg", reps: 6 },
+						{ weight: "+12 kg", reps: 6 },
+						{ weight: "+12 kg", reps: 6 },
+						{ weight: "+12 kg", reps: 6 },
+						{ reps: 6 }
+					]
+				}
+			],
+			url: "https://strong.app.link/tcfHOD1eiKb"
+		},
+		{
 			date: "2024-06-05",
 			title: "Evening Run",
 			exercises: [
