@@ -1,9 +1,15 @@
+'use client'
 import CustomLink from '@/components/markdown/CustomLink';
 import { IProject } from '../../data/portfolio/projectsList'; // Assuming CustomLink is a custom component you've defined
+import { motion } from 'framer-motion';
 
 export default function ProjectCard({ project }: { project: IProject }) {
 	return (
-		<div className="max-w-full rounded overflow-hidden shadow-md">
+		<motion.div
+			className="max-w-full rounded overflow-hidden shadow-md"
+
+			whileHover={{ y: -4 }}
+		>
 			<img className="w-full" src={project.images[0]} alt={project.title}/>
 			<div className="px-6 py-4">
 				<div className="font-bold text-xl mb-2">{project.title}</div>
@@ -20,6 +26,6 @@ export default function ProjectCard({ project }: { project: IProject }) {
 				{/*    )}*/}
 				{/*</div>*/}
 			</div>
-		</div>
+		</motion.div>
 	);
 };
