@@ -23,7 +23,7 @@ export default function WorkoutCard({ workout, onClick }: Readonly<WorkoutCardPr
 			onClick={() => onClick(workout)}
 		>
 			{/*<Link href={workout.url} target="_blank" rel="noopener noreferrer" className="unstyled">*/}
-			<div className="bg-white p-10 hover:bg-gray-100  shadow">
+			<div className="bg-white p-10 hover:bg-gray-100 shadow cursor-pointer">
 				<div className="flex justify-end">
 					<p className="text-gray-600 text-sm font-sm">{format(parseISO(workout.date), 'MMMM dd, yyyy')}</p>
 				</div>

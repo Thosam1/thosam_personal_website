@@ -1,6 +1,8 @@
+'use client'
 import React from 'react';
 import { CourseType, ICourse } from '../../data/portfolio/education/interfaces';
 import CustomLink from '@/components/markdown/CustomLink';
+import { motion } from 'framer-motion';
 
 const getBorderColor = (type: CourseType): string => {
 	switch (type) {
@@ -25,16 +27,19 @@ const getBorderColor = (type: CourseType): string => {
 	}
 };
 
-export default function CourseCard ({ course } : { course: ICourse }) {
+export default function CourseCard({ course }: { course: ICourse }) {
 	return (
-		<div className={`max-w-screen-sm items-center border rounded-xl p-4 border-l-8 ${getBorderColor(course.type)} shadow-md`}>
-			<div className='flex flex-col w-full'>
-				<p className='font-semibold text-slate-700'>{course.name}</p>
-				<div className='flex flex-row justify-between'>
+		<motion.div
+			className={`max-w-screen-sm items-center border rounded-xl p-4 border-l-8 ${getBorderColor(course.type)} shadow-md`}
+			whileHover={{ y: -4 }}
+		>
+			<div className="flex flex-col w-full">
+				<p className="font-semibold text-slate-700">{course.name}</p>
+				<div className="flex flex-row justify-between">
 					<p className="text-slate-500">{course.code} · {course.credits} credits</p>
 					<CustomLink href={course.link}>Course Link</CustomLink>
 				</div>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
