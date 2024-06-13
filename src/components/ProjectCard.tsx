@@ -7,7 +7,6 @@ export default function ProjectCard({ project }: { project: IProject }) {
 	return (
 		<motion.div
 			className="max-w-full rounded overflow-hidden shadow-md"
-
 			whileHover={{ y: -4 }}
 		>
 			<img className="w-full" src={project.images[0]} alt={project.title}/>

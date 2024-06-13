@@ -122,16 +122,19 @@ const Hero = () => (
 
 const Projects = () => (
 	<Wrapper>
-		<h1 className="font-semibold text-2xl py-6">
+		<h1 className="font-semibold text-2xl py-6 md:text-center md:text-4xl md:py-16">
 			My Projects
 		</h1>
-		<div className="grid grid-cols-1 gap-16 md:gap-36">
-			{
-				projectsList().map((item) =>
-					<ProjectCard project={item} key={item.title} />
-				)
-			}
+		<div className="flex justify-center">
+			<div className="grid grid-cols-1 gap-16 lg:w-1/2">
+				{
+					projectsList().map((item) =>
+						<ProjectCard project={item} key={item.title}/>
+					)
+				}
+			</div>
 		</div>
+
 	</Wrapper>
 )
 
