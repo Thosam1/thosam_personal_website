@@ -27,7 +27,7 @@ const getBorderColor = (type: CourseType): string => {
 	}
 };
 
-export default function CourseCard({ course }: { course: ICourse }) {
+export default function CourseCard({ course }: Readonly<{ course: ICourse }>) {
 	return (
 		<motion.div
 			className={`max-w-screen-sm items-center border rounded-xl p-4 border-l-8 ${getBorderColor(course.type)} shadow-md`}

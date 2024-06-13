@@ -1,5 +1,6 @@
 import {EMAIL_LINK} from '@/constants'
 import Link from 'next/link'
+import Image from 'next/image'
 import CustomLink from "@/components/markdown/CustomLink";
 
 // https://github.com/stevenvachon/broken-link-checker
@@ -48,9 +49,16 @@ const Hero = () => (
                 </div>
 
                 <div className="flex items-center md:items-end flex-col">
-                    <img className="max-h-[35rem]" src="/home/thosam_auth_image.webp"
-                         alt="Thösam in Fribourg"/>
-                        <p className='py-3 font-light text-sm text-zinc-600'>Thösam Norlha-Tsang 2023</p>
+                    <Image
+                        src="/home/thosam_auth_image.webp"
+                        alt="Thösam in Fribourg"
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        style={{ width: 'auto', maxHeight: '35rem' }}
+                        priority={true}
+                    />
+                    <p className='py-3 font-light text-sm text-zinc-600'>Thösam Norlha-Tsang 2023</p>
                 </div>
             </div>
         </div>

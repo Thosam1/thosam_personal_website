@@ -1,15 +1,23 @@
 'use client'
+import Image from 'next/image'
 import CustomLink from '@/components/markdown/CustomLink';
 import { IProject } from '../../data/portfolio/projectsList'; // Assuming CustomLink is a custom component you've defined
 import { motion } from 'framer-motion';
 
-export default function ProjectCard({ project }: { project: IProject }) {
+export default function ProjectCard({ project }: Readonly<{ project: IProject }>) {
 	return (
 		<motion.div
 			className="max-w-full rounded overflow-hidden shadow-md"
 			whileHover={{ y: -4 }}
 		>
-			<img className="w-full" src={project.images[0]} alt={project.title}/>
+			<Image
+				src={project.images[0]}
+				alt={project.title}
+				width={0}
+				height={0}
+				sizes="100vw"
+				style={{ width: '100%', height: 'auto' }} // optional
+			/>
 			<div className="px-6 py-4">
 				<div className="font-bold text-xl mb-2">{project.title}</div>
 				<p className="text-gray-700 text-base">{project.description}</p>

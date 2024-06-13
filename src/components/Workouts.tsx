@@ -7,13 +7,12 @@ import WorkoutModal from '@/components/WorkoutModal';
 
 export default function Workouts() {
 
-	const [showModal, setShowModal] = useState<Boolean>(false);
+	const [showModal, setShowModal] = useState<boolean>(false);
 	const [selectedWorkout, setSelectedWorkout] = useState<Workout | null>(null);
 
 	const handleCardClick = (workout: Workout) => {
 		setSelectedWorkout(workout);
 		setShowModal(true);
-		console.log('modal has been set to true')
 	};
 
 	const handleCloseModal = () => {
