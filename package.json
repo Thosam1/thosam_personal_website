@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@vercel/speed-insights": "^1.0.12",
     "date-fns": "^3.6.0",
     "email-validator": "^2.0.4",
     "firebase-admin": "^12.1.1",
@@ -25,7 +26,7 @@
     "reading-time": "^1.5.0",
     "remark-gfm": "^4.0.0",
     "remark-toc": "^9.0.0",
-	"swr": "^2.2.5"
+    "swr": "^2.2.5"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.13",
