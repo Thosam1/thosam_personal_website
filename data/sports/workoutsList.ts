@@ -20,6 +20,116 @@ export interface Workout {
 export default function workoutList(): Workout[] {
 	return [
 		{
+			date: "2024-06-12",
+			title: "Push / Pull",
+			exercises: [
+				{
+					name: "Pull Up",
+					sets: [
+						{ reps: 5 },
+						{ reps: 5 },
+						{ weight: "+15 kg", reps: 2 },
+						{ weight: "+10 kg", reps: 4 },
+						{ reps: 5 },
+						{ weight: "+10 kg", reps: 4 },
+						{ weight: "+10 kg", reps: 4 },
+						{ weight: "+10 kg", reps: 5 },
+						{ weight: "+10 kg", reps: 5 },
+						{ weight: "+10 kg", reps: 5 },
+						{ reps: 5 }
+					]
+				},
+				{
+					name: "Chest Dip",
+					sets: [
+						{ reps: 6 },
+						{ reps: 6 },
+						{ weight: "+15 kg", reps: 5 },
+						{ weight: "+10 kg", reps: 5 },
+						{ reps: 6 },
+						{ reps: 12 },
+						{ reps: 6 },
+						{ reps: 6 },
+						{ reps: 6 },
+						{ reps: 6 }
+					]
+				},
+				{
+					name: "Back Extension (Machine)",
+					sets: [
+						{ weight: "50 kg", reps: 15 },
+						{ weight: "50 kg", reps: 15 },
+						{ weight: "50 kg", reps: 15 },
+						{ weight: "50 kg", reps: 15 }
+					]
+				},
+				{
+					name: "Chest Fly",
+					sets: [
+						{ weight: "45 kg", reps: 8 },
+						{ weight: "45 kg", reps: 6 }
+					]
+				},
+				{
+					name: "Reverse Fly (Machine)",
+					sets: [
+						{ weight: "25 kg", reps: 8 },
+						{ weight: "25 kg", reps: 8 }
+					]
+				}
+			],
+			url: "https://strong.app.link/CJ0N8waSoKb"
+		},
+		{
+			date: "2024-06-10",
+			title: "Push / Pull",
+			exercises: [
+				{
+					name: "Pull Up",
+					sets: [
+						{ reps: 5 },
+						{ reps: 5 },
+						{ reps: 5 },
+						{ reps: 5 },
+						{ reps: 9 },
+						{ reps: 3 },
+						{ reps: 3 },
+						{ reps: 3 },
+						{ reps: 2 },
+						{ reps: 5 },
+						{ reps: 5 }
+					]
+				},
+				{
+					name: "Chest Dip",
+					sets: [
+						{ reps: 6 },
+						{ reps: 12 },
+						{ reps: 12 },
+						{ reps: 8 },
+						{ reps: 6 },
+						{ reps: 12 }
+					]
+				},
+				{
+					name: "Back Extension (Machine)",
+					sets: [
+						{ weight: "58.5 kg", reps: 10 },
+						{ weight: "58.5 kg", reps: 10 },
+						{ weight: "58.5 kg", reps: 12 },
+						{ weight: "58.5 kg", reps: 12 }
+					]
+				},
+				{
+					name: "Staircases",
+					sets: [
+						{ distance: 12, time: "5:00" }
+					]
+				}
+			],
+			url: "https://strong.app.link/QmX2fO7RoKb"
+		},
+		{
 			date: "2024-06-07",
 			title: "Push / Pull",
 			exercises: [
