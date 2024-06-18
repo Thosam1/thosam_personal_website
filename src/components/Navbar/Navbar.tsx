@@ -1,6 +1,6 @@
 'use client'
 import Link from 'next/link'
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FULL_NAME, NAV_LINKS } from '@/constants'
 import { AnimatePresence, motion } from 'framer-motion';
 import styles from './navbar.module.css'
@@ -11,6 +11,10 @@ const Navbar: React.FC = () => {
 	const toggleNav = () => {
 		setIsNavOpen(!isNavOpen);
 	};
+
+	useEffect(() => {
+		document.body.style.overflow = isNavOpen ? "hidden" : "unset";
+	}, [isNavOpen]);
 
 	return (
 		<header className={`flex justify-center w-full top-0`}>
@@ -82,7 +86,7 @@ const Navbar: React.FC = () => {
 											<motion.div
 												initial="initial"
 												animate="animate"
-												variants={fadeUpVariant(0.2 * index + 0.1)}
+												variants={fadeUpVariant(0.2 * index + 0.4)}
 												key={link.key}
 											>
 												<Link className={styles.project} href={link.href}
