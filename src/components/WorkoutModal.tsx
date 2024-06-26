@@ -4,7 +4,6 @@ import Link from 'next/link';
 import { Set, Workout } from '../../data/sports/workoutsList';
 import { format, parseISO } from 'date-fns';
 
-
 type WorkoutModalProps = {
 	workout: Workout;
 	onClose: () => void;
@@ -37,10 +36,12 @@ export default function WorkoutModal({ workout, onClose }: Readonly<WorkoutModal
 		if (set.reps) {
 			// case for weight lifting, pull ups
 			return set.weight ? `${set.weight} × ${set.reps} reps` : `0 kg × ${set.reps} reps`;
-		} else if (set.distance) {
+		}
+		else if (set.distance) {
 			// case for running, swimming, walking
 			return `${set.distance} km | ${set.time} min`;
-		} else if (set.time) {
+		}
+		else if (set.time) {
 			// case for plank, ...
 			return set.time && `Time: ${set.time}`;
 
@@ -61,16 +62,24 @@ export default function WorkoutModal({ workout, onClose }: Readonly<WorkoutModal
 						<ol className="list-decimal list-inside ml-4">
 							{exercise.sets.map((set, setIndex) => (
 								<li key={setIndex + 1} className="text-gray-700">
-									{ displayElt(set) }
+									{displayElt(set)}
 								</li>
 							))}
 						</ol>
 					</div>
 				))}
 
-				<div className="py-8 bg-white" />
+				{
+					workout.workoutNotes && <div className="mt-4">
+						<h3 className="text-xl font-semibold">Notes</h3>
+						<p className="ml-4">{workout.workoutNotes}</p>
+					</div>
+				}
 
-				<div className="absolute bottom-8 left-8 right-8 md:bottom-20 md:left-20 md:right-20 flex flex-row justify-end p-4 gap-4 bg-white">
+				<div className="py-8 bg-white"/>
+
+				<div
+					className="absolute bottom-8 left-8 right-8 md:bottom-20 md:left-20 md:right-20 flex flex-row justify-end p-4 gap-4 bg-white">
 					<button
 						type="button"
 						className="py-2 px-4 inline-flex items-center gap-x-2 text-sm font-medium border border-gray-200 bg-white text-gray-500 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"

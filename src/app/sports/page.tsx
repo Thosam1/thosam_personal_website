@@ -7,7 +7,7 @@ import { Divider } from '@/components/Divider';
 import AnimatedCounter from '@/components/AnimatedCounter';
 import Workouts from '@/components/Workouts';
 
-const title = 'Portfolio | Thösam Norlha-Tsang'
+const title = 'Sports | Thösam Norlha-Tsang'
 const description = 'Hello there 👋, this is my fitness page where I log my fitness journey'
 const url = `${process.env.WEBSITE_URL}/sports`;
 export const metadata: Metadata = {
