@@ -474,7 +474,7 @@ export default function workoutList(): Workout[] {
 			url: "https://strong.app.link/W1FWT9GtKKb"
 		},
 		{
-			date: "2024-06-21",
+			date: "2024-06-22",
 			title: "Hike Lugano",
 			exercises: [
 				{
