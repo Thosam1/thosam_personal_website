@@ -8,55 +8,57 @@ seo: "5 Love Languages, my personal notes"
 
 # Introduction
 
-This is actually the second time I am reading this book. 
+This is actually the third time I am reading this book and I have written down the key ideas for me to remember.
 
-Looking at myself and my past relationship, I realize that I can improve on my behaviors and how I  approach love. When I first started reading this book, I was desperate and in search for answers on how love could be communicated in a relationship. I wanted to know where I failed to communicate my love.
+Recovering from a heartbreak was hard, it feels like the whole world around you is crumbling. During this period, I was filled with a mixed pot of emotions. Among those emotions was regret. Regret for not having expressed gratitude more often to her, for not appreciating her efforts enough, for taking her for granted and also by being more in love with the idea of her. Remorses for things I have done, for things I have said, for hurting her through words and actions, even though I didn’t have any bad intentions.
 
-As I turned each page and read the chapters, I noticed many interesting points were mentioned. Insights that resonated with me and made me realize that indeed, there are things that I can change.
+She was my first love, I did not have any previous experience in romantic relationship in any way. I was ignorant of many things and that is probably what led me, us to bring suffering into our relationship with each other.
 
-I hope that you will enjoy reading this book as much as I did and will grow into a better version of yourself. 😄 
+How to communicate better, how to show appreciation, express gratitude, how to work through a conflict in a constructive way together, how to take criticism, how to apologize in a way that the other person really feel our apology as genuine and sincere, how to navigate through our emotions and cultivate positive emotions to avoid falling into a cycle of suffering created by our own mind. With the knowledge I had, I have given my all, my everything and it was devastating to see the flame of love slowly extinguishing right in front of our eyes. Feeling powerless and losing control.
 
-This book helps you better understand the people around you and yourself.
+Those are realizations are things that raised in my mind after the breakup. Sadly those kind of thoughts only appeared in my mind when I started meditating daily, analyzing every facets of our relationship, living it again and again from the beginning until the end, reliving each of my memories, *our memories*. I realized that I can improve on my behaviors and how I approach love.
 
-# Table of contents
+During that time, I searched for answers, started reading books, writing and meditating frequently to really transforming my *being*.
+
+The 5 Love Languages is the first book I read. As I turned each page and read the chapters, I noticed many interesting points were mentioned. Insights that resonated with me and made me realize that indeed, there are things that I can change and work on.
+
+I hope that you will enjoy reading this book as much as I did and will grow into a better human being. 😄
 
 # What happens to love after the wedding
 
-In this chapter, the author explains that similar to having spoken languages: French, English, German, … There are 5 love languages (with their respective dialects 😆).
+In this chapter, the author explains that similar to having spoken languages: French, English, German, … There are **5 love languages** (with their respective dialects 😆).
 
 People tend to speak generally in their own native language because it is the language we feel the most comfortable in, and thus communicate with the love language they are the most familiar with.
 
-The author argues that one of the main reason why love fade after a marriage is because couples fail to understand each other’s love language and thus fail to communicate love in a way that is appreciated and felt by the spouse. What makes one person feel loved emotionally is not always the thing that makes another person feel loved emotionally.
+The author argues that one of the main reason why love fade after a marriage is because couples fail to understand each other’s love language and thus fail to communicate love in a way that is appreciated and felt by the spouse. *What makes one person feel loved emotionally is not always the thing that makes another person feel loved emotionally.*
 
 Therefore, we must put in the effort to learn to communicate and understand other people’s love language.
 
 # Keeping the love tank full
 
-The need to feel loved is a primary human emotional need. For love we would do anything, from climbing mountains to crossing seas. Without love, everything become unbearable.
+The need to feel loved is a primary human emotional need. For love we would do anything, from climbing mountains to crossing seas. Without love, everything becomes unbearable.
 
-Love is essential to our emotional well-being. This search for love starts from children, they need love and affection. When children do not feel wanted, they seek love in the wrong places and in the wrong ways. The metaphor of the “love tank” refers to having your emotional needs met.
+Love is essential to our emotional well-being. This search for love starts from children, they need love and affection. When children do not feel wanted, they seek love in the wrong places and in the wrong ways. The metaphor of the “**love tank**” refers to having our emotional needs met.
 
-People have the desire to be intimate and to be loved by another. Therefore the author highlights that making efforts to keep this love tank full is the key to a lasting marriage.
+People have the desire to be intimate and to be loved by another. Therefore the author highlights that **making efforts to keep this love tank full** is the key to a lasting marriage.
 
-I personally think that the author makes a good point. This concept of “love tank” and making efforts in order to meet the other person’s emotional needs is important for all kinds of relationships. Whether we got children, brothers, sisters, parents or friends, I think it is important to keep this picture of a love tank in our mind. Everyone wants to feel loved and appreciated. Whenever we interact with someone, we can try being more attentive to the o’ther person’s “love tank”, especially when the other person matters to you.
+I personally think that the author makes a good point. This concept of “love tank” and making efforts in order to meet the other person’s emotional needs is important for all kinds of relationships. Whether we got children, brothers, sisters, parents or friends, I think it is important to keep this picture of a love tank in our mind. Everyone wants to feel loved and appreciated. Whenever we interact with someone, we can try being more attentive to the other person’s “love tank”, especially when the other person matters to you.
 
 # Falling in love
 
-When we fall in love, everything seems so magical. We feel amazing, we think about that person day and night, we are *obsessed*. This “in-love” experience is euphoric. At our eyes, the other person seems so perfect and it is hard to believe anything else. We become willing to do anything for the benefit of our lover, we are guided by this “in-love” experience, we become irrational.
+When we fall in love, everything seems so *magical*. We feel amazing, we think about that person day and night, we are *obsessed*. This “**in-love**” experience is *euphoric*. At our eyes, the other person seems so perfect and it is hard to believe anything else. We become willing to do anything for the benefit of our lover, we are guided by this “in-love” experience, we become *irrational*.
 
-We wrongly believe that this amazing feeling, this happiness will last forever. Dr. Dorothy Tennov conducted studies on the “in-love” phenomenon and she concluded that the average lifespan of a romantic obsession is 2 years. After this, reality will set in and the little bumps we overlooked when we were in love now become huge mountains. We begin to assert ourselves, we will express our desires but they will differ. Little by little, this illusion of intimacy evaporates. 
+We wrongly believe that this amazing feeling, this happiness will last forever. Dr. Dorothy Tennov conducted studies on the “in-love” phenomenon and she concluded that the average lifespan of a romantic obsession is 2 years. After this, reality will set in and the little bumps we overlooked when we were in love now become huge mountains. We begin to assert ourselves, we will express our desires but they will differ. Little by little, this **illusion of intimacy** evaporates.
 
-Interestingly, data shows that the divorce rate of second marriages are higher than those of first marriages. Divorce rate of third marriages are even higher. 
-
-The obsession we feel at the beginning is ephemeral and if marriage was a book, it would only be the introduction.  When reality sets in and the “in-love” experience has run its course, this is the moment where “real” love can begin. A love that unites reason and emotion. It requires responsibility and discipline from both people to make this work, also recognizes the need for personal growth. This the moment where we “choose” to love the other person, not just out of instinct or emotion. We must find appropriate ways to express this decision. 
+The obsession we feel at the beginning is *ephemeral* and if marriage was a book, it would only be the introduction. When reality sets in and the “in-love” experience has run its course, this is the moment where “real” love can begin. **A love that unites reason and emotion.** It requires **responsibility** and **discipline** from both people to make this work, this kind of love also recognizes the need for **personal growth**. This the moment where we “choose” to love the other person, not just out of instinct or emotion. We must find appropriate ways to express this decision.
 
 “How do we meet each other’s deep, emotional need to feel loved ?” Keeping the love tank full is essential to a happy relationship.
 
 # Love language #1: Words of affirmation
 
-Words of affirmation are basically ways to formulate *verbally* our love. They are generally express in a simple and straightforward way: 
+Words of affirmation are basically ways to formulate *verbally* our love. They are generally express in a simple and straightforward way:
 
-“You look look incredible in this dress.”
+“You look incredible in this dress.”
 
 “I really like how you’re always on time.”
 
@@ -75,13 +77,13 @@ There are 4 main dialects in which we can communicate words of affirmation:
 
 ## Verbal compliments
 
-Verbal compliments are very important, they are better motivators than nagging words ! 
+Verbal compliments are very important, they are better motivators than nagging words !
 
 ## Encouraging words
 
 To *encourage* means “to inspire courage”. We all have areas in which we feel insecure. We lack courage and this lack of courage often hinders us from reaching our potential. We should encourage people through our words. This can really make an impact and really change someone’s perspective, inspiring them to take the first step.
 
-Encouragement requires empathy and seeing the world from the other person’s perspective. We must first learn what is important to our spouse. This is important because it should has to do with something that the other person *desires*, without that, the words will come across as judgmental and guilt inducing. 
+Encouragement requires empathy and seeing the world from the other person’s perspective. We must first learn what is important to our spouse. This is important because it should have to do with something that the other person *desires*, without that, the words will come across as judgmental and guilt inducing.
 
 With verbal encouragement, we are trying to communicate: “I know, I care. I am with you. How can I help ?” We are trying to show that we believe in his/her abilities.
 
@@ -101,24 +103,24 @@ Love make requests, not demands. If we are to develop an intimate relationship, 
 
 “Do you think it will be possible for you to xxx ?”
 
- When we make a request to someone, we are affirming his/her abilities to do something that is meaningful and worthwhile for us. Love is always a choice and this is what makes it meaningful. When we make a request we offer the choice to respond or deny the request. Therefore requests create the possibility to express love, to communicate that we respect and care about someone, to do something that pleases him/her, whereas demands destruct any possibility of intimacy. 
+When we make a request to someone, we are affirming his/her abilities to do something that is meaningful and worthwhile for us. Love is always a choice and this is what makes it meaningful. When we make a request we offer the choice to respond or deny the request. Therefore requests create the possibility to express love, to communicate that we respect and care about someone, to do something that pleases him/her, whereas demands destruct any possibility of intimacy.
 
 ## Practicing
 
-This deep need to feel appreciated, we all have it inside of us. Words of affirmation are one way to meet the need to feel appreciated. 
+This deep need to feel appreciated, we all have it inside of us. Words of affirmation are one way to meet the need to feel appreciated.
 
 The first thing we can do to improve is to collect those words or sentences in a list whenever we hear or read words of affirmation. This way, we can take inspiration from this collection in order to communicate our love to people.
 
 We can also use indirect words of affirmation, when the person is not present, we could express our gratitude or appreciation towards this person to other people. Likewise, we can also praise the person in a public setting, in front of others (parents, friends, colleagues). For example, when given public honor for an accomplishment we can share the credit with your parter. The thing to remember, is that verbal appreciation is not only limited when we are with our partner in a 1 on 1 setting !
 
-Written words of affirmation through letters, post-it and text messages have the great benefit that they can be read over and over again. 
+Written words of affirmation through letters, post-it and text messages have the great benefit that they can be read over and over again.
 
 To help getting started with practicing, we can start by expressing  verbal appreciation for things we like about the other person, list of positive traits, qualities, strengths. This list should be as specific as possible. This way, the words of affirmation are straightforward.
 
 In addition to that, don’t forget that you can just thank your mate for something they do routinely and wouldn’t expect to be complimented for !
 
 > *What would you most like your spouse to say to you ?*
-> 
+>
 
 This question is actually very interesting.
 
@@ -126,9 +128,9 @@ I would like to feel appreciated. Appreciated for the efforts I make to show lov
 
 # Love language #2: Quality time
 
-Quality time means to focus on the other person, to give someone our ***undivided attention***, looking at each other and talking with devices put away, doing an activity together that the other person enjoys (and doing it *wholeheartedly*). Just being in the same room with someone is not enough, our attention should be focused on that one person we are spending time with, only then can we call it “being together”. 
+Quality time means to focus on the other person, to give someone our ***undivided attention***, looking at each other and talking with devices put away, doing an activity together that the other person enjoys (and doing it *wholeheartedly*). Just being in the same room with someone is not enough, our attention should be focused on that one person we are spending time with, only then can we call it “being together”.
 
-Spending time on an activity together while focused on each other is what creates the sense of togetherness. The activity is not what matters, **what matters is that in this moment, we are spending time with each other** → We must see the bigger picture ! 
+Spending time on an activity together while focused on each other is what creates the sense of togetherness. The activity is not what matters, **what matters is that in this moment, we are spending time with each other** → We must see the bigger picture !
 
 Time is a precious commodity. When we sit down with our partner, and give each other our undivided attention. We are giving each other minutes of life ! We will never have those minutes again. Therefore, we are giving our lives to each other ! Quality time takes a whole other meaning, we can communicate love through quality time. It communicates that we care about each other, that we enjoy being with each other, that we like to do things together !
 
@@ -163,7 +165,7 @@ The purpose is to experience something together, to walk away from it feeling li
 By sharing quality activities, it provides us with a **memory bank** from which to draw in the future. Those are **memories of love**, especially for someone whose primary love language is quality time.
 
 > What in your marriage detracts from spending quality time ?
-> 
+>
 
 I think what prevents me personally is that I have some progress to do in communicating/sharing my emotions, thoughts, feelings and desire. To open up faster but also formulate them in a kind manner. I realize that I tend to go back into my shell and raise walls. This I think would be what prevents quality time.
 
@@ -193,15 +195,15 @@ Likewise, we can also offer them non verbal cues to communicate that we are list
 
 - Refuse to interrupt
 
-This means that we should listen, while the other person is talking. We should not think about what we are going to say while they are still talking. We should refrain from defending ourselves, stating our position or hurling accusations at him/her while they are talking. **The objective is to first seek and discover their thoughts and feelings**. Only then, can there be a constructive discussion. 
+This means that we should listen, while the other person is talking. We should not think about what we are going to say while they are still talking. We should refrain from defending ourselves, stating our position or hurling accusations at him/her while they are talking. **The objective is to first seek and discover their thoughts and feelings**. Only then, can there be a constructive discussion.
 
 - Get rid of distractions
 
-Don’t listen to them while doing something else. You want to give them full attention. If you are doing something else, you could say: “I know that you are trying to talk to me, I am interested but right now I cannot give you my full attention. If you give me 10 minutes to finish what I am doing, I will sit down and listen to you”. 
+Don’t listen to them while doing something else. You want to give them full attention. If you are doing something else, you could say: “I know that you are trying to talk to me, I am interested but right now I cannot give you my full attention. If you give me 10 minutes to finish what I am doing, I will sit down and listen to you”.
 
 ### Awareness
 
-“What emotions have I felt in the last 3 hours ?” 
+“What emotions have I felt in the last 3 hours ?”
 
 We can recall an event and the feelings associated with it, then write it down somewhere or communicate those to someone.
 
@@ -221,7 +223,7 @@ This can be done through activities such as: taking a walk, going out to eat, lo
 - Going for a walk and talk
 - …
 
-What is essential is that: 
+What is essential is that:
 
 1. At least one of us wants to do it (we can set time aside  to do something they enjoy/interests them ^^)
 2. The other is willing to do it
@@ -235,7 +237,7 @@ The gift itself is a symbol that we were thinking of that person. It’s somethi
 
 ## Best Investment
 
-We all have different views on how to spend money. If we are a spender, we will spend money easily on gifts, but in the other hand, if we are a saver, we might feel emotional resistance to the idea of spending money as “an expression of love”. We don’t even purchase things for ourselves, why would we purchase something for our spouse ? 
+We all have different views on how to spend money. If we are a spender, we will spend money easily on gifts, but in the other hand, if we are a saver, we might feel emotional resistance to the idea of spending money as “an expression of love”. We don’t even purchase things for ourselves, why would we purchase something for our spouse ?
 
 But this view is narrow minded, by saving money we care for our own emotional needs. We are not meeting the emotional needs of our spouse (especially in the case where his/her primary love language is receiving gifts). We must realise that this is the best investment we can make: investing in the relationship.
 
@@ -284,7 +286,7 @@ Expressing love by doing things for someone. I mean, this is pretty straightforw
 - Paying the bills
 - Walking the dog
 
-Those things require thought, planning, time, effort and energy. Done with a **positive spirit**, they are expressions of love. 
+Those things require thought, planning, time, effort and energy. Done with a **positive spirit**, they are expressions of love.
 
 “*I was thinking of you, you were with me even when you were gone.*”
 
@@ -308,7 +310,7 @@ This display of love touch can be explicit: massage, sexual intercourse, … Or 
 
 Obviously, if we haven’t grown up in a “touchy” family, those displays of affection might not come up naturally to us. However, it can be learned !
 
-In our society, shaking hands communicate openness to another individual, by refusing to shake hands, we communicate that there is something wrong in the relationship. This is the same in a love relationship, we must remember that “To touch my body is to touch me, to **withdraw** from my body is to distance yourself from me emotionally”. 
+In our society, shaking hands communicate openness to another individual, by refusing to shake hands, we communicate that there is something wrong in the relationship. This is the same in a love relationship, we must remember that “To touch my body is to touch me, to **withdraw** from my body is to distance yourself from me emotionally”.
 
 ## Practice
 
@@ -340,7 +342,7 @@ A way to find out our love language is to look back on our own experiences and s
 
 “**What have I most often requested of my spouse ?**”
 
-We can reflect on what we have been mostly asking our partner. 
+We can reflect on what we have been mostly asking our partner.
 
 This might give us a clearer indication on how we have been guiding our partner into communicating love to us in a way that we feel loved. (Remember: requests give guidance)
 
@@ -356,23 +358,34 @@ But be careful, you might be doing those things because you have been raised thi
 
 # Love is a choice
 
-# Loving the unlovely
+In this chapter, the author communicates that love is a choice. We are creatures of choices and we might have made some poor choices in the past. We may not be very proud of them, we may have said or done hurtful things our partner. However, it doesn’t mean that we must take those poor choices in the future.
+
+Love is important, although it cannot erase the past but it can make the future different. Apologizing sincerely is crucial. And when we actively express love in the primary love language of our partner, it creates an emotional climate where we can deal with past conflicts and failures.
+
+### “I don’t love her anymore”
+
+One feeling that can arise when we come down from the “in-love” experience is the feeling that our relationship has become empty, that our feelings  for the other person have disappeared. This feeling is common to millions of people in the world. To better understand this feeling, we must understand that the “in-love” experience at the beginning of a relationship is not premeditated, it is instinctive and only meets our emotional needs for love temporarily. We feel that someone admires us, appreciates us. However, the “in-love” experience ends, our tank slowly drains when our emotional needs are not met by the other person. When our love tank is empty for some time, we fall out of love, we are likely to “fall in love” with someone else and this cycle will repeat again. Many people confuse the “in-love” experience with the “emotional need to feel loved”. One does not arise from a conscious choice while the other does.**Therefore, accepting that love is a conscious choice is necessary**. **Speaking our mate’s love language whether or not it is natural for us, is fundamental to a healthy marriage.**
+
+# Love makes the difference
+
+Psychologists have observed that among our basic needs are the need for **security**, **self-worth** and **significance**. Love is related to all 3 of them. When we feel loved, we are secure in their presence. Loving and being loved by someone gives us a sense of self-worth and significance in each other’s lives. On the contrary, when we don’t feel loved, our differences are magnified, we view each other as a threat to our happiness. Love does not answer everything but it creates an environment where we can discuss differences without condemnations, where conflicts can be resolved. 2 different people can learn to live together in harmony and discover how to bring out the best in each other. Those are the rewards of love. This idea that someone will choose us and do what they can for us to feel loved, doesn’t it make love beautiful ?
+
+## Practice
+
+- Let’s think about what our spouse does to make us feel more “significant”
+- Let’s think about what we do for them.
 
 # Conclusion
 
-### Work in progress (don’t know where to integrate those parts -.-)
+Communicating love effectively is fundamental to relationships in general. There are 5 love languages: quality time, physical touch, gifts, acts of services and words of affirmation.
 
-We might enjoy all of them but there are some that communicates love louder to us than others. The key is to give feedback to our spouse on what we prefer.
+We might enjoy all of them but there are some that communicates love louder to us than others. Keeping each other’s love tank full is important, because without feeling loved, appreciated, we feel taken for granted, used and unappreciated.
 
 If we feel unloved, we can make request to our mate to let them know how we feel. We can guide them into being better lovers. We cannot expect them to read our mind, we often see the worlds through our own perception and sometimes what our partner see as a problem might not even come up in our mind.
 
-Without feeling appreciated, we feel taken for granted, used and unappreciated.
+For a healthy marriage, it is important to also learn these skills: how to discuss our differences without condemning each other, how to make decisions together without destroying our unity, how to give constructive suggestions without being demanding, how to apologize sincerely.
 
-Love calls for understanding, compassion and giving wholeheartedly.
-
-What is important is to understand our mate and realise what specifically is important to them. We might speak the same love language but a different dialect.
-
-It is not how fast we learn, but how how well we learn that matters.
+**Love calls for understanding, compassion and giving wholeheartedly.**
 
 ## Side Note
 
