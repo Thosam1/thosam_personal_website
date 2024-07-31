@@ -72,7 +72,7 @@ const Hero = () => (
                         <p>
                             My interests span across various activities, offering me a well-rounded lifestyle:
                         </p>
-                        <ul className="list-disc pl-4">
+                        <ul className="list-disc pl-8">
                             <li>Avid reader, continuously expanding my knowledge and perspectives.</li>
 
                             <li>Martial arts enthusiast, practicing Karate (7 years), Taekwondo + Hapkido (2 years).</li>
