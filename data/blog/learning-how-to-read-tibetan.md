@@ -311,7 +311,7 @@ ba, ma (up), tsa (normal), dza
 
 ![Untitled](./blog/learning-how-to-read-tibetan/Untitled%2031.webp)
 
-### **+ Suffixes**
+### + Suffixes
 
 - Episode 25: [https://www.youtube.com/watch?v=Qqqy2R9Y4-I](https://www.youtube.com/watch?v=Qqqy2R9Y4-I)
 
@@ -353,7 +353,7 @@ ta (normal), da, pa, ba, ***lha***
 
 → as if you have a prefix
 
-### **+ Suffixes**
+### + Suffixes
 
 - Episode 30: [https://www.youtube.com/watch?v=GGqDmwV6Po0](https://www.youtube.com/watch?v=GGqDmwV6Po0)
 
@@ -385,7 +385,7 @@ ta (normal), da, na (up), pa (normal)
 
 ba, ma (up), tsa (normal)
 
-### **+ Suffixes**
+### + Suffixes
 
 - Episode 34: [https://www.youtube.com/watch?v=zLTfRTw9R3s](https://www.youtube.com/watch?v=zLTfRTw9R3s)
 
