@@ -10,7 +10,11 @@ seo: "Learning how to read Tibetan, my personal notes"
 
 This goal of learning how to read Tibetan came from my need to find who I really am. I want to go back to my roots, to feel closer to my ancestors. For this, it is essential for me to understand Tibetan and more importantly how to read in that language. Growing up in Switzerland, I only learned how to speak Tibetan thanks to my parents, they are the main reason why I can speak the language, for this I am grateful for them.
 
-Other than learning the language because I am Tibetan, I would like to study Buddhism. I have spent some time learning Buddhist concepts on my own in English. However, I came to the realization that the English language do not provide accurate translations of concepts and words that are found in Buddhism. Therefore, in order to learn more about Buddhism and progress on the path, it is essential to learn Tibetan. Why ? Because Tibetans have preserved the Dharma. Everything has been translated in Tibetan, along with commentaries from many Buddhist scholars on the Dharma. Therefore, I see learning the language (speaking, reading, writing) as a necessity to study Buddhism. (The other option would be to study sanskrit)
+Other than learning the language because I am Tibetan, I would like to study Buddhism. I have spent some time learning Buddhist concepts on my own in English. However, I came to the realization that the English language do not provide accurate translations of concepts and words that are found in Buddhism. Therefore, in order to learn more about Buddhism and progress on the path, it is essential to learn Tibetan. Why ? Because Tibetans have preserved the Dharma. Everything has been translated in Tibetan, along with commentaries from many Buddhist scholars on the Dharma. Therefore, I see learning the language (speaking, reading, writing) as a necessity to study Buddhism. The other option would be to study Sanskrit.
+
+- If the images do not render, you can check my Notion page here:
+
+  [https://satin-hyssop-aff.notion.site/Learning-how-to-read-tibetan-ca3de79c538343bbb9dd92c280866843?pvs=4](https://www.notion.so/Learning-how-to-read-tibetan-ca3de79c538343bbb9dd92c280866843?pvs=21)
 
 # Resources
 
