@@ -13,6 +13,7 @@ import BA4List from '../../../data/portfolio/education/BA4List';
 import BA5List from '../../../data/portfolio/education/BA5List';
 import BA6List from '../../../data/portfolio/education/BA6List';
 import MA1List from '../../../data/portfolio/education/MA1List';
+import MA2List from "../../../data/portfolio/education/MA2List";
 
 const title = 'Portfolio | Thösam Norlha-Tsang'
 const description = 'Hello there 👋, this is my portfolio where you can learn more about my work'
@@ -240,6 +241,12 @@ const Education = () => (
             </h1>
             <div className="grid md:grid-cols-2 gap-6 text-left pb-12">
                 {MA1List().map((course) => <CourseCard course={course} key={course.code}/>)}
+            </div>
+            <h1 className="font-semibold text-xl py-6">
+                ETHZ - Year 1 - Semester 2
+            </h1>
+            <div className="grid md:grid-cols-2 gap-6 text-left pb-12">
+                {MA2List().map((course) => <CourseCard course={course} key={course.code}/>)}
             </div>
         </div>
     </Wrapper>
