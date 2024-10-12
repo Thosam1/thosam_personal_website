@@ -59,53 +59,64 @@ const Hero = () => (
         <div className="max-w-[75rem] lg:px-8 mx-auto">
             <div className="items-center md:grid md:grid-cols-2 md:gap-12 xl:gap-32">
                 <div className="space-y-6 sm:space-y-8">
-                    <div className="space-y-2 md:space-y-4">
+                    <div className="space-y-6">
                         <h2 className="font-bold text-3xl lg:text-4xl text-gray-800 dark:text-gray-200">
                             Hi everyone 👋, I&apos;m Thösam
                         </h2>
-                        <p>
-                            I am a computer science student at ETH Zurich with a profound enthusiasm for science and new
-                            technologies. My goal is to leverage my technical skills to make a significant, positive
-                            contribution to society. I believe our happiness depends on the well-being of those around
-                            us, guiding my life&apos;s goals beyond personal desires.
-                        </p>
 
-                        <p>
-                            My interests span across various activities, offering me a well-rounded lifestyle:
-                        </p>
-                        <ul className="list-disc pl-8">
-                            <li>Avid reader, continuously expanding my knowledge and perspectives.</li>
+                        <div className="font-light leading-loose space-y-6">
+                            <p>
+                                I am a computer science student at ETH Zurich with a profound enthusiasm for science and
+                                new
+                                technologies. My goal is to leverage my technical skills to make a significant, positive
+                                contribution to society. I believe our happiness depends on the well-being of those
+                                around
+                                us, guiding my life&apos;s goals beyond personal desires.
+                            </p>
 
-                            <li>Martial arts enthusiast, practicing Karate (7 years), Taekwondo + Hapkido (2 years).</li>
-                            <li>Outdoor enthusiast, enjoying nature through walking and running.</li>
+                            {/*<p>*/}
+                            {/*    My interests span across various activities, offering me a well-rounded lifestyle:*/}
+                            {/*</p>*/}
+                            {/*<ul className="list-disc pl-8">*/}
+                            {/*    <li>Avid reader, continuously expanding my knowledge and perspectives.</li>*/}
 
-                            <li>Salsa dancer, practising weekly (1 year). Also enjoying ballroom dances, West Coast Swing, and
-                                Bachata (1 semester).
-                            </li>
+                            {/*    <li>Martial arts enthusiast, practicing Karate (7 years), Taekwondo + Hapkido (2*/}
+                            {/*        years).*/}
+                            {/*    </li>*/}
+                            {/*    <li>Outdoor enthusiast, enjoying nature through walking and running.</li>*/}
 
-                            <li>Amateur Guitarist, learning on my own with youtube.</li>
-                        </ul>
-                        {/*<p>You can checkout my Github, my youtube channel or my blog posts</p>*/}
-                        {/*<p>*/}
-                        {/*    Dive deeper into my thoughts and ideas by reading my blog posts.*/}
-                        {/*</p>*/}
-                        {/*<p>*/}
-                        {/*    For those interested in code and ongoing projects, visit my GitHub profile.*/}
-                        {/*</p>*/}
-                        <p>
-                            I am always open to new opportunities and eager to connect with like-minded
-                            individuals.
-                            Let&apos;s collaborate and make the world a better place, one step at a time!
-                        </p>
-                        {/*<p>*/}
-                        {/*	I am a software engineer, content creator and student living in Switzerland.*/}
-                        {/*</p>*/}
-                        {/*<p>*/}
-                        {/*	This is my portfolio page :)*/}
-                        {/*</p>*/}
+                            {/*    <li>Salsa dancer, practising weekly (1 year). Also enjoying ballroom dances, West Coast*/}
+                            {/*        Swing, and*/}
+                            {/*        Bachata (1 semester).*/}
+                            {/*    </li>*/}
+
+                            {/*    <li>Amateur Guitarist, learning on my own with youtube.</li>*/}
+                            {/*</ul>*/}
+                            {/*<p>You can checkout my Github, my youtube channel or my blog posts</p>*/}
+                            {/*<p>*/}
+
+                            {/*    Dive deeper into my thoughts and ideas by reading my blog posts.*/}
+                            {/*</p>*/}
+                            {/*<p>*/}
+                            {/*    For those interested in code and ongoing projects, visit my GitHub profile.*/}
+                            {/*</p>*/}
+
+                            <p>
+                                I am always open to new opportunities and eager to connect with like-minded
+                                individuals.
+                                Let&apos;s collaborate and make the world a better place, one step at a time!
+                            </p>
+                            {/*<p>*/}
+                            {/*	I am a software engineer, content creator and student living in Switzerland.*/}
+                            {/*</p>*/}
+                            {/*<p>*/}
+                            {/*	This is my portfolio page :)*/}
+                            {/*</p>*/}
+                        </div>
+
                     </div>
 
-                    <div className="flex justify-start pb-10 md:pb-0">
+                    <div className="flex justify-center md:justify-start pb-10 md:pb-0">
                         <Link href="/portfolio/cv/CV_Developer_Thosam.pdf" download="CV_Developer_Thosam"
                               target="_blank"
                               style={{marginRight: '16px'}}>

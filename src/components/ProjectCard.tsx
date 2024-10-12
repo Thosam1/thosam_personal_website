@@ -29,7 +29,7 @@ export default function ProjectCard({ project }: Readonly<{ project: IProject }>
 				/>
 				<div className="px-6 py-4">
 					<div className="font-bold text-xl mb-2">{project.title}</div>
-					<p className="text-gray-700 text-base">{project.description}</p>
+					<p className="text-gray-700 font-light leading-loose">{project.description}</p>
 					<div className="pt-4 flex flex-row gap-5">
 						{project.demoLink !== '' &&
 							<CustomLink href={project.demoLink}>View Demo</CustomLink>
