@@ -14,6 +14,8 @@ import BA5List from '../../../data/portfolio/education/BA5List';
 import BA6List from '../../../data/portfolio/education/BA6List';
 import MA1List from '../../../data/portfolio/education/MA1List';
 import MA2List from "../../../data/portfolio/education/MA2List";
+import {adnovumInternship} from "../../../data/portfolio/worksList";
+import WorkCard from "@/components/WorkCard";
 
 const title = 'Portfolio | Thösam Norlha-Tsang'
 const description = 'Hello there 👋, this is my portfolio where you can learn more about my work'
@@ -48,6 +50,7 @@ export default function Portfolio() {
             <Hero/>
             {/*<AboutMe/>*/}
             {/*<TeckStack/>*/}
+            <WorkExperience />
             <Projects/>
             <Education/>
         </>
@@ -175,6 +178,19 @@ const Hero = () => (
 //                    <SkillCard name={item.name} image={item.image} link={item.link} key={item.name}
 // description={item.description}/> ) } </div> </Wrapper> )
 
+const WorkExperience = () => (
+    <Wrapper>
+        <h1 className="font-semibold text-2xl py-6 md:text-center md:text-4xl md:py-16">
+            Work Experience
+        </h1>
+        <div className="flex justify-center">
+            <div className="grid grid-cols-1 gap-16 lg:w-1/2">
+                <WorkCard work={adnovumInternship()} key={adnovumInternship().title}/>
+            </div>
+        </div>
+    </Wrapper>
+)
+
 const Projects = () => (
     <Wrapper>
         <h1 className="font-semibold text-2xl py-6 md:text-center md:text-4xl md:py-16">
@@ -189,7 +205,6 @@ const Projects = () => (
                 }
             </div>
         </div>
-
     </Wrapper>
 )
 
@@ -217,28 +232,28 @@ const Education = () => (
             </div>
 
             <h1 className="font-semibold text-xl py-6">
-                EPFL - Year 2 - Semester 1
+                EPFL - Year 2 - Semester 3
             </h1>
             <div className="grid md:grid-cols-2 gap-6 text-left pb-12">
                 {BA3List().map((course) => <CourseCard course={course} key={course.code}/>)}
             </div>
 
             <h1 className="font-semibold text-xl py-6">
-                EPFL - Year 2 - Semester 2
+                EPFL - Year 2 - Semester 4
             </h1>
             <div className="grid md:grid-cols-2 gap-6 text-left pb-12">
                 {BA4List().map((course) => <CourseCard course={course} key={course.code}/>)}
             </div>
 
             <h1 className="font-semibold text-xl py-6">
-                EPFL - Year 3 - Semester 1
+                EPFL - Year 3 - Semester 5
             </h1>
             <div className="grid md:grid-cols-2 gap-6 text-left pb-12">
                 {BA5List().map((course) => <CourseCard course={course} key={course.code}/>)}
             </div>
 
             <h1 className="font-semibold text-xl py-6">
-                EPFL - Year 3 - Semester 2
+                EPFL - Year 3 - Semester 6
             </h1>
             <div className="grid md:grid-cols-2 gap-6 text-left pb-12">
                 {BA6List().map((course) => <CourseCard course={course} key={course.code}/>)}
@@ -253,12 +268,22 @@ const Education = () => (
             <div className="grid md:grid-cols-2 gap-6 text-left pb-12">
                 {MA1List().map((course) => <CourseCard course={course} key={course.code}/>)}
             </div>
-            <h1 className="font-semibold text-xl py-6">
-                ETHZ - Year 1 - Semester 2
-            </h1>
-            <div className="grid md:grid-cols-2 gap-6 text-left pb-12">
-                {MA2List().map((course) => <CourseCard course={course} key={course.code}/>)}
+            {/*<Wrapper>*/}
+            {/*<div className=" mx-auto pb-8 px-8">*/}
+            {/*    <div className="items-center flex flex-wrap">*/}
+            {/*        <div className="w-full ml-auto mr-auto text-left no-underline">*/}
+            {/*            <WorkCard work={adnovumInternship()} key={adnovumInternship().title}/>*/}
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*</div>*/}
+                {/*</Wrapper>*/}
+
+                <h1 className="font-semibold text-xl py-6">
+                    ETHZ - Year 2 - Semester 2
+                </h1>
+                <div className="grid md:grid-cols-2 gap-6 text-left pb-12">
+                    {MA2List().map((course) => <CourseCard course={course} key={course.code}/>)}
+                </div>
             </div>
-        </div>
     </Wrapper>
 )
