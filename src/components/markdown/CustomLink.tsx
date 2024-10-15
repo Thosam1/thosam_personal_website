@@ -10,7 +10,14 @@ const CustomLink: React.FC<ICustomLinkProps> = ({href, children}) => {
 
     if (isInternalLink) {
         return (
-            <a href={href} className="text-blue-600 dark:text-blue-500 hover:no-underline">
+            <a
+                href={href}
+                className="text-blue-600 dark:text-blue-500 hover:no-underline"
+                style={{
+                    wordBreak: 'break-word',  // Ensures long links wrap to the next line
+                    whiteSpace: 'normal'      // Prevents the link from stretching out horizontally
+                }}
+            >
                 {children}
             </a>
         );
@@ -20,15 +27,27 @@ const CustomLink: React.FC<ICustomLinkProps> = ({href, children}) => {
 
     if (isTableOfContentLink) {
         return (
-            <a href={href} className="text-slate-700">
+            <a
+                href={href} className="text-slate-700"
+                style={{
+                    wordBreak: 'break-word',  // Ensures long links wrap to the next line
+                    whiteSpace: 'normal'      // Prevents the link from stretching out horizontally
+                }}
+            >
                 {children}
             </a>
         );
     }
 
     return (
-        <a href={href} target="_blank" rel="noopener noreferrer"
-           className="text-blue-600 dark:text-blue-500 hover:no-underline">
+        <a
+            href={href} target="_blank" rel="noopener noreferrer"
+            className="text-blue-600 dark:text-blue-500 hover:no-underline"
+            style={{
+                wordBreak: 'break-word',  // Ensures long links wrap to the next line
+                whiteSpace: 'normal'      // Prevents the link from stretching out horizontally
+            }}
+        >
             {children}
         </a>
     );
