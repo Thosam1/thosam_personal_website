@@ -1,5 +1,5 @@
 export const fadeUpVariant = (delayTime: number = 0.1) => ({
-    initial: { opacity: 0, y: 50 },
+    initial: { opacity: 0, y: 20 },
     animate: {
       opacity: 1,
       y: 0,
