@@ -11,17 +11,18 @@ import { FULL_NAME } from '@/constants';
 
 // Generate metadata for SEO
 interface IProps {
-	params: { slug: string },
-	searchParams: { [key: string]: string | string[] | undefined }
+	params: Promise<{ slug: string }>,
+	searchParams: Promise<{ [key: string]: string | string[] | undefined }>
 }
 
-export async function generateMetadata({ params }: IProps): Promise<Metadata | undefined> {
-	const currentPostMetaData: IBlogPostMetadata = getPostMetadata(params.slug)
-	let title = currentPostMetaData.title
-	let description = currentPostMetaData.summary
-	let url = `${process.env.WEBSITE_URL}/${currentPostMetaData.slug}`
+export async function generateMetadata(props: IProps): Promise<Metadata | undefined> {
+    const params = await props.params;
+    const currentPostMetaData: IBlogPostMetadata = getPostMetadata(params.slug)
+    let title = currentPostMetaData.title
+    let description = currentPostMetaData.summary
+    let url = `${process.env.WEBSITE_URL}/${currentPostMetaData.slug}`
 
-	return {
+    return {
 		title,
 		description,
 		verification: { google: process.env.GOOGLE_SEO_CODE },
@@ -46,23 +47,16 @@ export async function generateMetadata({ params }: IProps): Promise<Metadata | u
 }
 
 interface IBlogProps {
-	params: {
+	params: Promise<{
 		slug: string;
-	};
+	}>;
 }
 
-const Blog: React.FC<IBlogProps> = (props: IBlogProps) => {
+const Blog: React.FC<IBlogProps> = async (props: IBlogProps) => {
 
-	const slug: string = props.params.slug
+	const slug: string = (await props.params).slug
 
 	const post: matter.GrayMatterFile<string> = getPostContent(slug)
-
-	const registerView = () => {
-		fetch(`${process.env.WEBSITE_URL}/api/views/${slug}`, {
-			method: 'POST',
-		}).then(r => r.json().then());
-	};
-	registerView();
 
 	return (
 		<main>
