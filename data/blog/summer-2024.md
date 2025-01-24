@@ -8,7 +8,7 @@ seo: "Learning Tibetan and Buddhism at Sarah: College for Higher Tibetan Studies
 
 Hey, it’s Thösam here :). Since many people have asked about my last trip to India, I thought it would be a good initiative to write an article about it. To share some of my thoughts and hopefully, it will inspire you to do something similar in the future :). In any case, I wish you a pleasant reading !
 
-![Tibetan prayer stones and prayer flags. ](./summer-2024/prayer_stones_flags.webp)
+![Tibetan prayer stones and prayer flags. ](./blog/summer-2024/prayer_stones_flags.webp)
 |:--:|
 | *Tibetan prayer stones and prayer flags.* |
 
@@ -28,7 +28,7 @@ I searched a lot on the internet for possibilities to study Buddhist philosophy 
 
 Oh yeah, also I had to cut my hair. Because, why not 😂.
 
-![monkey.gif](./summer-2024/monkey.gif)
+![monkey.gif](./blog/summer-2024/monkey.gif)
 |:--:|
 | *Me after that haircut* |
 
@@ -114,7 +114,7 @@ Also, you will see many people going on a “kora” which is a type of pilgrima
 
 This should be the path:
 
-![kora_mcleod_ganj.webp|500](./summer-2024/kora_mcleod_ganj.webp?width=10)
+![kora_mcleod_ganj.webp|500](./blog/summer-2024/kora_mcleod_ganj.webp?width=10)
 
 ## Norbulingka Institute
 
@@ -164,7 +164,7 @@ In some way, getting sick is a good opportunity to meditate and to remind oursel
 
 Why meditate ? Why should we study and analyze the nature of our mind ? Most often, our mental projections are not reflections of reality. Let’s say there is a white snow mountain in front of you, the color should be white. However, you are wearing pink glasses that makes you see the mountain in pink color. What color is the mountain then ? Pink ? White ? You see, our mind is like those pink glasses. Our mind “twists” and “bend” reality. For example, if we are really attracted to someone, we might exaggerate their positive traits while disregarding their negatives. If we don’t like a person, we might exaggerate their negative traits and not even mention their qualities. If they do a good deed, we might even say that they did it because they had some ulterior motives. “He gave you something because he wanted something in return.” The bottom line is that **our mind has a tendency to exaggerate**, wether it is a positive thought/memory or a negative one. The problem is that living in our own “subjective” reality can create some unnecessary suffering. It is especially the discrepancy between the “subjective” reality and the “objective” reality that creates the suffering, in other words: not being in tune with reality. This is a form of ignorance that meditation aims to clear. When I say meditation, I mean **analytical meditation** which is mainly about studying, analyzing the nature of our mind, not the concentration meditation where you sit cross-legged and count while breathing. 
 
-The last topic I would like to discuss here is a theory about “opposite mental states” we learned in the Buddhist science and philosophy class. It states that in our mind, we can have different mental states at a certain time t. But ***2 opposite mental states cannot exist at the same time t in our mind***. Let me give you an example: being *attracted* vs being *repelled*. Let’s say that there is a very tasteful apple in front of you. Your mental state is *attracted* towards that apple at the moment. There is no repulsion. However, now you remember the last apple you had was really bad. Now you feel repelled, your mental state is in a state of repulsion. Your mind can shift between those 2 opposite mental states, it can go from one to the other, but those 2 *cannot coexist at the same time*. This is where it gets interesting. The opposite mental state of anger and hatred is compassion. At the moment when we are angry at someone, we are in “anger” mode. We are not in “compassion” mode. However, to reduce the anger, we can shift our focus, find reasons to feel more compassionate towards the object of our anger. By taking a step back over the situation, and especially cultivating compassion, we can reduce our anger. Personally, since I learned about this theory, I have been using it pretty often, and the result is that I hardly ever get angry. Maybe it might not make sense to you, but I really think the best way to learn is to practice and do your own experiments 😊.
+The last topic I would like to discuss here is a theory about “opposite mental states” we learned in the Buddhist science and philosophy class. It states that in our mind, we can have different mental states at a certain time t. But ***2 opposite mental states cannot exist at the same time t in our mind***. Let me give you an example: being *attracted* vs being *repelled*. Let’s say that there is a very tasteful apple in front of you. Your mental state is *attracted* towards that apple at the moment. There is no repulsion. However, now you remember the last apple you had was really bad. You feel repelled, your mental state is in a state of repulsion. Your mind can shift between those 2 opposite mental states, it can go from one to the other, but those 2 *cannot coexist at the same time*. This is where it gets interesting. The opposite mental state of anger and hatred is compassion. At the moment when we are angry at someone, we are in “anger” mode. We are not in “compassion” mode. However, to reduce the anger, we can shift our focus, find reasons to feel more compassionate towards the object of our anger. By taking a step back over the situation, and especially cultivating compassion, we can reduce our anger. Personally, since I learned about this theory, I have been using it pretty often, and the result is that I hardly ever get angry. Maybe it might not make sense to you, but I really think the best way to learn is to practice and do your own experiments 😊.
 
 # My heartfelt gratitude
 
@@ -180,4 +180,4 @@ Looking back, I think this was one of the best decisions I have taken in my life
 
 May you all find inner peace and lasting joy and happiness. I wish you all the best in your paths and hopefully we’ll see each other again in this lifetime or a next one. ✨🍀
 
-![goodbye_pic.webp](./summer-2024/goodbye_pic.webp)
+![goodbye_pic.webp](./blog/summer-2024/goodbye_pic.webp)
