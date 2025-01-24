@@ -8,7 +8,7 @@ seo: "Learning Tibetan and Buddhism at Sarah: College for Higher Tibetan Studies
 
 Hey, it’s Thösam here :). Since many people have asked about my last trip to India, I thought it would be a good initiative to write an article about it. To share some of my thoughts and hopefully, it will inspire you to do something similar in the future :). In any case, I wish you a pleasant reading !
 
-![Tibetan prayer stones and prayer flags. ](./blog/summer-2024/prayer_stones_flags.webp)
+![Tibetan prayer stones and prayer flags. ](./summer-2024/prayer_stones_flags.webp)
 |:--:|
 | *Tibetan prayer stones and prayer flags.* |
 
@@ -28,7 +28,7 @@ I searched a lot on the internet for possibilities to study Buddhist philosophy 
 
 Oh yeah, also I had to cut my hair. Because, why not 😂.
 
-![monkey.gif](./blog/summer-2024/monkey.gif)
+![monkey.gif](./summer-2024/monkey.gif)
 |:--:|
 | *Me after that haircut* |
 
@@ -114,7 +114,7 @@ Also, you will see many people going on a “kora” which is a type of pilgrima
 
 This should be the path:
 
-![kora_mcleod_ganj.webp|500](./blog/summer-2024/kora_mcleod_ganj.webp?width=10)
+![kora_mcleod_ganj.webp|500](./summer-2024/kora_mcleod_ganj.webp?width=10)
 
 ## Norbulingka Institute
 
@@ -180,4 +180,4 @@ Looking back, I think this was one of the best decisions I have taken in my life
 
 May you all find inner peace and lasting joy and happiness. I wish you all the best in your paths and hopefully we’ll see each other again in this lifetime or a next one. ✨🍀
 
-![goodbye_pic.webp](./blog/summer-2024/goodbye_pic.webp)
+![goodbye_pic.webp](./summer-2024/goodbye_pic.webp)
