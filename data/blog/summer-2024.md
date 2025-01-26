@@ -12,6 +12,8 @@ Hey, it’s Thösam here :). Since many people have asked about my last trip to 
 |:--:|
 | *Tibetan prayer stones and prayer flags.* |
 
+# Table of contents
+
 # Motivations
 
 When reflecting on my past relationship and recalling some of the conflicts we had. I understand that many of them arose because I couldn’t control my mind and my emotions. 
