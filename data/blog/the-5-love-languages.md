@@ -10,19 +10,7 @@ seo: "5 Love Languages, my personal notes"
 
 This is actually the third time I am reading this book and I have written down the key ideas for me to remember.
 
-Recovering from a heartbreak was hard, it feels like the whole world around you is crumbling. During this period, I was filled with a mixed pot of emotions. Among those emotions was regret. Regret for not having expressed gratitude more often to her, for not appreciating her efforts enough, for taking her for granted and also by being more in love with the idea of her. Remorses for things I have done, for things I have said, for hurting her through words and actions, even though I didn’t have any bad intentions.
-
-She was my first love, I did not have any previous experience in romantic relationship in any way. I was ignorant of many things and that is probably what led me, us to bring suffering into our relationship with each other.
-
-How to communicate better, how to show appreciation, express gratitude, how to work through a conflict in a constructive way together, how to take criticism, how to apologize in a way that the other person really feel our apology as genuine and sincere, how to navigate through our emotions and cultivate positive emotions to avoid falling into a cycle of suffering created by our own mind. With the knowledge I had, I have given my all, my everything and it was devastating to see the flame of love slowly extinguishing right in front of our eyes. Feeling powerless and losing control.
-
-Those are realizations are things that raised in my mind after the breakup. Sadly those kind of thoughts only appeared in my mind when I started meditating daily, analyzing every facets of our relationship, living it again and again from the beginning until the end, reliving each of my memories, *our memories*. I realized that I can improve on my behaviors and how I approach love.
-
-During that time, I searched for answers, started reading books, writing and meditating frequently to really transforming my *being*.
-
-The 5 Love Languages is the first book I read. As I turned each page and read the chapters, I noticed many interesting points were mentioned. Insights that resonated with me and made me realize that indeed, there are things that I can change and work on.
-
-I hope that you will enjoy reading this book as much as I did and will grow into a better human being. 😄
+I hope that you will enjoy reading this book as much as I did and will grow into a better version of yourself. 😄
 
 # What happens to love after the wedding
 
