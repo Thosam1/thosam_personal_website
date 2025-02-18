@@ -14,6 +14,7 @@ import BA5List from '../../../data/portfolio/education/BA5List';
 import BA6List from '../../../data/portfolio/education/BA6List';
 import MA1List from '../../../data/portfolio/education/MA1List';
 import MA2List from "../../../data/portfolio/education/MA2List";
+import MA3List from "../../../data/portfolio/education/MA3List";
 import {adnovumInternship} from "../../../data/portfolio/worksList";
 import WorkCard from "@/components/WorkCard";
 
@@ -278,12 +279,19 @@ const Education = () => (
             {/*</div>*/}
                 {/*</Wrapper>*/}
 
-                <h1 className="font-semibold text-xl py-6">
-                    ETHZ - Year 2 - Semester 2
-                </h1>
-                <div className="grid md:grid-cols-2 gap-6 text-left pb-12">
-                    {MA2List().map((course) => <CourseCard course={course} key={course.code}/>)}
-                </div>
+            <h1 className="font-semibold text-xl py-6">
+                ETHZ - Year 2 - Semester 2
+            </h1>
+            <div className="grid md:grid-cols-2 gap-6 text-left pb-12">
+                {MA2List().map((course) => <CourseCard course={course} key={course.code}/>)}
             </div>
+
+            <h1 className="font-semibold text-xl py-6">
+                ETHZ - Year 2 - Semester 3
+            </h1>
+            <div className="grid md:grid-cols-2 gap-6 text-left pb-12">
+                {MA3List().map((course) => <CourseCard course={course} key={course.code}/>)}
+            </div>
+        </div>
     </Wrapper>
 )
