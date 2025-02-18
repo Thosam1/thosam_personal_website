@@ -28,6 +28,7 @@
     "swr": "^2.3.2"
   },
   "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.6",
     "@tailwindcss/typography": "^0.5.16",
     "@types/node": "^22",
     "@types/react": "19.0.8",
