@@ -39,7 +39,7 @@ export default function CourseCard({ course }: Readonly<{ course: ICourse }>) {
 			variants={fadeUpVariant(0.2)}
 		>
 			<motion.div
-				className={`max-w-screen-sm items-center border rounded-xl p-4 border-l-8 ${getBorderColor(
+				className={`max-w-(--breakpoint-sm) items-center border rounded-xl p-4 border-l-8 ${getBorderColor(
 					course.type)} shadow-md`}
 				whileHover={{ y: -4 }}
 			>

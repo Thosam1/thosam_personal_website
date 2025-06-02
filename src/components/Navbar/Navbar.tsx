@@ -18,7 +18,7 @@ const Navbar: React.FC = () => {
 
 	return (
 		<header className={`flex justify-center w-full top-0`}>
-			<nav className="flex justify-between items-center py-2 lg:py-6 px-8 w-full max-w-[75rem]">
+			<nav className="flex justify-between items-center py-2 lg:py-6 px-8 w-full max-w-300">
 				<Link className="flex items-center cursor-pointer" href={'/'}>
             <span className="font-semibold">
               {FULL_NAME}
@@ -52,11 +52,11 @@ const Navbar: React.FC = () => {
 				>
 					<div
 						// aria-hidden="true"
-						className={`m-auto h-0.5 w-6 rounded bg-black transition duration-300`}
+						className={`m-auto h-0.5 w-6 rounded-xs bg-black transition duration-300`}
 					></div>
 					<div
 						// aria-hidden="true"
-						className={`m-auto mt-2 h-0.5 w-6 rounded bg-black transition duration-300`}
+						className={`m-auto mt-2 h-0.5 w-6 rounded-xs bg-black transition duration-300`}
 					></div>
 				</label>
 			</nav>
