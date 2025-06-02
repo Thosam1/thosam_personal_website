@@ -1,6 +1,7 @@
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
 import {
-    oneLight,
+    // oneLight,
+    atomDark
 } from 'react-syntax-highlighter/dist/cjs/styles/prism'
 
 const CodeBlock = ({ node, inline, className, children, ...props }: any) => {
@@ -12,7 +13,7 @@ const CodeBlock = ({ node, inline, className, children, ...props }: any) => {
             {!inline && match ? (
                 <SyntaxHighlighter
                     showLineNumbers={true}
-                    style={oneLight}
+                    style={atomDark}
                     // PreTag={CustomPreTag}
                     language={match[1]}
                     {...props}>

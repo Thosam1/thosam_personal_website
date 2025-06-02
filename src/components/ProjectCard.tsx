@@ -16,7 +16,7 @@ export default function ProjectCard({ project }: Readonly<{ project: IProject }>
 			variants={fadeUpVariant(0.2)}
 		>
 			<motion.div
-				className="max-w-full rounded overflow-hidden shadow-md"
+				className="max-w-full rounded-xs overflow-hidden shadow-md"
 				whileHover={{ y: -4 }}
 			>
 				<Image

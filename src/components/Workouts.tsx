@@ -22,7 +22,7 @@ export default function Workouts() {
 
 	return (
 		<>
-			<div className="container max-w-screen-md mx-auto pt-16 pb-8 px-8">
+			<div className="container max-w-(--breakpoint-md) mx-auto pt-16 pb-8 px-8">
 				<div className="items-center flex flex-wrap">
 					<div className="w-full text-left no-underline flex flex-col gap-5">
 						{

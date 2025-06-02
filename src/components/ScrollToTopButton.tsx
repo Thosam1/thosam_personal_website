@@ -29,7 +29,7 @@ const ScrollToTopButton: React.FC = () => {
 				<div className="fixed bottom-12 right-12 lg:right-24 z-20">
 					<motion.button
 						onClick={scrollToTop}
-						className="flex items-center justify-center w-12 h-12 bg-blue-950 text-slate-200 rounded-full shadow-lg"
+						className="flex items-center justify-center w-12 h-12 bg-blue-950 text-slate-200 rounded-full shadow-lg cursor-pointer"
 						initial={{ y: 40, opacity: 0 }}
 						animate={{ y: 0, opacity: 1, transition: { duration: 1.2 } }}
 						exit={{ y: -400, rotate: -45, opacity: 0, transition: { duration: 0.8 } }}
