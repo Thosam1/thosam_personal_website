@@ -140,15 +140,15 @@ const Hero = () => (
 
                 <div className="flex items-center md:items-end flex-col">
                     <Image
-                        src="/home/thosam_auth_image.webp"
-                        alt="Thösam in Fribourg"
+                        src="/home/dharamsala_pic.webp"
+                        alt="Thösam in Dharamsala, India"
                         width={0}
                         height={0}
                         sizes="100vw"
-                        style={{width: 'auto', maxHeight: '35rem'}}
+                        style={{width: 'auto', maxHeight: '35rem', boxShadow: '0 4px 10px rgba(0, 0, 0, 0.2)'}}
                         priority={true}
                     />
-                    <p className="py-3 font-light text-sm text-zinc-600">Thösam Norlha-Tsang 2023</p>
+                    <p className="py-3 font-light text-sm text-zinc-600">Thösam Norlha-Tsang 2024</p>
                 </div>
             </div>
         </div>
