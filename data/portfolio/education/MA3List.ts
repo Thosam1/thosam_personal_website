@@ -1,6 +1,6 @@
 import { CourseType, ICourse } from './interfaces';
 
-export default function MA2List(): ICourse[] {
+export default function MA3List(): ICourse[] {
     return [
         {
             name: "Machine Learning for Health Care",

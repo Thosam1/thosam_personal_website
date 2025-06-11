@@ -3,13 +3,6 @@ import { CourseType, ICourse } from './interfaces';
 export default function MA2List(): ICourse[] {
     return [
         {
-            name: "Advanced Machine Learning",
-            code: "252-0535-00",
-            link: "https://www.vorlesungen.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2024W&ansicht=KATALOGDATEN&lerneinheitId=181977&lang=en",
-            credits: 10,
-            type: CourseType.CS,
-        },
-        {
             name: "Probabilistic Artificial Intelligence",
             code: "263-5210-00",
             link: "https://www.vorlesungen.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?semkez=2024W&ansicht=KATALOGDATEN&lerneinheitId=183167&lang=en",

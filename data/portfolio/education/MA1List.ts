@@ -16,12 +16,5 @@ export default function MA1List(): ICourse[] {
             credits: 8,
             type: CourseType.CS,
         },
-        {
-            name: "Algorithms Lab",
-            code: "263-0006-00",
-            link: "https://www.vvz.ethz.ch/Vorlesungsverzeichnis/lerneinheit.view?lerneinheitId=172035&semkez=2023W&ansicht=LEHRVERANSTALTUNGEN&lang=en",
-            credits: 8,
-            type: CourseType.CS,
-        },
     ];
 }
