@@ -1,5 +1,6 @@
 import {Wrapper} from '@/components/Wrapper';
-import projectsList from '../../../data/portfolio/projectsList';
+import softwareProjectsList from '../../../data/portfolio/projects/softwareProjectsList';
+import researchProjectsList from '../../../data/portfolio/projects/researchProjectsList';
 import Link from 'next/link';
 import Image from 'next/image'
 import {EMAIL_LINK, FULL_NAME} from '@/constants';
@@ -53,7 +54,8 @@ export default function Portfolio() {
             {/*<AboutMe/>*/}
             {/*<TeckStack/>*/}
             <WorkExperience />
-            <Projects/>
+            <ResearchProjects />
+            <SoftwareProjects />
             <Education/>
         </>
     )
@@ -193,15 +195,32 @@ const WorkExperience = () => (
     </Wrapper>
 )
 
-const Projects = () => (
+const ResearchProjects = () => (
     <Wrapper>
         <h1 className="font-semibold text-2xl py-6 md:text-center md:text-4xl md:py-16">
-            My Projects
+            Research & AI/ML Experience
         </h1>
         <div className="flex justify-center">
             <div className="grid grid-cols-1 gap-16 lg:w-1/2">
                 {
-                    projectsList().map((item) =>
+                    researchProjectsList().map((item) =>
+                        <ProjectCard project={item} key={item.title}/>
+                    )
+                }
+            </div>
+        </div>
+    </Wrapper>
+)
+
+const SoftwareProjects = () => (
+    <Wrapper>
+        <h1 className="font-semibold text-2xl py-6 md:text-center md:text-4xl md:py-16">
+            Software Engineering Experience
+        </h1>
+        <div className="flex justify-center">
+            <div className="grid grid-cols-1 gap-16 lg:w-1/2">
+                {
+                    softwareProjectsList().map((item) =>
                         <ProjectCard project={item} key={item.title}/>
                     )
                 }
