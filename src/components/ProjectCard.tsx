@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image'
 import CustomLink from '@/components/markdown/CustomLink';
-import { IProject } from '../../data/portfolio/projects/softwareProjectsList'; // Assuming CustomLink is a custom component you've defined
+import IProject from '../../data/portfolio/projects/interface_project';
 import { motion } from 'framer-motion';
 import { fadeUpVariant } from '@/animations/animations';
 
