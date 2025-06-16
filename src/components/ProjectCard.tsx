@@ -34,6 +34,9 @@ export default function ProjectCard({ project }: Readonly<{ project: IProject }>
 						{project.demoLink !== '' &&
 							<CustomLink href={project.demoLink}>View Demo</CustomLink>
 						}
+						{project.pdfLink &&
+							<CustomLink href={project.pdfLink}>Download PDF</CustomLink>
+						}
 						<CustomLink href={project.githubLink}>View Source</CustomLink>
 					</div>
 					{/*<div className="pt-4 pb-2">*/}

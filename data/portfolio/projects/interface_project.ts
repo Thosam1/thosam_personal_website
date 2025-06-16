@@ -3,6 +3,7 @@ export default interface IProject {
     description: string;
     githubLink: string;
     demoLink: string;
+    pdfLink?: string;
     tags: string[];
     images: string[];
 }
