@@ -45,9 +45,21 @@ export default function RootLayout({
 		<main>
 			{children}
 		</main>
-		<ScrollToTopButton />
-		<Footer />
-		<SpeedInsights />
+		<ScrollToTopButton/>
+		<iframe
+			src="https://thosam1.substack.com/embed"
+			style={{
+				width: '100%',
+				height: '320px',
+				borderTop: '2px solid #EEE',
+				background: 'white',
+			}}
+			frameBorder={0}
+			scrolling="no"
+		>
+		</iframe>
+		<Footer/>
+		<SpeedInsights/>
 		</body>
 		</html>
 	);

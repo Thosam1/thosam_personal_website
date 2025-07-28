@@ -30,6 +30,7 @@ export default function WorkCard({work}: Readonly<{ work: IWork }>) {
                 />
                 <div className="px-6 py-4">
                     <div className="font-bold text-xl mb-2">{work.title}</div>
+                    <p className="font-bold text-l leading-loose">{work.dates}</p>
                     <p className="text-gray-700 font-light leading-loose">{work.description}</p>
                     <div className="pt-4 flex flex-row gap-5">
                         {work.blogLink !== '' &&

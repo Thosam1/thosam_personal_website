@@ -17,7 +17,7 @@ import MA1List from '../../../data/portfolio/education/MA1List';
 import MA2List from "../../../data/portfolio/education/MA2List";
 import MA3List from "../../../data/portfolio/education/MA3List";
 import MA4List from "../../../data/portfolio/education/MA4List";
-import {adnovumInternship} from "../../../data/portfolio/worksList";
+import {adnovumInternship, privateTutor} from "../../../data/portfolio/worksList";
 import WorkCard from "@/components/WorkCard";
 
 const title = 'Portfolio | Thösam Norlha-Tsang'
@@ -190,6 +190,7 @@ const WorkExperience = () => (
         <div className="flex justify-center">
             <div className="grid grid-cols-1 gap-16 lg:w-1/2">
                 <WorkCard work={adnovumInternship()} key={adnovumInternship().title}/>
+                <WorkCard work={privateTutor()} key={privateTutor().title}/>
             </div>
         </div>
     </Wrapper>
