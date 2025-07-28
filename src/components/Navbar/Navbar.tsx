@@ -5,6 +5,7 @@ import { FULL_NAME, NAV_LINKS } from '@/constants'
 import { AnimatePresence, motion } from 'framer-motion';
 import styles from './navbar.module.css'
 import { fadeUpVariant } from '@/animations/animations';
+import Image from "next/image";
 
 const Navbar: React.FC = () => {
 	const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
@@ -20,9 +21,16 @@ const Navbar: React.FC = () => {
 		<header className={`flex justify-center w-full top-0`}>
 			<nav className="flex justify-between items-center py-2 lg:py-6 px-8 w-full max-w-300">
 				<Link className="flex items-center cursor-pointer" href={'/'}>
-            <span className="font-semibold">
-              {FULL_NAME}
-            </span>
+            <div className="font-semibold items-center">
+              {/*{FULL_NAME}*/}
+				<Image
+					src="/home/tenzin_thosam_himalaya_m.svg"
+					alt="Tenzin Thosam"
+					width={180}
+					height={0}
+					priority
+				/>
+            </div>
 				</Link>
 
 				{/* What we see on larger screen */}
