@@ -82,7 +82,7 @@ export default function WorkoutModal({ workout, onClose }: Readonly<WorkoutModal
 					className="absolute bottom-8 left-8 right-8 md:bottom-20 md:left-20 md:right-20 flex flex-row justify-end p-4 gap-4 bg-white">
 					<button
 						type="button"
-						className="py-2 px-4 inline-flex items-center gap-x-2 text-sm font-medium border border-gray-200 bg-white text-gray-500 shadow-xs hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-hidden dark:focus:ring-1 dark:focus:ring-gray-600 cursor-pointer"
+						className="py-2 px-4 inline-flex items-center gap-x-2 text-sm font-medium border border-gray-200 bg-white text-gray-500 shadow-xs hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none cursor-pointer"
 						onClick={onClose}
 					>
 						Close
@@ -90,7 +90,7 @@ export default function WorkoutModal({ workout, onClose }: Readonly<WorkoutModal
 					<Link href={workout.url} target="_blank" rel="noopener noreferrer" className="unstyled">
 						<button
 							type="button"
-							className="py-2 px-4 inline-flex items-center gap-x-2 text-sm font-medium border border-gray-200 bg-blue-950 text-gray-100 shadow-xs hover:bg-blue-900 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-hidden dark:focus:ring-1 dark:focus:ring-gray-600 cursor-pointer"
+							className="py-2 px-4 inline-flex items-center gap-x-2 text-sm font-medium border border-gray-200 bg-blue-950 text-gray-100 shadow-xs hover:bg-blue-900 disabled:opacity-50 disabled:pointer-events-none cursor-pointer"
 						>
 							Workout Link
 						</button>

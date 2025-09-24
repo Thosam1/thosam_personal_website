@@ -18,7 +18,7 @@ const Hero = () => (
             <div className="items-center md:grid md:grid-cols-2 md:gap-12 xl:gap-32">
                 <div className="space-y-6 sm:space-y-8">
                     <div className="space-y-6">
-                        <h2 className="font-bold text-3xl lg:text-4xl text-gray-800 dark:text-gray-200">
+                        <h2 className="font-bold text-3xl lg:text-4xl text-gray-800">
                             Hi everyone 👋, I&apos;m Thösam
                         </h2>
 
@@ -41,13 +41,13 @@ const Hero = () => (
                     <div className="flex justify-center md:justify-start pb-10 md:pb-0">
                         <Link href="/portfolio" style={{marginRight: '16px'}}>
                             <button type="button"
-                                    className="py-2 px-2 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-500 shadow-xs hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-hidden dark:focus:ring-1 dark:focus:ring-gray-600">
+                                    className="py-2 px-2 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-500 shadow-xs hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none">
                                 My Portfolio
                             </button>
                         </Link>
                         <Link href={EMAIL_LINK}>
                             <button type="button"
-                                    className="py-2 px-2 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-500 shadow-xs hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-hidden dark:focus:ring-1 dark:focus:ring-gray-600">
+                                    className="py-2 px-2 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-500 shadow-xs hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none">
                                 Contact me
                             </button>
                         </Link>

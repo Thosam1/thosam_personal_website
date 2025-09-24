@@ -12,7 +12,7 @@ const CustomLink: React.FC<ICustomLinkProps> = ({href, children}) => {
         return (
             <a
                 href={href}
-                className="text-blue-600 dark:text-blue-500 hover:no-underline"
+                className="text-blue-600 hover:no-underline"
                 style={{
                     wordBreak: 'break-word',  // Ensures long links wrap to the next line
                     whiteSpace: 'normal'      // Prevents the link from stretching out horizontally
@@ -42,7 +42,7 @@ const CustomLink: React.FC<ICustomLinkProps> = ({href, children}) => {
     return (
         <a
             href={href} target="_blank" rel="noopener noreferrer"
-            className="text-blue-600 dark:text-blue-500 hover:no-underline"
+            className="text-blue-600 hover:no-underline"
             style={{
                 wordBreak: 'break-word',  // Ensures long links wrap to the next line
                 whiteSpace: 'normal'      // Prevents the link from stretching out horizontally

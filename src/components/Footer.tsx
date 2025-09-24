@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
 
         {/* Divider */}
         <div className="py-4 max-w-sm m-auto">
-          <hr className='border-gray-200 border dark:border-white' />
+          <hr className='border-gray-200 border' />
         </div>
 
         {/* Socials */}
@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
             href={YOUTUBE_LINK}
             title="Youtube"
             target='_blank'
-            className="inline-flex justify-center items-center w-10 h-10 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-hidden focus:ring-2 focus:ring-blue-100 focus:ring-offset-2 focus:ring-offset-white transition dark:text-gray-500 dark:hover:text-gray-200 dark:hover:bg-gray-800"
+            className="inline-flex justify-center items-center w-10 h-10 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-hidden focus:ring-2 focus:ring-blue-100 focus:ring-offset-2 focus:ring-offset-white transition"
           >
             <FiYoutube />
           </Link>
@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
             href={INSTAGRAM_LINK}
             title="Instagram"
             target='_blank'
-            className="inline-flex justify-center items-center w-10 h-10 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-hidden focus:ring-2 focus:ring-blue-100 focus:ring-offset-2 focus:ring-offset-white transition dark:text-gray-500 dark:hover:text-gray-200 dark:hover:bg-gray-800"
+            className="inline-flex justify-center items-center w-10 h-10 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-hidden focus:ring-2 focus:ring-blue-100 focus:ring-offset-2 focus:ring-offset-white transition"
           >
             <FiInstagram />
           </Link>
@@ -44,7 +44,7 @@ const Footer: React.FC = () => {
             href={GITHUB_LINK}
             title="Github"
             target='_blank'
-            className="inline-flex justify-center items-center w-10 h-10 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-hidden focus:ring-2 focus:ring-blue-100 focus:ring-offset-2 focus:ring-offset-white transition dark:text-gray-500 dark:hover:text-gray-200 dark:hover:bg-gray-800"
+            className="inline-flex justify-center items-center w-10 h-10 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-hidden focus:ring-2 focus:ring-blue-100 focus:ring-offset-2 focus:ring-offset-white transition"
           >
             <FiGithub />
           </Link>
@@ -52,7 +52,7 @@ const Footer: React.FC = () => {
             href={LINKEDIN_LINK}
             title="Linkedin"
             target='_blank'
-            className="inline-flex justify-center items-center w-10 h-10 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-hidden focus:ring-2 focus:ring-blue-100 focus:ring-offset-2 focus:ring-offset-white transition dark:text-gray-500 dark:hover:text-gray-200 dark:hover:bg-gray-800"
+            className="inline-flex justify-center items-center w-10 h-10 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-hidden focus:ring-2 focus:ring-blue-100 focus:ring-offset-2 focus:ring-offset-white transition"
           >
             <FiLinkedin />
           </Link>
@@ -60,7 +60,7 @@ const Footer: React.FC = () => {
             href={EMAIL_LINK}
             title="Email"
             target='_blank'
-            className="inline-flex justify-center items-center w-10 h-10 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-hidden focus:ring-2 focus:ring-blue-100 focus:ring-offset-2 focus:ring-offset-white transition dark:text-gray-500 dark:hover:text-gray-200 dark:hover:bg-gray-800"
+            className="inline-flex justify-center items-center w-10 h-10 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-hidden focus:ring-2 focus:ring-blue-100 focus:ring-offset-2 focus:ring-offset-white transition"
           >
             <FiMail />
           </Link>
