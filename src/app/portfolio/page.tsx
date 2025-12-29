@@ -143,8 +143,8 @@ const Hero = () => (
 
                 <div className="flex items-center md:items-end flex-col">
                     <Image
-                        src="/home/dharamsala_pic.webp"
-                        alt="Thösam in Dharamsala, India"
+                        src="/home/graduation_pic.webp"
+                        alt="EPFL Bachelor graduation"
                         width={0}
                         height={0}
                         sizes="100vw"
