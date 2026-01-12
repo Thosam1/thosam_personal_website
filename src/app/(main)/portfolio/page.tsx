@@ -1,23 +1,23 @@
 import {Wrapper} from '@/components/Wrapper';
-import softwareProjectsList from '../../../data/portfolio/projects/softwareProjectsList';
-import researchProjectsList from '../../../data/portfolio/projects/researchProjectsList';
+import softwareProjectsList from '../../../../data/portfolio/projects/softwareProjectsList';
+import researchProjectsList from '../../../../data/portfolio/projects/researchProjectsList';
 import Link from 'next/link';
 import Image from 'next/image'
 import {EMAIL_LINK, FULL_NAME} from '@/constants';
 import type {Metadata} from 'next';
 import ProjectCard from '@/components/ProjectCard';
-import BA1List from '../../../data/portfolio/education/BA1List';
+import BA1List from '../../../../data/portfolio/education/BA1List';
 import CourseCard from '@/components/CourseCard';
-import BA2List from '../../../data/portfolio/education/BA2List';
-import BA3List from '../../../data/portfolio/education/BA3List';
-import BA4List from '../../../data/portfolio/education/BA4List';
-import BA5List from '../../../data/portfolio/education/BA5List';
-import BA6List from '../../../data/portfolio/education/BA6List';
-import MA1List from '../../../data/portfolio/education/MA1List';
-import MA2List from "../../../data/portfolio/education/MA2List";
-import MA3List from "../../../data/portfolio/education/MA3List";
-import MA4List from "../../../data/portfolio/education/MA4List";
-import {adnovumInternship, privateTutor} from "../../../data/portfolio/worksList";
+import BA2List from '../../../../data/portfolio/education/BA2List';
+import BA3List from '../../../../data/portfolio/education/BA3List';
+import BA4List from '../../../../data/portfolio/education/BA4List';
+import BA5List from '../../../../data/portfolio/education/BA5List';
+import BA6List from '../../../../data/portfolio/education/BA6List';
+import MA1List from '../../../../data/portfolio/education/MA1List';
+import MA2List from "../../../../data/portfolio/education/MA2List";
+import MA3List from "../../../../data/portfolio/education/MA3List";
+import MA4List from "../../../../data/portfolio/education/MA4List";
+import {adnovumInternship, privateTutor} from "../../../../data/portfolio/worksList";
 import WorkCard from "@/components/WorkCard";
 
 const title = 'Portfolio | Thösam Norlha-Tsang'

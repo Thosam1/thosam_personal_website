@@ -1,9 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import Navbar from '@/components/Navbar/Navbar';
-import Footer from '@/components/Footer';
 import { FULL_NAME } from '@/constants';
-import ScrollToTopButton from '@/components/ScrollToTopButton';
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
 /* Default SEO */
@@ -28,7 +25,7 @@ export const metadata: Metadata = {
 	twitter: {
 		title,
 		description,
-		card: 'summary_large_image', // summary_large_image
+		card: 'summary_large_image',
 		images: [`${process.env.WEBSITE_URL}/website_thumbnail.png`]
 	},
 }
@@ -41,25 +38,8 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 		<body>
-		<Navbar/>
-		<main>
 			{children}
-		</main>
-		<ScrollToTopButton/>
-		<iframe
-			src="https://thosam1.substack.com/embed"
-			style={{
-				width: '100%',
-				height: '320px',
-				borderTop: '2px solid #EEE',
-				background: 'white',
-			}}
-			frameBorder={0}
-			scrolling="no"
-		>
-		</iframe>
-		<Footer/>
-		<SpeedInsights/>
+			<SpeedInsights/>
 		</body>
 		</html>
 	);

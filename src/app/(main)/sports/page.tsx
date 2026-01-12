@@ -2,7 +2,7 @@ import { Wrapper } from '@/components/Wrapper';
 import { FULL_NAME } from '@/constants';
 import type { Metadata } from 'next';
 
-import workoutList from '../../../data/sports/workoutsList';
+import workoutList from '../../../../data/sports/workoutsList';
 import { Divider } from '@/components/Divider';
 import AnimatedCounter from '@/components/AnimatedCounter';
 import Workouts from '@/components/Workouts';
