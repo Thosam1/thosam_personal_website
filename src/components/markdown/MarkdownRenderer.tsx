@@ -51,7 +51,7 @@ let components = {
 
 export const MarkdownRenderer = ({content}: MarkdownRendererProps) => {
     return (
-        <div className="prose prose-pre:none max-w-none pt-4 leading-10 bg-white">
+        <div className="prose dark:prose-invert prose-pre:none max-w-none pt-4 leading-10 bg-bg-base">
             <CustomMarkdown
                 remarkPlugins={[[remarkGfm], [remarkToc, {heading: "Table of contents", maxDepth: 3}]]}
                 components={{...components}}

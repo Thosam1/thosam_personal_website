@@ -65,9 +65,9 @@ const Blog: React.FC<IBlogProps> = async (props: IBlogProps) => {
 					<div className="items-center flex flex-wrap">
 						<div className="w-full ml-auto mr-auto text-left no-underline">
 							<div className="text-center">
-								<h1 className="text-md text-gray-700 py-4">
+								<h1 className="text-md text-text-secondary py-4">
 								</h1>
-								<h1 className="text-md text-gray-700 py-4">
+								<h1 className="text-md text-text-secondary py-4">
 									{format(parseISO(post.data.publishedAt), 'MMMM dd, yyyy')}
 									{'   -   '}
 									{readingTime(post.content).text}

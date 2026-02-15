@@ -49,10 +49,10 @@ const Heading = () => (
 	<div className="py-6 flex items-center">
 		<Wrapper>
 			<div className="text-center">
-				<h1 className="font-semibold text-4xl">
+				<h1 className="font-semibold text-4xl text-text-primary">
 					My Workout Journal 🏋️‍♂️
 				</h1>
-				<p className="mt-4 text-2xl py-4">
+				<p className="mt-4 text-2xl py-4 text-text-primary">
 					Tracking my fitness journey !
 				</p>
 				<p className="my-4">Currently, there are {' '}<span className="text-xl font-semibold"><AnimatedCounter

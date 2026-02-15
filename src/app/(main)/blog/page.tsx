@@ -66,10 +66,10 @@ const Heading = () => (
 	<div className="py-6 flex items-center">
 		<Wrapper>
 			<div className="text-center">
-				<h1 className="font-semibold text-4xl">
+				<h1 className="font-semibold text-4xl text-text-primary">
 					My Blog 📝
 				</h1>
-				<p className="mt-4 text-2xl py-4">
+				<p className="mt-4 text-2xl py-4 text-text-primary">
 					Here you can read my articles, enjoy ! 🙂
 				</p>
 			</div>

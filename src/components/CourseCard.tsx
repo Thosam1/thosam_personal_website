@@ -40,13 +40,13 @@ export default function CourseCard({ course }: Readonly<{ course: ICourse }>) {
 		>
 			<motion.div
 				className={`max-w-(--breakpoint-sm) items-center border rounded-xl p-4 border-l-8 ${getBorderColor(
-					course.type)} shadow-md`}
+					course.type)} shadow-md bg-bg-elevated`}
 				whileHover={{ y: -4 }}
 			>
 				<div className="flex flex-col w-full">
-					<p className="font-semibold text-slate-700">{course.name}</p>
+					<p className="font-semibold text-text-secondary">{course.name}</p>
 					<div className="flex flex-row justify-between">
-						<p className="text-slate-500">{course.code} · {course.credits} credits</p>
+						<p className="text-text-subdued">{course.code} · {course.credits} credits</p>
 						<CustomLink href={course.link}>Course Link</CustomLink>
 					</div>
 				</div>

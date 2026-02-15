@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { FULL_NAME } from '@/constants';
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { ThemeProvider } from '@/components/ThemeProvider'
 
 /* Default SEO */
 const title = 'Home | Thösam Norlha-Tsang'
@@ -36,9 +37,11 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
+		<html lang="en" suppressHydrationWarning>
 		<body>
-			{children}
+			<ThemeProvider>
+				{children}
+			</ThemeProvider>
 			<SpeedInsights/>
 		</body>
 		</html>

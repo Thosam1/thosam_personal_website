@@ -6,16 +6,29 @@ import { AnimatePresence, motion } from 'framer-motion';
 import styles from './navbar.module.css'
 import { fadeUpVariant } from '@/animations/animations';
 import Image from "next/image";
+import { useTheme } from 'next-themes';
+import { FiSun, FiMoon } from 'react-icons/fi';
 
 const Navbar: React.FC = () => {
 	const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
+	const [mounted, setMounted] = useState(false);
+	const { theme, setTheme } = useTheme();
+
 	const toggleNav = () => {
 		setIsNavOpen(!isNavOpen);
 	};
 
 	useEffect(() => {
+		setMounted(true);
+	}, []);
+
+	useEffect(() => {
 		document.body.style.overflow = isNavOpen ? "hidden" : "unset";
 	}, [isNavOpen]);
+
+	const toggleTheme = () => {
+		setTheme(theme === 'dark' ? 'light' : 'dark');
+	};
 
 	return (
 		<header className={`flex justify-center w-full top-0`}>
@@ -29,44 +42,66 @@ const Navbar: React.FC = () => {
 					width={180}
 					height={0}
 					priority
+					className="dark:invert"
 				/>
             </div>
 				</Link>
 
 				{/* What we see on larger screen */}
-				<div className="lg:flex hidden gap-12 text-md">
+				<div className="lg:flex hidden gap-12 text-md items-center">
 					{NAV_LINKS.map((link) => (
 						<Link href={link.href} key={link.key}
-							  className="font-medium hover:text-gray-600 py-3 md:py-6">
+							  className="font-medium hover:text-text-subdued py-3 md:py-6">
 							{link.label}
 						</Link>
 					))}
+					{/* Theme toggle - desktop */}
+					{mounted && (
+						<button
+							onClick={toggleTheme}
+							className="p-2 rounded-lg hover:bg-bg-highlight transition-colors"
+							aria-label="Toggle dark mode"
+						>
+							{theme === 'dark' ? <FiSun className="text-xl" /> : <FiMoon className="text-xl" />}
+						</button>
+					)}
 				</div>
 
-				{/* Navbar button */}
-				{/* Check out globals.css for hamburger transition */}
-				<input
-					type="checkbox"
-					name="hamburger"
-					id="hamburger"
-					className="peer"
-					hidden
-					checked={isNavOpen}
-					onChange={toggleNav}
-				/>
-				<label
-					htmlFor="hamburger"
-					className={`peer-checked:hamburger block z-50 p-6 -mr-6 cursor-pointer lg:hidden relative`}
-				>
-					<div
-						// aria-hidden="true"
-						className={`m-auto h-0.5 w-6 rounded-xs bg-black transition duration-300`}
-					></div>
-					<div
-						// aria-hidden="true"
-						className={`m-auto mt-2 h-0.5 w-6 rounded-xs bg-black transition duration-300`}
-					></div>
-				</label>
+				<div className="flex items-center gap-2 lg:hidden">
+					{/* Theme toggle - mobile */}
+					{mounted && (
+						<button
+							onClick={toggleTheme}
+							className="p-2 rounded-lg hover:bg-bg-highlight transition-colors"
+							aria-label="Toggle dark mode"
+						>
+							{theme === 'dark' ? <FiSun className="text-xl" /> : <FiMoon className="text-xl" />}
+						</button>
+					)}
+
+					{/* Navbar button */}
+					{/* Check out globals.css for hamburger transition */}
+					<input
+						type="checkbox"
+						name="hamburger"
+						id="hamburger"
+						className="peer"
+						hidden
+						checked={isNavOpen}
+						onChange={toggleNav}
+					/>
+					<label
+						htmlFor="hamburger"
+						className={`peer-checked:hamburger block z-50 p-6 -mr-6 cursor-pointer relative`}
+					>
+						<div
+							className={`m-auto h-0.5 w-6 rounded-xs bg-text-primary transition duration-300`}
+						></div>
+						<div
+							className={`m-auto mt-2 h-0.5 w-6 rounded-xs bg-text-primary transition duration-300`}
+						></div>
+					</label>
+				</div>
 			</nav>
 
 			{/* Mobile Navbar */}
@@ -85,7 +120,7 @@ const Navbar: React.FC = () => {
 						}}
 					>
 						<div
-							className="fixed left-0 top-0 w-full h-screen origin-top bg-white text-black py-8 px-8 z-10">
+							className="fixed left-0 top-0 w-full h-dvh origin-top bg-bg-base text-text-primary py-8 px-8 z-10">
 							<div className="flex h-full flex-col">
 								<div
 									className="flex justify-center flex-col items-center h-full">
@@ -117,5 +152,3 @@ const Navbar: React.FC = () => {
 };
 
 export default Navbar;
-
-
