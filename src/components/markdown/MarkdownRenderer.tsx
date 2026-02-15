@@ -28,7 +28,7 @@ let components = {
     h3: ({...props}) => <h3 id={generateSlug(props.children)}
                             className="font-semibold" {...props}>{props.children}</h3>,
     //p: ({ ...props }) => <p className="text-md " {...props} />,
-    img: ({src, alt}: { src?: string; alt?: string }) => {
+    img: ({src, alt}: { src?: string | Blob; alt?: string }) => {
         // Parse custom alt syntax like "width=300 height=200"
         const [altText, width, height] = (alt || "").split("|");
 

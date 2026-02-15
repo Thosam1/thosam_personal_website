@@ -34,7 +34,7 @@ export default function MainLayout({
           💌 Subscribe to my Newsletter
         </h3>
         <p className="text-text-secondary mb-6 text-center max-w-md">
-          Sign up for my monthly newsletter — interesting ideas and what I've been working on
+          Sign up for my monthly newsletter — interesting ideas and what I&apos;ve been working on
         </p>
         <a
           href="https://thosam1.substack.com"

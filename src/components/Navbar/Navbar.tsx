@@ -19,7 +19,7 @@ const Navbar: React.FC = () => {
 	};
 
 	useEffect(() => {
-		setMounted(true);
+		setMounted(true); // eslint-disable-line react-hooks/set-state-in-effect -- Standard hydration guard for next-themes
 	}, []);
 
 	useEffect(() => {
