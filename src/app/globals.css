@@ -1,26 +1,58 @@
 @import 'tailwindcss';
 @plugin "@tailwindcss/typography";
 
-/*@config "../../tailwind.config.js";*/
+/* Class-based dark mode for next-themes (needed for one-off dark: overrides like dark:invert) */
+@custom-variant dark (&:where(.dark, .dark *));
 
-/*
-  The default border color has changed to `currentcolor` in Tailwind CSS v4,
-  so we've added these compatibility styles to make sure everything still
-  looks the same as it did with Tailwind CSS v3.
+/* Semantic color tokens — Tailwind generates utility classes from these */
+@theme {
+  --color-bg-base: var(--bg-base);
+  --color-bg-elevated: var(--bg-elevated);
+  --color-bg-highlight: var(--bg-highlight);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-subdued: var(--text-subdued);
+  --color-border-default: var(--border-default);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+}
 
-  If we ever want to remove these styles, we need to add an explicit border
-  color utility to any element that depends on these defaults.
-*/
+/* Light mode values */
+:root {
+  --bg-base: #FFFFFF;
+  --bg-elevated: #FFFFFF;
+  --bg-highlight: #F3F4F6;
+  --text-primary: #1F2937;
+  --text-secondary: #4B5563;
+  --text-subdued: #6B7280;
+  --border-default: #E5E7EB;
+  --accent: #2563EB;
+  --accent-hover: #1D4ED8;
+}
+
+/* Dark mode values (Spotify-inspired) */
+.dark {
+  --bg-base: #121212;
+  --bg-elevated: #181818;
+  --bg-highlight: #282828;
+  --text-primary: #FFFFFF;
+  --text-secondary: #B3B3B3;
+  --text-subdued: #6A6A6A;
+  --border-default: #282828;
+  --accent: #3B82F6;
+  --accent-hover: #60A5FA;
+}
+
+/* Default border color compatibility (Tailwind v4 changed default to currentcolor) */
 @layer base {
   *,
   ::after,
   ::before,
   ::backdrop,
   ::file-selector-button {
-    border-color: var(--color-gray-200, currentcolor);
+    border-color: var(--border-default);
   }
 }
-
 
 /* For the Navbar */
 @utility hamburger {
@@ -35,4 +67,8 @@
 
 html {
     scroll-behavior: smooth;
+}
+
+body {
+    @apply bg-bg-base text-text-secondary;
 }

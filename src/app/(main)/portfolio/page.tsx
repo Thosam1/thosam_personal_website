@@ -67,7 +67,7 @@ const Hero = () => (
             <div className="items-center md:grid md:grid-cols-2 md:gap-12 xl:gap-32">
                 <div className="space-y-6 sm:space-y-8">
                     <div className="space-y-6">
-                        <h2 className="font-bold text-3xl lg:text-4xl text-gray-800">
+                        <h2 className="font-bold text-3xl lg:text-4xl text-text-primary">
                             Hi everyone 👋, I&apos;m Thösam
                         </h2>
 
@@ -128,13 +128,13 @@ const Hero = () => (
                               target="_blank"
                               style={{marginRight: '16px'}}>
                             <button type="button"
-                                    className="py-2 px-2 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-500 shadow-xs hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none">
+                                    className="py-2 px-2 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-border-default bg-bg-elevated text-text-secondary shadow-xs hover:bg-bg-highlight disabled:opacity-50 disabled:pointer-events-none">
                                 Download my CV
                             </button>
                         </Link>
                         <Link href={EMAIL_LINK}>
                             <button type="button"
-                                    className="py-2 px-2 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-500 shadow-xs hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none">
+                                    className="py-2 px-2 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-border-default bg-bg-elevated text-text-secondary shadow-xs hover:bg-bg-highlight disabled:opacity-50 disabled:pointer-events-none">
                                 Contact me
                             </button>
                         </Link>
@@ -148,10 +148,11 @@ const Hero = () => (
                         width={0}
                         height={0}
                         sizes="100vw"
-                        style={{width: 'auto', maxHeight: '35rem', boxShadow: '0 4px 10px rgba(0, 0, 0, 0.2)'}}
+                        className="shadow-lg"
+                        style={{width: 'auto', maxHeight: '35rem'}}
                         priority={true}
                     />
-                    <p className="py-3 font-light text-sm text-zinc-600">Thösam Norlha-Tsang 2024</p>
+                    <p className="py-3 font-light text-sm text-text-secondary">Thösam Norlha-Tsang 2024</p>
                 </div>
             </div>
         </div>
@@ -184,7 +185,7 @@ const Hero = () => (
 
 const WorkExperience = () => (
     <Wrapper>
-        <h1 className="font-semibold text-2xl py-6 md:text-center md:text-4xl md:py-16">
+        <h1 className="font-semibold text-2xl py-6 md:text-center md:text-4xl md:py-16 text-text-primary">
             Work Experience
         </h1>
         <div className="flex justify-center">
@@ -198,7 +199,7 @@ const WorkExperience = () => (
 
 const ResearchProjects = () => (
     <Wrapper>
-        <h1 className="font-semibold text-2xl py-6 md:text-center md:text-4xl md:py-16">
+        <h1 className="font-semibold text-2xl py-6 md:text-center md:text-4xl md:py-16 text-text-primary">
             Research & AI/ML Experience
         </h1>
         <div className="flex justify-center">
@@ -215,7 +216,7 @@ const ResearchProjects = () => (
 
 const SoftwareProjects = () => (
     <Wrapper>
-        <h1 className="font-semibold text-2xl py-6 md:text-center md:text-4xl md:py-16">
+        <h1 className="font-semibold text-2xl py-6 md:text-center md:text-4xl md:py-16 text-text-primary">
             Software Engineering Experience
         </h1>
         <div className="flex justify-center">
@@ -233,58 +234,58 @@ const SoftwareProjects = () => (
 const Education = () => (
     <Wrapper>
         <div className="md:text-center">
-            <h1 className="font-semibold text-4xl py-4">
+            <h1 className="font-semibold text-4xl py-4 text-text-primary">
                 Education
             </h1>
-            <h1 className="font-semibold text-2xl py-4">
+            <h1 className="font-semibold text-2xl py-4 text-text-primary">
                 EPFL - Bachelor of Computer Science
             </h1>
-            <h1 className="font-semibold text-xl py-6">
+            <h1 className="font-semibold text-xl py-6 text-text-primary">
                 EPFL - Year 1 - Semester 1
             </h1>
             <div className="grid md:grid-cols-2 gap-6 text-left pb-12">
                 {BA1List().map((course) => <CourseCard course={course} key={course.code}/>)}
             </div>
 
-            <h1 className="font-semibold text-xl py-6">
+            <h1 className="font-semibold text-xl py-6 text-text-primary">
                 EPFL - Year 1 - Semester 2
             </h1>
             <div className="grid md:grid-cols-2 gap-6 text-left pb-12">
                 {BA2List().map((course) => <CourseCard course={course} key={course.code}/>)}
             </div>
 
-            <h1 className="font-semibold text-xl py-6">
+            <h1 className="font-semibold text-xl py-6 text-text-primary">
                 EPFL - Year 2 - Semester 3
             </h1>
             <div className="grid md:grid-cols-2 gap-6 text-left pb-12">
                 {BA3List().map((course) => <CourseCard course={course} key={course.code}/>)}
             </div>
 
-            <h1 className="font-semibold text-xl py-6">
+            <h1 className="font-semibold text-xl py-6 text-text-primary">
                 EPFL - Year 2 - Semester 4
             </h1>
             <div className="grid md:grid-cols-2 gap-6 text-left pb-12">
                 {BA4List().map((course) => <CourseCard course={course} key={course.code}/>)}
             </div>
 
-            <h1 className="font-semibold text-xl py-6">
+            <h1 className="font-semibold text-xl py-6 text-text-primary">
                 EPFL - Year 3 - Semester 5
             </h1>
             <div className="grid md:grid-cols-2 gap-6 text-left pb-12">
                 {BA5List().map((course) => <CourseCard course={course} key={course.code}/>)}
             </div>
 
-            <h1 className="font-semibold text-xl py-6">
+            <h1 className="font-semibold text-xl py-6 text-text-primary">
                 EPFL - Year 3 - Semester 6
             </h1>
             <div className="grid md:grid-cols-2 gap-6 text-left pb-12">
                 {BA6List().map((course) => <CourseCard course={course} key={course.code}/>)}
             </div>
 
-            <h1 className="font-semibold text-2xl py-4 pt-12">
+            <h1 className="font-semibold text-2xl py-4 pt-12 text-text-primary">
                 ETHZ - Master of Computer Science
             </h1>
-            <h1 className="font-semibold text-xl py-6">
+            <h1 className="font-semibold text-xl py-6 text-text-primary">
                 ETHZ - Year 1 - Semester 1
             </h1>
             <div className="grid md:grid-cols-2 gap-6 text-left pb-12">
@@ -300,21 +301,21 @@ const Education = () => (
             {/*</div>*/}
             {/*</Wrapper>*/}
 
-            <h1 className="font-semibold text-xl py-6">
+            <h1 className="font-semibold text-xl py-6 text-text-primary">
                 ETHZ - Year 2 - Semester 2
             </h1>
             <div className="grid md:grid-cols-2 gap-6 text-left pb-12">
                 {MA2List().map((course) => <CourseCard course={course} key={course.code}/>)}
             </div>
 
-            <h1 className="font-semibold text-xl py-6">
+            <h1 className="font-semibold text-xl py-6 text-text-primary">
                 ETHZ - Year 2 - Semester 3
             </h1>
             <div className="grid md:grid-cols-2 gap-6 text-left pb-12">
                 {MA3List().map((course) => <CourseCard course={course} key={course.code}/>)}
             </div>
 
-            <h1 className="font-semibold text-xl py-6">
+            <h1 className="font-semibold text-xl py-6 text-text-primary">
                 ETHZ - Year 3 - Semester 4
             </h1>
             <div className="grid md:grid-cols-2 gap-6 text-left pb-12">

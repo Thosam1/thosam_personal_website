@@ -77,7 +77,7 @@ const featuredCard = {
 
 export default function LinksPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-bg-base">
       <div className="container max-w-[600px] mx-auto px-8 pt-16 pb-8">
         <ProfileSection />
         <SocialRow />
@@ -100,18 +100,18 @@ const ProfileSection = () => {
           alt={profileData.name}
           width={120}
           height={120}
-          className="rounded-full border-4 border-gray-100 shadow-md"
+          className="rounded-full border-4 border-border-default shadow-md"
           priority
         />
       </div>
 
       {/* Name - responsive font size */}
-      <h1 className="font-semibold text-3xl md:text-4xl text-gray-800">
+      <h1 className="font-semibold text-3xl md:text-4xl text-text-primary">
         {profileData.name}
       </h1>
 
       {/* Bio */}
-      <h2 className="font-light text-lg text-gray-500 leading-loose">
+      <h2 className="font-light text-lg text-text-subdued leading-loose">
         {profileData.bio}
       </h2>
     </div>
@@ -129,7 +129,7 @@ const SocialRow = () => {
             href={social.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex justify-center items-center w-12 h-12 text-center text-gray-500 hover:bg-gray-100 rounded-full transition-all duration-200"
+            className="inline-flex justify-center items-center w-12 h-12 text-center text-text-subdued hover:bg-bg-highlight rounded-full transition-all duration-200"
           >
             <IconComponent className="text-xl" />
           </Link>
@@ -158,29 +158,29 @@ const FeaturedCard = () => {
             stiffness: 400,
             damping: 25
           }}
-          className="w-full p-6 rounded-lg border-2 border-gray-200 bg-gradient-to-br from-blue-50 to-white shadow-md hover:shadow-lg"
+          className="w-full p-6 rounded-lg border-2 border-border-default bg-gradient-to-br from-blue-50 dark:from-bg-elevated to-bg-base shadow-md hover:shadow-lg"
         >
           <div className="flex items-start gap-4">
             {/* Icon */}
-            <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-blue-100">
-              <IconComponent className="text-2xl text-blue-600" />
+            <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-full bg-blue-100 dark:bg-bg-highlight">
+              <IconComponent className="text-2xl text-accent" />
             </div>
 
             {/* Content */}
             <div className="flex-1">
-              <div className="text-xs uppercase tracking-wide text-blue-600 font-semibold mb-1">
+              <div className="text-xs uppercase tracking-wide text-accent font-semibold mb-1">
                 {featuredCard.title}
               </div>
-              <h3 className="font-bold text-xl text-gray-800 mb-2">
+              <h3 className="font-bold text-xl text-text-primary mb-2">
                 {featuredCard.subtitle}
               </h3>
-              <p className="font-light text-gray-600 leading-relaxed">
+              <p className="font-light text-text-subdued leading-relaxed">
                 {featuredCard.description}
               </p>
             </div>
 
             {/* Arrow indicator - rotated 45 degrees */}
-            <FiArrowRight className="flex-shrink-0 text-xl text-gray-400 rotate-[-45deg]" />
+            <FiArrowRight className="flex-shrink-0 text-xl text-text-subdued rotate-[-45deg]" />
           </div>
         </motion.div>
       </Link>
@@ -219,21 +219,21 @@ const LinksSection = () => {
                   stiffness: 400,
                   damping: 25
                 }}
-                className="w-full py-4 px-6 flex items-center justify-between text-left rounded-lg border border-gray-200 bg-white text-gray-800 shadow-xs hover:shadow-md hover:bg-gray-50"
+                className="w-full py-4 px-6 flex items-center justify-between text-left rounded-lg border border-border-default bg-bg-elevated text-text-primary shadow-xs hover:shadow-md hover:bg-bg-highlight"
               >
                 <div className="flex items-center gap-4">
                   {/* Optional left icon */}
                   {IconComponent && (
-                    <IconComponent className="text-xl text-gray-500 flex-shrink-0" />
+                    <IconComponent className="text-xl text-text-subdued flex-shrink-0" />
                   )}
                   <div>
                     <div className="font-semibold text-lg">{link.title}</div>
-                    <div className="font-light text-sm text-gray-500">{link.subtitle}</div>
+                    <div className="font-light text-sm text-text-subdued">{link.subtitle}</div>
                   </div>
                 </div>
 
                 {/* Right arrow - rotated 45 degrees */}
-                <FiArrowRight className="text-xl text-gray-400 flex-shrink-0 rotate-[-45deg]" />
+                <FiArrowRight className="text-xl text-text-subdued flex-shrink-0 rotate-[-45deg]" />
               </motion.button>
             </Link>
           </motion.div>

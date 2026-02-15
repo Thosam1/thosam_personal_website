@@ -17,7 +17,7 @@ export default function WorkCard({work}: Readonly<{ work: IWork }>) {
             variants={fadeUpVariant(0.2)}
         >
             <motion.div
-                className="max-w-full rounded-xs overflow-hidden shadow-md"
+                className="max-w-full rounded-xs overflow-hidden shadow-md bg-bg-elevated"
                 whileHover={{y: -4}}
             >
                 <Image
@@ -29,9 +29,9 @@ export default function WorkCard({work}: Readonly<{ work: IWork }>) {
                     style={{width: '100%', height: 'auto'}} // optional
                 />
                 <div className="px-6 py-4">
-                    <div className="font-bold text-xl mb-2">{work.title}</div>
-                    <p className="font-bold text-l leading-loose">{work.dates}</p>
-                    <p className="text-gray-700 font-light leading-loose">{work.description}</p>
+                    <div className="font-bold text-xl mb-2 text-text-primary">{work.title}</div>
+                    <p className="font-bold text-l leading-loose text-text-primary">{work.dates}</p>
+                    <p className="text-text-secondary font-light leading-loose">{work.description}</p>
                     <div className="pt-4 flex flex-row gap-5">
                         {work.blogLink !== '' &&
                             <CustomLink href={work.blogLink}>Read blog post</CustomLink>

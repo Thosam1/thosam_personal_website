@@ -39,10 +39,10 @@ const Newsletter: React.FC = () => {
 
 	return (
 		<div className="w-full flex justify-center text-center py-16">
-			<div className="max-w-(--breakpoint-sm) rounded-xs overflow-hidden shadow-md">
+			<div className="max-w-(--breakpoint-sm) rounded-xs overflow-hidden shadow-md bg-bg-elevated">
 				<div className="px-6 py-4">
 					<div className="font-bold text-2xl mb-2">💌 Subscribe to my Newsletter</div>
-					<p className="text-gray-700 text-base">Sign up for my monthly newsletter, I will send you interesting ideas and what I have been working on 🙂</p>
+					<p className="text-text-secondary text-base">Sign up for my monthly newsletter, I will send you interesting ideas and what I have been working on 🙂</p>
 					<form onSubmit={handleSubmit}>
 						<div className="mt-4">
 							<input
@@ -50,7 +50,7 @@ const Newsletter: React.FC = () => {
 								value={email}
 								onChange={handleEmailChange}
 								placeholder="Enter your email address"
-								className={`border border-gray-400 rounded-xs px-3 py-2 w-full ${isValid ? '' : 'border-red-500'}`}
+								className={`border border-border-default bg-bg-base text-text-primary rounded-xs px-3 py-2 w-full ${isValid ? '' : 'border-red-500'}`}
 								disabled={isSubmitting}
 							/>
 							{!isValid && <p className="text-red-500 text-xs italic">Please enter a valid email address</p>}

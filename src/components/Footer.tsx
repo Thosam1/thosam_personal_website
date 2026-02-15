@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
 
         {/* Divider */}
         <div className="py-4 max-w-sm m-auto">
-          <hr className='border-gray-200 border' />
+          <hr className='border-border-default border' />
         </div>
 
         {/* Socials */}
@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
             href={YOUTUBE_LINK}
             title="Youtube"
             target='_blank'
-            className="inline-flex justify-center items-center w-10 h-10 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-hidden focus:ring-2 focus:ring-blue-100 focus:ring-offset-2 focus:ring-offset-white transition"
+            className="inline-flex justify-center items-center w-10 h-10 text-center text-text-subdued hover:bg-bg-highlight rounded-full focus:outline-hidden focus:ring-2 focus:ring-blue-100 dark:focus:ring-blue-900 focus:ring-offset-2 focus:ring-offset-bg-base transition"
           >
             <FiYoutube />
           </Link>
@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
             href={INSTAGRAM_LINK}
             title="Instagram"
             target='_blank'
-            className="inline-flex justify-center items-center w-10 h-10 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-hidden focus:ring-2 focus:ring-blue-100 focus:ring-offset-2 focus:ring-offset-white transition"
+            className="inline-flex justify-center items-center w-10 h-10 text-center text-text-subdued hover:bg-bg-highlight rounded-full focus:outline-hidden focus:ring-2 focus:ring-blue-100 dark:focus:ring-blue-900 focus:ring-offset-2 focus:ring-offset-bg-base transition"
           >
             <FiInstagram />
           </Link>
@@ -44,7 +44,7 @@ const Footer: React.FC = () => {
             href={GITHUB_LINK}
             title="Github"
             target='_blank'
-            className="inline-flex justify-center items-center w-10 h-10 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-hidden focus:ring-2 focus:ring-blue-100 focus:ring-offset-2 focus:ring-offset-white transition"
+            className="inline-flex justify-center items-center w-10 h-10 text-center text-text-subdued hover:bg-bg-highlight rounded-full focus:outline-hidden focus:ring-2 focus:ring-blue-100 dark:focus:ring-blue-900 focus:ring-offset-2 focus:ring-offset-bg-base transition"
           >
             <FiGithub />
           </Link>
@@ -52,7 +52,7 @@ const Footer: React.FC = () => {
             href={LINKEDIN_LINK}
             title="Linkedin"
             target='_blank'
-            className="inline-flex justify-center items-center w-10 h-10 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-hidden focus:ring-2 focus:ring-blue-100 focus:ring-offset-2 focus:ring-offset-white transition"
+            className="inline-flex justify-center items-center w-10 h-10 text-center text-text-subdued hover:bg-bg-highlight rounded-full focus:outline-hidden focus:ring-2 focus:ring-blue-100 dark:focus:ring-blue-900 focus:ring-offset-2 focus:ring-offset-bg-base transition"
           >
             <FiLinkedin />
           </Link>
@@ -60,15 +60,15 @@ const Footer: React.FC = () => {
             href={EMAIL_LINK}
             title="Email"
             target='_blank'
-            className="inline-flex justify-center items-center w-10 h-10 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-hidden focus:ring-2 focus:ring-blue-100 focus:ring-offset-2 focus:ring-offset-white transition"
+            className="inline-flex justify-center items-center w-10 h-10 text-center text-text-subdued hover:bg-bg-highlight rounded-full focus:outline-hidden focus:ring-2 focus:ring-blue-100 dark:focus:ring-blue-900 focus:ring-offset-2 focus:ring-offset-bg-base transition"
           >
             <FiMail />
           </Link>
         </div>
 
         <div className="mt-3">
-          <p className="text-gray-500">{FULL_NAME}</p>
-          <p className="text-gray-500">© 2024. All rights reserved.</p>
+          <p className="text-text-subdued">{FULL_NAME}</p>
+          <p className="text-text-subdued">© 2024. All rights reserved.</p>
         </div>
       </div>
     </footer>
