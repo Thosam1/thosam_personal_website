@@ -72,7 +72,7 @@ const Blog: React.FC<IBlogProps> = async (props: IBlogProps) => {
 									{'   -   '}
 									{readingTime(post.content).text}
 								</h1>
-								<h1 className="text-4xl font-semibold pb-14">
+								<h1 className="text-4xl font-semibold pb-14 text-text-primary">
 									{post.data.title}
 								</h1>
 							</div>
