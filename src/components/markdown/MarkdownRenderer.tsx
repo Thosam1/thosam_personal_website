@@ -29,12 +29,22 @@ let components = {
                             className="font-semibold" {...props}>{props.children}</h3>,
     //p: ({ ...props }) => <p className="text-md " {...props} />,
     img: ({src, alt}: { src?: string | Blob; alt?: string }) => {
+        // Resolve relative paths to absolute /blog/ paths so images load
+        // correctly during client-side navigation (not just on full reload)
+        let resolvedSrc = src;
+        if (typeof resolvedSrc === 'string' && resolvedSrc.startsWith('./')) {
+            const relPath = resolvedSrc.slice(2);
+            resolvedSrc = relPath.startsWith('blog/')
+                ? `/${relPath}`
+                : `/blog/${relPath}`;
+        }
+
         // Parse custom alt syntax like "width=300 height=200"
         const [altText, width, height] = (alt || "").split("|");
 
         return (
             <img
-                src={src}
+                src={resolvedSrc}
                 alt={altText?.trim()}
                 style={{
                     width: width ? `${width.trim()}px` : "auto",
