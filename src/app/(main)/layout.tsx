@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar/Navbar';
 import Footer from '@/components/Footer';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
+import ChatBubble from '@/components/Chat/ChatBubble';
 
 export default function MainLayout({
   children,
@@ -14,6 +15,7 @@ export default function MainLayout({
         {children}
       </main>
       <ScrollToTopButton/>
+      <ChatBubble/>
       {/* Light mode: Substack iframe */}
       <div className="border-t-2 border-border-default bg-bg-base dark:hidden">
         <iframe
