@@ -1,0 +1,69 @@
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+language: en-US
+
+reviews:
+  profile: "chill"
+  auto_review:
+    enabled: true
+    drafts: false
+    base_branches:
+      - main
+  path_filters:
+    - "!public/**"
+    - "!data/blog/**"
+    - "!**/*.png"
+    - "!**/*.jpg"
+    - "!**/*.jpeg"
+    - "!**/*.gif"
+    - "!**/*.svg"
+    - "!**/*.ico"
+    - "!**/*.webp"
+    - "!**/*.md"
+    - "!**/*.json"
+  path_instructions:
+    - path: "src/app/**/page.tsx"
+      instructions: >
+        Page components must export a generateMetadata() function for SEO.
+        Use Framer Motion fadeUpVariant for entrance animations.
+        Mark interactive components with 'use client'.
+    - path: "src/app/**/layout.tsx"
+      instructions: >
+        Layout files define route group structure. (main) includes Navbar,
+        Footer, Newsletter, ScrollToTopButton. (standalone) is minimal.
+    - path: "src/components/**/*.tsx"
+      instructions: >
+        Components use Tailwind CSS v4 with semantic color tokens defined
+        in globals.css (e.g. --color-primary, --color-background). Use
+        Framer Motion for animations. Mark interactive components with
+        'use client'.
+    - path: "src/utils/**/*.ts"
+      instructions: >
+        Utility files are server-side by default. Keep pure functions.
+        Shared interfaces live in src/utils/interfaces.ts.
+    - path: "data/portfolio/**/*.ts"
+      instructions: >
+        Portfolio data files export typed arrays/objects consumed by
+        portfolio page components. Keep data-only, no React imports.
+    - path: "src/app/globals.css"
+      instructions: >
+        This is the Tailwind CSS v4 entry point. Custom theme tokens are
+        defined here. Prefer semantic color tokens over raw hex values.
+
+tools:
+  eslint:
+    enabled: true
+  markdownlint:
+    enabled: true
+  gitleaks:
+    enabled: true
+  ast-grep:
+    enabled: true
+
+chat:
+  auto_reply: true
+
+knowledge_base:
+  learnings:
+    scope: auto
+
+early_access: true
