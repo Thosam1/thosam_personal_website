@@ -49,3 +49,11 @@ All content is file-based with no external CMS:
 - SEO: Pages export `generateMetadata()` for dynamic Open Graph/Twitter meta
 - Blog markdown rendered with `react-markdown` + `remark-gfm`, code blocks via `react-syntax-highlighter`
 - Environment variable `WEBSITE_URL` used for sitemap generation
+
+## Code Review
+
+- **CodeRabbit** — AI code review via GitHub App, configured in `.coderabbit.yaml`
+  - Automatically reviews all non-draft PRs (including Dependabot updates)
+  - Uses "chill" profile; ESLint, markdownlint, and Gitleaks tools enabled
+  - Skips static assets, blog content, and binary files
+- **CodeRabbit CLI** — Available locally via `coderabbit` for on-demand reviews before pushing
