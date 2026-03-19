@@ -1,9 +1,8 @@
 'use client'
-import React from 'react';
+import React, { useRef } from 'react';
 import { CourseType, ICourse } from '../../data/portfolio/education/interfaces';
 import CustomLink from '@/components/markdown/CustomLink';
-import { motion } from 'framer-motion';
-import { fadeUpVariant } from '@/animations/animations';
+import { useGSAP, fadeUp } from '@/animations/gsapAnimations';
 
 const getBorderColor = (type: CourseType): string => {
 	switch (type) {
@@ -28,20 +27,18 @@ const getBorderColor = (type: CourseType): string => {
 	}
 };
 
-export default function CourseCard({ course }: Readonly<{ course: ICourse }>) {
+export default function CourseCard({ course, index = 0 }: Readonly<{ course: ICourse; index?: number }>) {
+	const ref = useRef<HTMLDivElement>(null)
+
+	useGSAP(() => {
+		if (ref.current) fadeUp(ref.current, { delay: 0.1 + index * 0.08 })
+	}, { scope: ref })
+
 	return (
-		<motion.div
-			initial="initial"
-			whileInView="animate"
-			viewport={{
-				once: true,
-			}}
-			variants={fadeUpVariant(0.2)}
-		>
-			<motion.div
+		<div ref={ref} style={{ opacity: 0 }}>
+			<div
 				className={`max-w-(--breakpoint-sm) items-center border rounded-xl p-4 border-l-8 ${getBorderColor(
-					course.type)} shadow-md bg-bg-elevated`}
-				whileHover={{ y: -4 }}
+					course.type)} shadow-md bg-bg-elevated transition-transform duration-200 hover:-translate-y-1`}
 			>
 				<div className="flex flex-col w-full">
 					<p className="font-semibold text-text-secondary">{course.name}</p>
@@ -50,7 +47,7 @@ export default function CourseCard({ course }: Readonly<{ course: ICourse }>) {
 						<CustomLink href={course.link}>Course Link</CustomLink>
 					</div>
 				</div>
-			</motion.div>
-		</motion.div>
+			</div>
+		</div>
 	);
 };

@@ -1,24 +1,21 @@
 'use client'
 import Image from 'next/image'
 import CustomLink from '@/components/markdown/CustomLink';
-import {motion} from 'framer-motion';
-import {fadeUpVariant} from '@/animations/animations';
+import { useRef } from 'react';
+import { useGSAP, fadeUp } from '@/animations/gsapAnimations';
 import {IWork} from "../../data/portfolio/worksList";
-import Link from "next/link";
 
 export default function WorkCard({work}: Readonly<{ work: IWork }>) {
+    const ref = useRef<HTMLDivElement>(null)
+
+    useGSAP(() => {
+        if (ref.current) fadeUp(ref.current, { delay: 0.2 })
+    }, { scope: ref })
+
     return (
-        <motion.div
-            initial="initial"
-            whileInView="animate"
-            viewport={{
-                once: true,
-            }}
-            variants={fadeUpVariant(0.2)}
-        >
-            <motion.div
-                className="max-w-full rounded-xs overflow-hidden shadow-md bg-bg-elevated"
-                whileHover={{y: -4}}
+        <div ref={ref} style={{ opacity: 0 }}>
+            <div
+                className="max-w-full rounded-xs overflow-hidden shadow-md bg-bg-elevated transition-transform duration-200 hover:-translate-y-1"
             >
                 <Image
                     src={work.images[0]}
@@ -26,7 +23,7 @@ export default function WorkCard({work}: Readonly<{ work: IWork }>) {
                     width={0}
                     height={0}
                     sizes="100vw"
-                    style={{width: '100%', height: 'auto'}} // optional
+                    style={{width: '100%', height: 'auto'}}
                 />
                 <div className="px-6 py-4">
                     <div className="font-bold text-xl mb-2 text-text-primary">{work.title}</div>
@@ -37,21 +34,19 @@ export default function WorkCard({work}: Readonly<{ work: IWork }>) {
                             <CustomLink href={work.blogLink}>Read blog post</CustomLink>
                         }
                         {work.recommendationLink !== '' &&
-                            <CustomLink href={work.recommendationLink}>
-                                <Link href={work.recommendationLink} download="adnovum_exit_recommendation_letter"
-                                      target="_blank">
-                                    Recommendation Letter
-                                </Link>
-                            </CustomLink>
+                            <a
+                                href={work.recommendationLink}
+                                download="adnovum_exit_recommendation_letter"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-accent hover:no-underline"
+                            >
+                                Recommendation Letter
+                            </a>
                         }
                     </div>
-                    {/*<div className="pt-4 pb-2">*/}
-                    {/*    {project.tags.map((tag) =>*/}
-                    {/*        <div key={project.title + tag} className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"># {tag}</div>*/}
-                    {/*    )}*/}
-                    {/*</div>*/}
                 </div>
-            </motion.div>
-        </motion.div>
+            </div>
+        </div>
     );
 };

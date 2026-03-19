@@ -244,42 +244,42 @@ const Education = () => (
                 EPFL - Year 1 - Semester 1
             </h1>
             <div className="grid md:grid-cols-2 gap-6 text-left pb-12">
-                {BA1List().map((course) => <CourseCard course={course} key={course.code}/>)}
+                {BA1List().map((course, index) => <CourseCard course={course} key={course.code} index={index}/>)}
             </div>
 
             <h1 className="font-semibold text-xl py-6 text-text-primary">
                 EPFL - Year 1 - Semester 2
             </h1>
             <div className="grid md:grid-cols-2 gap-6 text-left pb-12">
-                {BA2List().map((course) => <CourseCard course={course} key={course.code}/>)}
+                {BA2List().map((course, index) => <CourseCard course={course} key={course.code} index={index}/>)}
             </div>
 
             <h1 className="font-semibold text-xl py-6 text-text-primary">
                 EPFL - Year 2 - Semester 3
             </h1>
             <div className="grid md:grid-cols-2 gap-6 text-left pb-12">
-                {BA3List().map((course) => <CourseCard course={course} key={course.code}/>)}
+                {BA3List().map((course, index) => <CourseCard course={course} key={course.code} index={index}/>)}
             </div>
 
             <h1 className="font-semibold text-xl py-6 text-text-primary">
                 EPFL - Year 2 - Semester 4
             </h1>
             <div className="grid md:grid-cols-2 gap-6 text-left pb-12">
-                {BA4List().map((course) => <CourseCard course={course} key={course.code}/>)}
+                {BA4List().map((course, index) => <CourseCard course={course} key={course.code} index={index}/>)}
             </div>
 
             <h1 className="font-semibold text-xl py-6 text-text-primary">
                 EPFL - Year 3 - Semester 5
             </h1>
             <div className="grid md:grid-cols-2 gap-6 text-left pb-12">
-                {BA5List().map((course) => <CourseCard course={course} key={course.code}/>)}
+                {BA5List().map((course, index) => <CourseCard course={course} key={course.code} index={index}/>)}
             </div>
 
             <h1 className="font-semibold text-xl py-6 text-text-primary">
                 EPFL - Year 3 - Semester 6
             </h1>
             <div className="grid md:grid-cols-2 gap-6 text-left pb-12">
-                {BA6List().map((course) => <CourseCard course={course} key={course.code}/>)}
+                {BA6List().map((course, index) => <CourseCard course={course} key={course.code} index={index}/>)}
             </div>
 
             <h1 className="font-semibold text-2xl py-4 pt-12 text-text-primary">
@@ -289,7 +289,7 @@ const Education = () => (
                 ETHZ - Year 1 - Semester 1
             </h1>
             <div className="grid md:grid-cols-2 gap-6 text-left pb-12">
-                {MA1List().map((course) => <CourseCard course={course} key={course.code}/>)}
+                {MA1List().map((course, index) => <CourseCard course={course} key={course.code} index={index}/>)}
             </div>
             {/*<Wrapper>*/}
             {/*<div className=" mx-auto pb-8 px-8">*/}
@@ -305,21 +305,21 @@ const Education = () => (
                 ETHZ - Year 2 - Semester 2
             </h1>
             <div className="grid md:grid-cols-2 gap-6 text-left pb-12">
-                {MA2List().map((course) => <CourseCard course={course} key={course.code}/>)}
+                {MA2List().map((course, index) => <CourseCard course={course} key={course.code} index={index}/>)}
             </div>
 
             <h1 className="font-semibold text-xl py-6 text-text-primary">
                 ETHZ - Year 2 - Semester 3
             </h1>
             <div className="grid md:grid-cols-2 gap-6 text-left pb-12">
-                {MA3List().map((course) => <CourseCard course={course} key={course.code}/>)}
+                {MA3List().map((course, index) => <CourseCard course={course} key={course.code} index={index}/>)}
             </div>
 
             <h1 className="font-semibold text-xl py-6 text-text-primary">
                 ETHZ - Year 3 - Semester 4
             </h1>
             <div className="grid md:grid-cols-2 gap-6 text-left pb-12">
-                {MA4List().map((course) => <CourseCard course={course} key={course.code}/>)}
+                {MA4List().map((course, index) => <CourseCard course={course} key={course.code} index={index}/>)}
             </div>
         </div>
     </Wrapper>

@@ -1,18 +1,20 @@
 'use client'
-import Link from 'next/link'
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { FULL_NAME, NAV_LINKS } from '@/constants'
-import { AnimatePresence, motion } from 'framer-motion';
 import styles from './navbar.module.css'
-import { fadeUpVariant } from '@/animations/animations';
 import Image from "next/image";
 import { useTheme } from 'next-themes';
 import { FiSun, FiMoon } from 'react-icons/fi';
+import Link from 'next/link';
+import { gsap, useGSAP } from '@/animations/gsapAnimations';
+import { getLenis } from '@/components/SmoothScroll';
 
 const Navbar: React.FC = () => {
 	const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
 	const [mounted, setMounted] = useState(false);
 	const { theme, setTheme } = useTheme();
+	const mobileMenuRef = useRef<HTMLDivElement>(null);
+	const navItemsRef = useRef<HTMLDivElement>(null);
 
 	const toggleNav = () => {
 		setIsNavOpen(!isNavOpen);
@@ -23,7 +25,34 @@ const Navbar: React.FC = () => {
 	}, []);
 
 	useEffect(() => {
-		document.body.style.overflow = isNavOpen ? "hidden" : "unset";
+		const lenis = getLenis();
+		if (isNavOpen) {
+			document.body.style.overflow = "hidden";
+			lenis?.stop();
+		} else {
+			document.body.style.overflow = "unset";
+			lenis?.start();
+		}
+	}, [isNavOpen]);
+
+	// Animate mobile menu links on mount (menu is conditionally rendered)
+	useEffect(() => {
+		if (!isNavOpen || !navItemsRef.current) return;
+
+		const items = navItemsRef.current.children;
+		if (items.length > 0) {
+			gsap.fromTo(items,
+				{ y: 20, opacity: 0 },
+				{
+					y: 0,
+					opacity: 1,
+					duration: 0.5,
+					stagger: 0.2,
+					delay: 0.4,
+					ease: 'power2.out',
+				}
+			);
+		}
 	}, [isNavOpen]);
 
 	const toggleTheme = () => {
@@ -43,6 +72,7 @@ const Navbar: React.FC = () => {
 					height={0}
 					priority
 					className="dark:invert"
+					style={{ height: 'auto' }}
 				/>
             </div>
 				</Link>
@@ -104,49 +134,32 @@ const Navbar: React.FC = () => {
 				</div>
 			</nav>
 
-			{/* Mobile Navbar */}
-			<AnimatePresence>
-				{isNavOpen && (
-					<motion.div
-						initial="hidden"
-						whileInView="visible"
-						exit="hidden"
-						animate={isNavOpen ? 'visible' : 'hidden'}
-						viewport={{ once: false }}
-						transition={{ duration: 0.2, ease: 'easeOut' }}
-						variants={{
-							visible: { opacity: 1, scale: 1 },
-							hidden: { opacity: 0, scale: 1 },
-						}}
-					>
+			{/* Mobile Navbar — only mounted when open */}
+			{isNavOpen && (
+				<div
+					ref={mobileMenuRef}
+					className="fixed left-0 top-0 w-full h-dvh origin-top bg-bg-base text-text-primary py-8 px-8 z-10"
+				>
+					<div className="flex h-full flex-col">
 						<div
-							className="fixed left-0 top-0 w-full h-dvh origin-top bg-bg-base text-text-primary py-8 px-8 z-10">
-							<div className="flex h-full flex-col">
-								<div
-									className="flex justify-center flex-col items-center h-full">
-									{NAV_LINKS.map((link, index) => {
-										return (
-											<motion.div
-												initial="initial"
-												animate="animate"
-												variants={fadeUpVariant(0.2 * index + 0.4)}
-												key={link.key}
-											>
-												<Link className={styles.project} href={link.href}
-													  onClick={toggleNav}>
-													<h2 className="text-xl">
-														{link.label}
-													</h2>
-												</Link>
-											</motion.div>
-										);
-									})}
-								</div>
-							</div>
+							ref={navItemsRef}
+							className="flex justify-center flex-col items-center h-full">
+							{NAV_LINKS.map((link) => {
+								return (
+									<div key={link.key}>
+										<Link className={styles.project} href={link.href}
+											  onClick={toggleNav}>
+											<h2 className="text-xl">
+												{link.label}
+											</h2>
+										</Link>
+									</div>
+								);
+							})}
 						</div>
-					</motion.div>
-				)}
-			</AnimatePresence>
+					</div>
+				</div>
+			)}
 		</header>
 	);
 };

@@ -1,16 +1,24 @@
 "use client";
-import {motion} from "framer-motion";
-import {ReactNode} from "react";
+import { useRef, ReactNode } from "react";
+import { useGSAP, gsap } from "@/animations/gsapAnimations";
 
-export const ZoomIntroAnimation = ({children}: { children: ReactNode }) => {
+export const ZoomIntroAnimation = ({ children }: { children: ReactNode }) => {
+    const ref = useRef<HTMLDivElement>(null);
+
+    useGSAP(() => {
+        if (!ref.current) return;
+        gsap.from(ref.current, {
+            opacity: 0,
+            scale: 0.5,
+            duration: 2.0,
+            ease: "power2.out",
+        });
+    }, { scope: ref });
+
     return (
-        <motion.div
-            initial={{opacity: 0, scale: 0.5}}
-            animate={{opacity: 1, scale: 1.0}}
-            transition={{duration: 2.0, ease: "anticipate"}}
-        >
+        <div ref={ref}>
             {children}
-        </motion.div>
+        </div>
     );
 };
 

@@ -1,56 +1,57 @@
 "use client";
 
-import {
-	KeyframeOptions,
-	animate,
-	useInView,
-	useIsomorphicLayoutEffect,
-} from "framer-motion";
-import { useRef } from "react";
+import { useRef, useEffect, useState } from "react";
+import { gsap, ScrollTrigger } from "@/animations/gsapAnimations";
 
 type AnimatedCounterProps = {
 	from: number;
 	to: number;
-	animationOptions?: KeyframeOptions;
 };
 
-const AnimatedCounter = ({
-	from,
-	to,
-	animationOptions,
-}: AnimatedCounterProps) => {
+const AnimatedCounter = ({ from, to }: AnimatedCounterProps) => {
 	const ref = useRef<HTMLSpanElement>(null);
-	const inView = useInView(ref, { once: true });
+	const [hasAnimated, setHasAnimated] = useState(false);
 
-	useIsomorphicLayoutEffect(() => {
+	useEffect(() => {
 		const element = ref.current;
-
 		if (!element) return;
-		if (!inView) return;
 
 		// Set initial value
 		element.textContent = String(from);
 
-		// If reduced motion is enabled in system's preferences
+		// If reduced motion is enabled
 		if (window.matchMedia("(prefers-reduced-motion)").matches) {
 			element.textContent = String(to);
 			return;
 		}
 
-		const controls = animate(from, to, {
-			duration: 1,
-			ease: "easeOut",
-			...animationOptions,
-			onUpdate(value) {
-				element.textContent = value.toFixed(0);
+		const trigger = ScrollTrigger.create({
+			trigger: element,
+			start: "top 90%",
+			once: true,
+			onEnter: () => {
+				if (hasAnimated) return;
+				setHasAnimated(true);
+
+				const obj = { value: from };
+				gsap.to(obj, {
+					value: to,
+					duration: 1,
+					ease: "power2.out",
+					snap: { value: 1 },
+					onUpdate: () => {
+						if (element) {
+							element.textContent = String(Math.round(obj.value));
+						}
+					},
+				});
 			},
 		});
 
-		// Cancel on unmount
 		return () => {
-			controls.stop();
+			trigger.kill();
 		};
-	}, [ref, inView, from, to]);
+	}, [from, to, hasAnimated]);
 
 	return <span ref={ref} />;
 };

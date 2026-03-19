@@ -3,6 +3,7 @@ import './globals.css';
 import { FULL_NAME } from '@/constants';
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { ThemeProvider } from '@/components/ThemeProvider'
+import SmoothScroll from '@/components/SmoothScroll'
 
 /* Default SEO */
 const title = 'Home | Thösam Norlha-Tsang'
@@ -40,7 +41,9 @@ export default function RootLayout({
 		<html lang="en" suppressHydrationWarning>
 		<body>
 			<ThemeProvider>
-				{children}
+				<SmoothScroll>
+					{children}
+				</SmoothScroll>
 			</ThemeProvider>
 			<SpeedInsights/>
 		</body>

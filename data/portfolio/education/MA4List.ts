@@ -32,7 +32,7 @@ export default function MA4List(): ICourse[] {
         },
         {
             name: "Seminar in Data Science",
-            code: "252-0535-00",
+            code: "263-0650-00L",
             link: "",
             credits: 2,
             type: CourseType.CS,
