@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { FULL_NAME, NAV_LINKS } from '@/constants'
 import styles from './navbar.module.css'
 import Image from "next/image";
@@ -16,6 +16,8 @@ const Navbar: React.FC = () => {
 	const { theme, setTheme } = useTheme();
 	const mobileMenuRef = useRef<HTMLDivElement>(null);
 	const navItemsRef = useRef<HTMLDivElement>(null);
+	const desktopThemeRef = useRef<HTMLButtonElement>(null);
+	const mobileThemeRef = useRef<HTMLButtonElement>(null);
 
 	const toggleNav = () => {
 		setIsNavOpen(!isNavOpen);
@@ -56,9 +58,41 @@ const Navbar: React.FC = () => {
 		}
 	}, [isNavOpen]);
 
-	const toggleTheme = () => {
-		setTheme(theme === 'dark' ? 'light' : 'dark');
-	};
+	const animateThemeToggle = useCallback((buttonEl: HTMLButtonElement | null) => {
+		const newTheme = theme === 'dark' ? 'light' : 'dark';
+
+		if (!buttonEl || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+			setTheme(newTheme);
+			return;
+		}
+
+		gsap.killTweensOf(buttonEl);
+
+		const tl = gsap.timeline();
+		tl.to(buttonEl, {
+			scale: 0,
+			rotation: 90,
+			duration: 0.2,
+			ease: 'power2.in',
+			onComplete: () => setTheme(newTheme),
+		});
+		tl.to(buttonEl, {
+			scale: 1,
+			rotation: 0,
+			duration: 0.5,
+			ease: 'elastic.out(1, 0.5)',
+		});
+	}, [theme, setTheme]);
+
+	const handleThemeHoverEnter = useCallback((buttonEl: HTMLButtonElement | null) => {
+		if (!buttonEl) return;
+		gsap.to(buttonEl, { scale: 1.15, duration: 0.2, ease: 'power2.out' });
+	}, []);
+
+	const handleThemeHoverLeave = useCallback((buttonEl: HTMLButtonElement | null) => {
+		if (!buttonEl) return;
+		gsap.to(buttonEl, { scale: 1, duration: 0.2, ease: 'power2.out' });
+	}, []);
 
 	return (
 		<header className={`flex justify-center w-full top-0`}>
@@ -89,8 +123,11 @@ const Navbar: React.FC = () => {
 					{/* Theme toggle - desktop */}
 					{mounted && (
 						<button
-							onClick={toggleTheme}
-							className="p-2 rounded-lg hover:bg-bg-highlight transition-colors"
+							ref={desktopThemeRef}
+							onClick={() => animateThemeToggle(desktopThemeRef.current)}
+							onMouseEnter={() => handleThemeHoverEnter(desktopThemeRef.current)}
+							onMouseLeave={() => handleThemeHoverLeave(desktopThemeRef.current)}
+							className="p-2 rounded-lg hover:bg-bg-highlight cursor-pointer"
 							aria-label="Toggle dark mode"
 						>
 							{theme === 'dark' ? <FiSun className="text-xl" /> : <FiMoon className="text-xl" />}
@@ -102,8 +139,11 @@ const Navbar: React.FC = () => {
 					{/* Theme toggle - mobile */}
 					{mounted && (
 						<button
-							onClick={toggleTheme}
-							className="p-2 rounded-lg hover:bg-bg-highlight transition-colors"
+							ref={mobileThemeRef}
+							onClick={() => animateThemeToggle(mobileThemeRef.current)}
+							onMouseEnter={() => handleThemeHoverEnter(mobileThemeRef.current)}
+							onMouseLeave={() => handleThemeHoverLeave(mobileThemeRef.current)}
+							className="p-2 rounded-lg hover:bg-bg-highlight cursor-pointer"
 							aria-label="Toggle dark mode"
 						>
 							{theme === 'dark' ? <FiSun className="text-xl" /> : <FiMoon className="text-xl" />}
