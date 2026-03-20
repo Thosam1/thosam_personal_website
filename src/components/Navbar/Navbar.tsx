@@ -63,7 +63,7 @@ const Navbar: React.FC = () => {
 				opacity: 0,
 				duration: 0.15,
 				ease: 'power2.in',
-				onComplete: () => gsap.set(menu, { visibility: 'hidden' }),
+				onComplete: () => { gsap.set(menu, { visibility: 'hidden' }); },
 			});
 		}
 	}, [isNavOpen]);
