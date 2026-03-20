@@ -1,9 +1,9 @@
 'use client'
 
-import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
-import { fadeUpVariant } from '@/animations/animations'
+import { useRef } from 'react'
+import { useGSAP, fadeUp } from '@/animations/gsapAnimations'
 import { FULL_NAME, GITHUB_LINK, INSTAGRAM_LINK, LINKEDIN_LINK, YOUTUBE_LINK, EMAIL_LINK } from '@/constants'
 import {
   FiGithub,
@@ -141,24 +141,17 @@ const SocialRow = () => {
 
 const FeaturedCard = () => {
   const IconComponent = featuredCard.icon
+  const ref = useRef<HTMLDivElement>(null)
+
+  useGSAP(() => {
+    if (ref.current) fadeUp(ref.current, { delay: 0.1 })
+  }, { scope: ref })
 
   return (
-    <motion.div
-      initial="initial"
-      whileInView="animate"
-      viewport={{ once: true }}
-      variants={fadeUpVariant(0.1)}
-      className="w-full mb-8"
-    >
+    <div ref={ref} style={{ opacity: 0 }} className="w-full mb-8">
       <Link href={featuredCard.url}>
-        <motion.div
-          whileHover={{ y: -4, scale: 1.01 }}
-          transition={{
-            type: "spring",
-            stiffness: 400,
-            damping: 25
-          }}
-          className="w-full p-6 rounded-lg border-2 border-border-default bg-gradient-to-br from-blue-50 dark:from-bg-elevated to-bg-base shadow-md hover:shadow-lg"
+        <div
+          className="w-full p-6 rounded-lg border-2 border-border-default bg-gradient-to-br from-blue-50 dark:from-bg-elevated to-bg-base shadow-md hover:shadow-lg transition-transform duration-200 hover:-translate-y-1 hover:scale-[1.01]"
         >
           <div className="flex items-start gap-4">
             {/* Icon */}
@@ -182,9 +175,9 @@ const FeaturedCard = () => {
             {/* Arrow indicator - rotated 45 degrees */}
             <FiArrowRight className="flex-shrink-0 text-xl text-text-subdued rotate-[-45deg]" />
           </div>
-        </motion.div>
+        </div>
       </Link>
-    </motion.div>
+    </div>
   )
 }
 
@@ -195,50 +188,45 @@ const LinksSection = () => {
         const IconComponent = link.icon
 
         return (
-          <motion.div
-            key={link.id}
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            variants={fadeUpVariant(0.1 * (index + 2))}
-            className="w-full"
-          >
-            <Link
-              href={link.url}
-              target={link.external ? '_blank' : '_self'}
-              rel={link.external ? 'noopener noreferrer' : undefined}
-            >
-              <motion.button
-                whileHover={{
-                  scale: 1.02,
-                  y: -2,
-                }}
-                whileTap={{ scale: 0.98 }}
-                transition={{
-                  type: "spring",
-                  stiffness: 400,
-                  damping: 25
-                }}
-                className="w-full py-4 px-6 flex items-center justify-between text-left rounded-lg border border-border-default bg-bg-elevated text-text-primary shadow-xs hover:shadow-md hover:bg-bg-highlight"
-              >
-                <div className="flex items-center gap-4">
-                  {/* Optional left icon */}
-                  {IconComponent && (
-                    <IconComponent className="text-xl text-text-subdued flex-shrink-0" />
-                  )}
-                  <div>
-                    <div className="font-semibold text-lg">{link.title}</div>
-                    <div className="font-light text-sm text-text-subdued">{link.subtitle}</div>
-                  </div>
-                </div>
-
-                {/* Right arrow - rotated 45 degrees */}
-                <FiArrowRight className="text-xl text-text-subdued flex-shrink-0 rotate-[-45deg]" />
-              </motion.button>
-            </Link>
-          </motion.div>
+          <LinkItem key={link.id} link={link} index={index} IconComponent={IconComponent} />
         )
       })}
+    </div>
+  )
+}
+
+const LinkItem = ({ link, index, IconComponent }: { link: typeof links[0]; index: number; IconComponent: typeof FiGithub | null }) => {
+  const ref = useRef<HTMLDivElement>(null)
+
+  useGSAP(() => {
+    if (ref.current) fadeUp(ref.current, { delay: 0.1 * (index + 2) })
+  }, { scope: ref })
+
+  return (
+    <div ref={ref} style={{ opacity: 0 }} className="w-full">
+      <Link
+        href={link.url}
+        target={link.external ? '_blank' : undefined}
+        rel={link.external ? 'noopener noreferrer' : undefined}
+      >
+        <button
+          className="w-full py-4 px-6 flex items-center justify-between text-left rounded-lg border border-border-default bg-bg-elevated text-text-primary shadow-xs hover:shadow-md hover:bg-bg-highlight transition-all duration-200 hover:scale-[1.02] hover:-translate-y-0.5 active:scale-[0.98]"
+        >
+          <div className="flex items-center gap-4">
+            {/* Optional left icon */}
+            {IconComponent && (
+              <IconComponent className="text-xl text-text-subdued flex-shrink-0" />
+            )}
+            <div>
+              <div className="font-semibold text-lg">{link.title}</div>
+              <div className="font-light text-sm text-text-subdued">{link.subtitle}</div>
+            </div>
+          </div>
+
+          {/* Right arrow - rotated 45 degrees */}
+          <FiArrowRight className="text-xl text-text-subdued flex-shrink-0 rotate-[-45deg]" />
+        </button>
+      </Link>
     </div>
   )
 }

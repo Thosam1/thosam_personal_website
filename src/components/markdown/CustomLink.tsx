@@ -1,4 +1,7 @@
+'use client'
+
 import React, {ReactNode} from "react";
+import Link from "next/link";
 
 interface ICustomLinkProps {
     href: string;
@@ -10,16 +13,16 @@ const CustomLink: React.FC<ICustomLinkProps> = ({href, children}) => {
 
     if (isInternalLink) {
         return (
-            <a
+            <Link
                 href={href}
                 className="text-accent hover:no-underline"
                 style={{
-                    wordBreak: 'break-word',  // Ensures long links wrap to the next line
-                    whiteSpace: 'normal'      // Prevents the link from stretching out horizontally
+                    wordBreak: 'break-word',
+                    whiteSpace: 'normal'
                 }}
             >
                 {children}
-            </a>
+            </Link>
         );
     }
 
@@ -30,8 +33,8 @@ const CustomLink: React.FC<ICustomLinkProps> = ({href, children}) => {
             <a
                 href={href} className="text-text-secondary"
                 style={{
-                    wordBreak: 'break-word',  // Ensures long links wrap to the next line
-                    whiteSpace: 'normal'      // Prevents the link from stretching out horizontally
+                    wordBreak: 'break-word',
+                    whiteSpace: 'normal'
                 }}
             >
                 {children}
@@ -44,8 +47,8 @@ const CustomLink: React.FC<ICustomLinkProps> = ({href, children}) => {
             href={href} target="_blank" rel="noopener noreferrer"
             className="text-accent hover:no-underline"
             style={{
-                wordBreak: 'break-word',  // Ensures long links wrap to the next line
-                whiteSpace: 'normal'      // Prevents the link from stretching out horizontally
+                wordBreak: 'break-word',
+                whiteSpace: 'normal'
             }}
         >
             {children}

@@ -1,9 +1,8 @@
 'use client'
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
 import { Workout } from '../../data/sports/workoutsList';
 import { format, parseISO } from 'date-fns';
-import { fadeUpVariant } from '@/animations/animations';
-import { motion } from 'framer-motion';
+import { gsap } from '@/animations/gsapAnimations';
 
 type WorkoutCardProps = {
 	workout: Workout;
@@ -11,18 +10,31 @@ type WorkoutCardProps = {
 };
 
 export default function WorkoutCard({ workout, onClick }: Readonly<WorkoutCardProps>) {
+	const ref = useRef<HTMLDivElement>(null)
+
+	useEffect(() => {
+		const el = ref.current
+		if (!el) return
+
+		const observer = new IntersectionObserver(
+			([entry]) => {
+				if (entry.isIntersecting) {
+					gsap.fromTo(el,
+						{ y: 20, opacity: 0 },
+						{ y: 0, opacity: 1, duration: 0.5, ease: 'power2.out' }
+					)
+					observer.disconnect()
+				}
+			},
+			{ threshold: 0.1 }
+		)
+
+		observer.observe(el)
+		return () => observer.disconnect()
+	}, [])
 
 	return (
-		<motion.div
-			initial="initial"
-			whileInView="animate"
-			viewport={{
-				once: true,
-			}}
-			variants={fadeUpVariant()}
-			onClick={() => onClick(workout)}
-		>
-			{/*<Link href={workout.url} target="_blank" rel="noopener noreferrer" className="unstyled">*/}
+		<div ref={ref} style={{ opacity: 0 }} onClick={() => onClick(workout)}>
 			<div className="bg-bg-elevated p-10 hover:bg-bg-highlight shadow-xs cursor-pointer">
 				<div className="flex justify-end">
 					<p className="text-text-subdued text-sm font-sm">{format(parseISO(workout.date), 'MMMM dd, yyyy')}</p>
@@ -39,7 +51,6 @@ export default function WorkoutCard({ workout, onClick }: Readonly<WorkoutCardPr
 						<p className="text-md font-semibold text-text-secondary">[...]</p>
 					</div>}
 			</div>
-			{/*</Link>*/}
-		</motion.div>
+		</div>
 	);
 };

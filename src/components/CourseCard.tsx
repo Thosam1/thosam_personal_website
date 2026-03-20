@@ -1,9 +1,8 @@
 'use client'
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import { CourseType, ICourse } from '../../data/portfolio/education/interfaces';
 import CustomLink from '@/components/markdown/CustomLink';
-import { motion } from 'framer-motion';
-import { fadeUpVariant } from '@/animations/animations';
+import { gsap } from '@/animations/gsapAnimations';
 
 const getBorderColor = (type: CourseType): string => {
 	switch (type) {
@@ -28,20 +27,35 @@ const getBorderColor = (type: CourseType): string => {
 	}
 };
 
-export default function CourseCard({ course }: Readonly<{ course: ICourse }>) {
+export default function CourseCard({ course, index = 0 }: Readonly<{ course: ICourse; index?: number }>) {
+	const ref = useRef<HTMLDivElement>(null)
+
+	useEffect(() => {
+		const el = ref.current
+		if (!el) return
+
+		const observer = new IntersectionObserver(
+			([entry]) => {
+				if (entry.isIntersecting) {
+					gsap.fromTo(el,
+						{ y: 20, opacity: 0 },
+						{ y: 0, opacity: 1, duration: 0.5, delay: index * 0.05, ease: 'power2.out' }
+					)
+					observer.disconnect()
+				}
+			},
+			{ threshold: 0.1 }
+		)
+
+		observer.observe(el)
+		return () => observer.disconnect()
+	}, [index])
+
 	return (
-		<motion.div
-			initial="initial"
-			whileInView="animate"
-			viewport={{
-				once: true,
-			}}
-			variants={fadeUpVariant(0.2)}
-		>
-			<motion.div
+		<div ref={ref} style={{ opacity: 0 }}>
+			<div
 				className={`max-w-(--breakpoint-sm) items-center border rounded-xl p-4 border-l-8 ${getBorderColor(
-					course.type)} shadow-md bg-bg-elevated`}
-				whileHover={{ y: -4 }}
+					course.type)} shadow-md bg-bg-elevated transition-transform duration-200 hover:-translate-y-1`}
 			>
 				<div className="flex flex-col w-full">
 					<p className="font-semibold text-text-secondary">{course.name}</p>
@@ -50,7 +64,7 @@ export default function CourseCard({ course }: Readonly<{ course: ICourse }>) {
 						<CustomLink href={course.link}>Course Link</CustomLink>
 					</div>
 				</div>
-			</motion.div>
-		</motion.div>
+			</div>
+		</div>
 	);
 };

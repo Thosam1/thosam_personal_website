@@ -1,18 +1,23 @@
 'use client'
-import Link from 'next/link'
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { FULL_NAME, NAV_LINKS } from '@/constants'
-import { AnimatePresence, motion } from 'framer-motion';
 import styles from './navbar.module.css'
-import { fadeUpVariant } from '@/animations/animations';
 import Image from "next/image";
 import { useTheme } from 'next-themes';
 import { FiSun, FiMoon } from 'react-icons/fi';
+import Link from 'next/link';
+import { TransitionLink } from '@/components/PageTransition';
+import { gsap, useGSAP } from '@/animations/gsapAnimations';
+import { getLenis } from '@/components/SmoothScroll';
 
 const Navbar: React.FC = () => {
 	const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
 	const [mounted, setMounted] = useState(false);
 	const { theme, setTheme } = useTheme();
+	const mobileMenuRef = useRef<HTMLDivElement>(null);
+	const navItemsRef = useRef<HTMLDivElement>(null);
+	const desktopThemeRef = useRef<HTMLButtonElement>(null);
+	const mobileThemeRef = useRef<HTMLButtonElement>(null);
 
 	const toggleNav = () => {
 		setIsNavOpen(!isNavOpen);
@@ -23,17 +28,86 @@ const Navbar: React.FC = () => {
 	}, []);
 
 	useEffect(() => {
-		document.body.style.overflow = isNavOpen ? "hidden" : "unset";
+		const lenis = getLenis();
+		if (isNavOpen) {
+			document.body.style.overflow = "hidden";
+			lenis?.stop();
+		} else {
+			document.body.style.overflow = "unset";
+			lenis?.start();
+		}
 	}, [isNavOpen]);
 
-	const toggleTheme = () => {
-		setTheme(theme === 'dark' ? 'light' : 'dark');
-	};
+	// Animate mobile menu fade in / fade out
+	useEffect(() => {
+		const menu = mobileMenuRef.current;
+		const navItems = navItemsRef.current;
+		if (!menu || !navItems) return;
+
+		if (isNavOpen) {
+			// Fade in background
+			gsap.set(menu, { visibility: 'visible' });
+			gsap.fromTo(menu, { opacity: 0 }, { opacity: 1, duration: 0.15, ease: 'power2.out' });
+
+			// Stagger links in
+			const items = navItems.children;
+			if (items.length > 0) {
+				gsap.fromTo(items,
+					{ y: 20, opacity: 0 },
+					{ y: 0, opacity: 1, duration: 0.5, stagger: 0.15, delay: 0.4, ease: 'power2.out' }
+				);
+			}
+		} else {
+			// Fade out
+			gsap.to(menu, {
+				opacity: 0,
+				duration: 0.15,
+				ease: 'power2.in',
+				onComplete: () => { gsap.set(menu, { visibility: 'hidden' }); },
+			});
+		}
+	}, [isNavOpen]);
+
+	const animateThemeToggle = useCallback((buttonEl: HTMLButtonElement | null) => {
+		const newTheme = theme === 'dark' ? 'light' : 'dark';
+
+		if (!buttonEl || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+			setTheme(newTheme);
+			return;
+		}
+
+		gsap.killTweensOf(buttonEl);
+
+		const tl = gsap.timeline();
+		tl.to(buttonEl, {
+			scale: 0,
+			rotation: 90,
+			duration: 0.2,
+			ease: 'power2.in',
+			onComplete: () => setTheme(newTheme),
+		});
+		tl.to(buttonEl, {
+			scale: 1,
+			rotation: 0,
+			duration: 0.5,
+			ease: 'elastic.out(1, 0.5)',
+		});
+	}, [theme, setTheme]);
+
+	const handleThemeHoverEnter = useCallback((buttonEl: HTMLButtonElement | null) => {
+		if (!buttonEl) return;
+		gsap.to(buttonEl, { scale: 1.15, duration: 0.2, ease: 'power2.out' });
+	}, []);
+
+	const handleThemeHoverLeave = useCallback((buttonEl: HTMLButtonElement | null) => {
+		if (!buttonEl) return;
+		gsap.to(buttonEl, { scale: 1, duration: 0.2, ease: 'power2.out' });
+	}, []);
 
 	return (
 		<header className={`flex justify-center w-full top-0`}>
 			<nav className="flex justify-between items-center py-2 lg:py-6 px-8 w-full max-w-300">
-				<Link className="flex items-center cursor-pointer" href={'/'}>
+				<TransitionLink className="flex items-center cursor-pointer" href={'/'}>
             <div className="font-semibold items-center">
               {/*{FULL_NAME}*/}
 				<Image
@@ -43,23 +117,27 @@ const Navbar: React.FC = () => {
 					height={0}
 					priority
 					className="dark:invert"
+					style={{ height: 'auto' }}
 				/>
             </div>
-				</Link>
+				</TransitionLink>
 
 				{/* What we see on larger screen */}
 				<div className="lg:flex hidden gap-12 text-md items-center">
 					{NAV_LINKS.map((link) => (
-						<Link href={link.href} key={link.key}
+						<TransitionLink href={link.href} key={link.key}
 							  className="font-medium hover:text-text-subdued py-3 md:py-6">
 							{link.label}
-						</Link>
+						</TransitionLink>
 					))}
 					{/* Theme toggle - desktop */}
 					{mounted && (
 						<button
-							onClick={toggleTheme}
-							className="p-2 rounded-lg hover:bg-bg-highlight transition-colors"
+							ref={desktopThemeRef}
+							onClick={() => animateThemeToggle(desktopThemeRef.current)}
+							onMouseEnter={() => handleThemeHoverEnter(desktopThemeRef.current)}
+							onMouseLeave={() => handleThemeHoverLeave(desktopThemeRef.current)}
+							className="p-2 rounded-lg hover:bg-bg-highlight cursor-pointer"
 							aria-label="Toggle dark mode"
 						>
 							{theme === 'dark' ? <FiSun className="text-xl" /> : <FiMoon className="text-xl" />}
@@ -71,8 +149,11 @@ const Navbar: React.FC = () => {
 					{/* Theme toggle - mobile */}
 					{mounted && (
 						<button
-							onClick={toggleTheme}
-							className="p-2 rounded-lg hover:bg-bg-highlight transition-colors"
+							ref={mobileThemeRef}
+							onClick={() => animateThemeToggle(mobileThemeRef.current)}
+							onMouseEnter={() => handleThemeHoverEnter(mobileThemeRef.current)}
+							onMouseLeave={() => handleThemeHoverLeave(mobileThemeRef.current)}
+							className="p-2 rounded-lg hover:bg-bg-highlight cursor-pointer"
 							aria-label="Toggle dark mode"
 						>
 							{theme === 'dark' ? <FiSun className="text-xl" /> : <FiMoon className="text-xl" />}
@@ -104,49 +185,31 @@ const Navbar: React.FC = () => {
 				</div>
 			</nav>
 
-			{/* Mobile Navbar */}
-			<AnimatePresence>
-				{isNavOpen && (
-					<motion.div
-						initial="hidden"
-						whileInView="visible"
-						exit="hidden"
-						animate={isNavOpen ? 'visible' : 'hidden'}
-						viewport={{ once: false }}
-						transition={{ duration: 0.2, ease: 'easeOut' }}
-						variants={{
-							visible: { opacity: 1, scale: 1 },
-							hidden: { opacity: 0, scale: 1 },
-						}}
-					>
-						<div
-							className="fixed left-0 top-0 w-full h-dvh origin-top bg-bg-base text-text-primary py-8 px-8 z-10">
-							<div className="flex h-full flex-col">
-								<div
-									className="flex justify-center flex-col items-center h-full">
-									{NAV_LINKS.map((link, index) => {
-										return (
-											<motion.div
-												initial="initial"
-												animate="animate"
-												variants={fadeUpVariant(0.2 * index + 0.4)}
-												key={link.key}
-											>
-												<Link className={styles.project} href={link.href}
-													  onClick={toggleNav}>
-													<h2 className="text-xl">
-														{link.label}
-													</h2>
-												</Link>
-											</motion.div>
-										);
-									})}
+			{/* Mobile Navbar — always rendered, visibility controlled by GSAP */}
+			<div
+				ref={mobileMenuRef}
+				className="fixed left-0 top-0 w-full h-dvh origin-top bg-bg-base text-text-primary py-8 px-8 z-10"
+				style={{ opacity: 0, visibility: 'hidden' }}
+			>
+				<div className="flex h-full flex-col">
+					<div
+						ref={navItemsRef}
+						className="flex justify-center flex-col items-center h-full">
+						{NAV_LINKS.map((link) => {
+							return (
+								<div key={link.key}>
+									<TransitionLink className={styles.project} href={link.href}
+										  onClick={toggleNav}>
+										<h2 className="text-xl">
+											{link.label}
+										</h2>
+									</TransitionLink>
 								</div>
-							</div>
-						</div>
-					</motion.div>
-				)}
-			</AnimatePresence>
+							);
+						})}
+					</div>
+				</div>
+			</div>
 		</header>
 	);
 };
