@@ -45,7 +45,7 @@
 
 
 /* Lenis smooth scroll */
-html.lenis, html.lenis body {
+html.lenis body {
   height: auto;
 }
 .lenis.lenis-smooth {

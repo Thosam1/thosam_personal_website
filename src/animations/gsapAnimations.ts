@@ -3,11 +3,12 @@
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { SplitText } from 'gsap/SplitText'
 
 // Register all GSAP plugins once
-gsap.registerPlugin(useGSAP, ScrollTrigger)
+gsap.registerPlugin(useGSAP, ScrollTrigger, SplitText)
 
-export { gsap, useGSAP, ScrollTrigger }
+export { gsap, useGSAP, ScrollTrigger, SplitText }
 
 /**
  * Reusable fade-up animation (replaces old Framer Motion fadeUpVariant).

@@ -4,6 +4,16 @@ import { FULL_NAME } from '@/constants';
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { ThemeProvider } from '@/components/ThemeProvider'
 import SmoothScroll from '@/components/SmoothScroll'
+import PageTransitionProvider from '@/components/PageTransition'
+import InitialLoader from '@/components/InitialLoader'
+import { Noto_Serif_Tibetan } from 'next/font/google'
+
+const tibetanFont = Noto_Serif_Tibetan({
+	subsets: ['tibetan'],
+	weight: ['400', '700'],
+	display: 'swap',
+	variable: '--font-tibetan',
+})
 
 /* Default SEO */
 const title = 'Home | Thösam Norlha-Tsang'
@@ -38,12 +48,15 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en" suppressHydrationWarning>
+		<html lang="en" className={tibetanFont.variable} suppressHydrationWarning>
 		<body>
 			<ThemeProvider>
-				<SmoothScroll>
-					{children}
-				</SmoothScroll>
+				<PageTransitionProvider>
+					<SmoothScroll>
+						<InitialLoader/>
+						{children}
+					</SmoothScroll>
+				</PageTransitionProvider>
 			</ThemeProvider>
 			<SpeedInsights/>
 		</body>

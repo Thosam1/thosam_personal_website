@@ -6,6 +6,7 @@ import Image from "next/image";
 import { useTheme } from 'next-themes';
 import { FiSun, FiMoon } from 'react-icons/fi';
 import Link from 'next/link';
+import { TransitionLink } from '@/components/PageTransition';
 import { gsap, useGSAP } from '@/animations/gsapAnimations';
 import { getLenis } from '@/components/SmoothScroll';
 
@@ -62,7 +63,7 @@ const Navbar: React.FC = () => {
 	return (
 		<header className={`flex justify-center w-full top-0`}>
 			<nav className="flex justify-between items-center py-2 lg:py-6 px-8 w-full max-w-300">
-				<Link className="flex items-center cursor-pointer" href={'/'}>
+				<TransitionLink className="flex items-center cursor-pointer" href={'/'}>
             <div className="font-semibold items-center">
               {/*{FULL_NAME}*/}
 				<Image
@@ -75,15 +76,15 @@ const Navbar: React.FC = () => {
 					style={{ height: 'auto' }}
 				/>
             </div>
-				</Link>
+				</TransitionLink>
 
 				{/* What we see on larger screen */}
 				<div className="lg:flex hidden gap-12 text-md items-center">
 					{NAV_LINKS.map((link) => (
-						<Link href={link.href} key={link.key}
+						<TransitionLink href={link.href} key={link.key}
 							  className="font-medium hover:text-text-subdued py-3 md:py-6">
 							{link.label}
-						</Link>
+						</TransitionLink>
 					))}
 					{/* Theme toggle - desktop */}
 					{mounted && (
@@ -147,12 +148,12 @@ const Navbar: React.FC = () => {
 							{NAV_LINKS.map((link) => {
 								return (
 									<div key={link.key}>
-										<Link className={styles.project} href={link.href}
+										<TransitionLink className={styles.project} href={link.href}
 											  onClick={toggleNav}>
 											<h2 className="text-xl">
 												{link.label}
 											</h2>
-										</Link>
+										</TransitionLink>
 									</div>
 								);
 							})}
