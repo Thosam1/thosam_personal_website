@@ -83,13 +83,14 @@ export default function PageTransitionProvider({ children }: { children: React.R
 
     const tl = gsap.timeline({
       onComplete: () => {
-        gsap.set(overlay, { yPercent: -100, pointerEvents: 'none', visibility: 'hidden' })
+        gsap.set(overlay, { yPercent: -100, pointerEvents: 'none', visibility: 'hidden', touchAction: '' })
         gsap.set(clipRect, { attr: { width: 0, x: 0 } })
         gsap.set(tibetanText, { opacity: 0, y: 0 })
         gsap.set(subtitle, { opacity: 0, y: 0 })
         isTransitioning.current = false
+        document.body.style.overflow = ''
         getLenis()?.start()
-        ScrollTrigger.refresh()
+        ScrollTrigger.refresh(true)
       },
     })
 
@@ -117,6 +118,7 @@ export default function PageTransitionProvider({ children }: { children: React.R
       }
 
       isTransitioning.current = true
+      document.body.style.overflow = 'hidden'
       getLenis()?.stop()
 
       const overlay = overlayRef.current
@@ -136,7 +138,7 @@ export default function PageTransitionProvider({ children }: { children: React.R
         },
       })
 
-      tl.set(overlay, { pointerEvents: 'auto', visibility: 'visible' })
+      tl.set(overlay, { pointerEvents: 'auto', visibility: 'visible', touchAction: 'none' })
 
       // 0.6s: Overlay slides DOWN
       tl.fromTo(
@@ -173,7 +175,7 @@ export default function PageTransitionProvider({ children }: { children: React.R
     <PageTransitionContext.Provider value={{ animatePageOut }}>
       <div
         ref={overlayRef}
-        className="fixed inset-0 z-[55]"
+        className="fixed inset-0 z-[55] overscroll-none"
       >
         <div className="absolute inset-0 bg-bg-base flex flex-col items-center justify-center">
           <svg

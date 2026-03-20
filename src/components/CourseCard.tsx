@@ -1,8 +1,8 @@
 'use client'
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import { CourseType, ICourse } from '../../data/portfolio/education/interfaces';
 import CustomLink from '@/components/markdown/CustomLink';
-import { useGSAP, fadeUp } from '@/animations/gsapAnimations';
+import { gsap } from '@/animations/gsapAnimations';
 
 const getBorderColor = (type: CourseType): string => {
 	switch (type) {
@@ -30,9 +30,26 @@ const getBorderColor = (type: CourseType): string => {
 export default function CourseCard({ course, index = 0 }: Readonly<{ course: ICourse; index?: number }>) {
 	const ref = useRef<HTMLDivElement>(null)
 
-	useGSAP(() => {
-		if (ref.current) fadeUp(ref.current, { delay: 0.1 + index * 0.08 })
-	}, { scope: ref })
+	useEffect(() => {
+		const el = ref.current
+		if (!el) return
+
+		const observer = new IntersectionObserver(
+			([entry]) => {
+				if (entry.isIntersecting) {
+					gsap.fromTo(el,
+						{ y: 20, opacity: 0 },
+						{ y: 0, opacity: 1, duration: 0.5, delay: index * 0.05, ease: 'power2.out' }
+					)
+					observer.disconnect()
+				}
+			},
+			{ threshold: 0.1 }
+		)
+
+		observer.observe(el)
+		return () => observer.disconnect()
+	}, [index])
 
 	return (
 		<div ref={ref} style={{ opacity: 0 }}>

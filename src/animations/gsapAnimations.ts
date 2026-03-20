@@ -34,7 +34,8 @@ export function fadeUp(
             scrollTrigger: {
               trigger: element as gsap.DOMTarget,
               start: 'top 80%',
-              toggleActions: 'play none none none',
+              toggleActions: 'play none none reset',
+              invalidateOnRefresh: true,
             },
           }
         : {}),

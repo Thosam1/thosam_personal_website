@@ -30,6 +30,9 @@ export default function SmoothScroll({ children }: { children: React.ReactNode }
     gsap.ticker.add(rafCallback)
     gsap.ticker.lagSmoothing(0)
 
+    // Recalculate ScrollTrigger positions after layout settles (~200ms safe delay)
+    ScrollTrigger.refresh(true)
+
     return () => {
       gsap.ticker.remove(rafCallback)
       lenis.destroy()

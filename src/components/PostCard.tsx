@@ -1,16 +1,33 @@
 "use client"
 import { TransitionLink } from "@/components/PageTransition";
 import { parseISO, format } from "date-fns";
-import { useRef } from "react";
-import { useGSAP, fadeUp } from "@/animations/gsapAnimations";
+import { useRef, useEffect } from "react";
+import { gsap } from "@/animations/gsapAnimations";
 
 export default function PostCard(props: any) {
     const { post } = props
     const ref = useRef<HTMLDivElement>(null)
 
-    useGSAP(() => {
-        if (ref.current) fadeUp(ref.current, { delay: 0.2 })
-    }, { scope: ref })
+    useEffect(() => {
+        const el = ref.current
+        if (!el) return
+
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    gsap.fromTo(el,
+                        { y: 20, opacity: 0 },
+                        { y: 0, opacity: 1, duration: 0.5, ease: 'power2.out' }
+                    )
+                    observer.disconnect()
+                }
+            },
+            { threshold: 0.1 }
+        )
+
+        observer.observe(el)
+        return () => observer.disconnect()
+    }, [])
 
     return (
         <div ref={ref} style={{ opacity: 0 }}>

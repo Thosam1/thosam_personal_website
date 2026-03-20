@@ -1,8 +1,8 @@
 'use client'
-import React, { useRef } from 'react'
+import React, { useRef, useEffect } from 'react'
 import { Workout } from '../../data/sports/workoutsList';
 import { format, parseISO } from 'date-fns';
-import { useGSAP, fadeUp } from '@/animations/gsapAnimations';
+import { gsap } from '@/animations/gsapAnimations';
 
 type WorkoutCardProps = {
 	workout: Workout;
@@ -12,9 +12,26 @@ type WorkoutCardProps = {
 export default function WorkoutCard({ workout, onClick }: Readonly<WorkoutCardProps>) {
 	const ref = useRef<HTMLDivElement>(null)
 
-	useGSAP(() => {
-		if (ref.current) fadeUp(ref.current)
-	}, { scope: ref })
+	useEffect(() => {
+		const el = ref.current
+		if (!el) return
+
+		const observer = new IntersectionObserver(
+			([entry]) => {
+				if (entry.isIntersecting) {
+					gsap.fromTo(el,
+						{ y: 20, opacity: 0 },
+						{ y: 0, opacity: 1, duration: 0.5, ease: 'power2.out' }
+					)
+					observer.disconnect()
+				}
+			},
+			{ threshold: 0.1 }
+		)
+
+		observer.observe(el)
+		return () => observer.disconnect()
+	}, [])
 
 	return (
 		<div ref={ref} style={{ opacity: 0 }} onClick={() => onClick(workout)}>

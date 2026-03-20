@@ -2,6 +2,7 @@ import {EMAIL_LINK} from '@/constants'
 import Link from 'next/link'
 import Image from 'next/image'
 import CustomLink from "@/components/markdown/CustomLink";
+import { TransitionLink } from "@/components/PageTransition";
 
 // https://github.com/stevenvachon/broken-link-checker
 
@@ -39,12 +40,12 @@ const Hero = () => (
                     </div>
 
                     <div className="flex justify-center md:justify-start pb-10 md:pb-0">
-                        <Link href="/portfolio" style={{marginRight: '16px'}}>
+                        <TransitionLink href="/portfolio" style={{marginRight: '16px'}}>
                             <button type="button"
                                     className="py-2 px-2 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-border-default bg-bg-elevated text-text-secondary shadow-xs hover:bg-bg-highlight disabled:opacity-50 disabled:pointer-events-none">
                                 My Portfolio
                             </button>
-                        </Link>
+                        </TransitionLink>
                         <Link href={EMAIL_LINK}>
                             <button type="button"
                                     className="py-2 px-2 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-border-default bg-bg-elevated text-text-secondary shadow-xs hover:bg-bg-highlight disabled:opacity-50 disabled:pointer-events-none">

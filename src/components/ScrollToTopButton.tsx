@@ -2,6 +2,7 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import { FaRocket } from "react-icons/fa";
 import { gsap } from "@/animations/gsapAnimations";
+import { getLenis } from "@/components/SmoothScroll";
 
 const ScrollToTopButton: React.FC = () => {
 	const [scrollPosition, setScrollPosition] = useState(0);
@@ -85,10 +86,12 @@ const ScrollToTopButton: React.FC = () => {
 			},
 		});
 
-		document.documentElement.scrollTo({
-			top: 0,
-			behavior: "smooth",
-		});
+		const lenis = getLenis();
+		if (lenis) {
+			lenis.scrollTo(0, { duration: 1.2 });
+		} else {
+			window.scrollTo({ top: 0, behavior: "smooth" });
+		}
 	}, []);
 
 	return (

@@ -38,23 +38,33 @@ const Navbar: React.FC = () => {
 		}
 	}, [isNavOpen]);
 
-	// Animate mobile menu links on mount (menu is conditionally rendered)
+	// Animate mobile menu fade in / fade out
 	useEffect(() => {
-		if (!isNavOpen || !navItemsRef.current) return;
+		const menu = mobileMenuRef.current;
+		const navItems = navItemsRef.current;
+		if (!menu || !navItems) return;
 
-		const items = navItemsRef.current.children;
-		if (items.length > 0) {
-			gsap.fromTo(items,
-				{ y: 20, opacity: 0 },
-				{
-					y: 0,
-					opacity: 1,
-					duration: 0.5,
-					stagger: 0.2,
-					delay: 0.4,
-					ease: 'power2.out',
-				}
-			);
+		if (isNavOpen) {
+			// Fade in background
+			gsap.set(menu, { visibility: 'visible' });
+			gsap.fromTo(menu, { opacity: 0 }, { opacity: 1, duration: 0.15, ease: 'power2.out' });
+
+			// Stagger links in
+			const items = navItems.children;
+			if (items.length > 0) {
+				gsap.fromTo(items,
+					{ y: 20, opacity: 0 },
+					{ y: 0, opacity: 1, duration: 0.5, stagger: 0.15, delay: 0.4, ease: 'power2.out' }
+				);
+			}
+		} else {
+			// Fade out
+			gsap.to(menu, {
+				opacity: 0,
+				duration: 0.15,
+				ease: 'power2.in',
+				onComplete: () => gsap.set(menu, { visibility: 'hidden' }),
+			});
 		}
 	}, [isNavOpen]);
 
@@ -175,32 +185,31 @@ const Navbar: React.FC = () => {
 				</div>
 			</nav>
 
-			{/* Mobile Navbar — only mounted when open */}
-			{isNavOpen && (
-				<div
-					ref={mobileMenuRef}
-					className="fixed left-0 top-0 w-full h-dvh origin-top bg-bg-base text-text-primary py-8 px-8 z-10"
-				>
-					<div className="flex h-full flex-col">
-						<div
-							ref={navItemsRef}
-							className="flex justify-center flex-col items-center h-full">
-							{NAV_LINKS.map((link) => {
-								return (
-									<div key={link.key}>
-										<TransitionLink className={styles.project} href={link.href}
-											  onClick={toggleNav}>
-											<h2 className="text-xl">
-												{link.label}
-											</h2>
-										</TransitionLink>
-									</div>
-								);
-							})}
-						</div>
+			{/* Mobile Navbar — always rendered, visibility controlled by GSAP */}
+			<div
+				ref={mobileMenuRef}
+				className="fixed left-0 top-0 w-full h-dvh origin-top bg-bg-base text-text-primary py-8 px-8 z-10"
+				style={{ opacity: 0, visibility: 'hidden' }}
+			>
+				<div className="flex h-full flex-col">
+					<div
+						ref={navItemsRef}
+						className="flex justify-center flex-col items-center h-full">
+						{NAV_LINKS.map((link) => {
+							return (
+								<div key={link.key}>
+									<TransitionLink className={styles.project} href={link.href}
+										  onClick={toggleNav}>
+										<h2 className="text-xl">
+											{link.label}
+										</h2>
+									</TransitionLink>
+								</div>
+							);
+						})}
 					</div>
 				</div>
-			)}
+			</div>
 		</header>
 	);
 };
