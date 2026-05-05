@@ -124,7 +124,7 @@ const Hero = () => (
                     </div>
 
                     <div className="flex justify-center md:justify-start pb-10 md:pb-0">
-                        <Link href="/portfolio/cv/Software_Engineer.pdf" download="Software_Engineer_CV"
+                        <Link href="/portfolio/cv/resume.pdf" download="resume"
                               target="_blank"
                               style={{marginRight: '16px'}}>
                             <button type="button"
