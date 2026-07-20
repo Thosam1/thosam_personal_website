@@ -33,7 +33,7 @@
     "tailwindcss": "^4.3.2"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.3.2",
+    "@tailwindcss/postcss": "^4.3.3",
     "@tailwindcss/typography": "^0.5.20",
     "@types/node": "26.1.1",
     "@types/react": "19.2.17",
@@ -41,7 +41,7 @@
     "@types/react-syntax-highlighter": "^15.5.13",
     "eslint": "^9",
     "eslint-config-next": "16.2.10",
-    "typescript": "^5.9.3"
+    "typescript": "^7.0.2"
   },
   "overrides": {
     "@types/react": "19.2.17",
