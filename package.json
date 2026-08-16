@@ -36,15 +36,15 @@
     "tailwindcss": "^4.3.3"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.3.2",
+    "@tailwindcss/postcss": "^4.3.3",
     "@tailwindcss/typography": "^0.5.20",
     "@types/node": "^24",
     "@types/react": "19.2.18",
     "@types/react-dom": "19.2.4",
     "@types/react-syntax-highlighter": "^15.5.13",
     "eslint": "^9",
-    "eslint-config-next": "16.2.10",
-    "typescript": "^5.9.3"
+    "eslint-config-next": "16.3.0",
+    "typescript": "^7.0.2"
   },
   "overrides": {
     "@types/react": "19.2.18",
