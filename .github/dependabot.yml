@@ -13,8 +13,14 @@ updates:
       prefix: "[UPDATE] "
     labels:
       - "dependencies"
-    groups: 
+    groups:
       production-dependencies:
         dependency-type: "production"
       development-dependencies:
         dependency-type: "development"
+    ignore:
+      # Keep @types/node aligned with the Node.js major we deploy on
+      # (see "engines" in package.json and .nvmrc).
+      - dependency-name: "@types/node"
+        update-types:
+          - "version-update:semver-major"
