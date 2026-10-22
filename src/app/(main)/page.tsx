@@ -25,7 +25,7 @@ const Hero = () => (
 
                         <div className="font-light leading-loose space-y-6">
                             <p>
-                                I am a software engineer, content creator and student living in Switzerland.
+                                I am an engineer and content creator living in Switzerland.
                             </p>
                             <p>
                                 On this website, you can find useful resources on topics like : coding, study, life,

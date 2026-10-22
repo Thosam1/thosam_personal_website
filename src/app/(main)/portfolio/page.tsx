@@ -17,7 +17,7 @@ import MA1List from '../../../../data/portfolio/education/MA1List';
 import MA2List from "../../../../data/portfolio/education/MA2List";
 import MA3List from "../../../../data/portfolio/education/MA3List";
 import MA4List from "../../../../data/portfolio/education/MA4List";
-import {adnovumInternship, privateTutor} from "../../../../data/portfolio/worksList";
+import {amperecloud, adnovumInternship, privateTutor} from "../../../../data/portfolio/worksList";
 import WorkCard from "@/components/WorkCard";
 
 const title = 'Portfolio | Thösam Norlha-Tsang'
@@ -74,11 +74,9 @@ const Hero = () => (
                         <div className="font-light leading-loose space-y-6">
                             <p>
                                 I am a computer science student at ETH Zurich with a profound enthusiasm for science and
-                                new
-                                technologies. My goal is to leverage my technical skills to make a significant, positive
+                                new technologies. My goal is to leverage my technical skills to make a significant, positive
                                 contribution to society. I believe our happiness depends on the well-being of those
-                                around
-                                us, guiding my life&apos;s goals beyond personal desires.
+                                around us, guiding my life&apos;s goals beyond personal desires.
                             </p>
 
                             {/*<p>*/}
@@ -124,12 +122,18 @@ const Hero = () => (
                     </div>
 
                     <div className="flex justify-center md:justify-start pb-10 md:pb-0">
-                        <Link href="/portfolio/cv/resume.pdf" download="resume"
+                        {/* <Link href="/portfolio/cv/resume.pdf" download="resume"
                               target="_blank"
                               style={{marginRight: '16px'}}>
                             <button type="button"
                                     className="py-2 px-2 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-border-default bg-bg-elevated text-text-secondary shadow-xs hover:bg-bg-highlight disabled:opacity-50 disabled:pointer-events-none">
                                 Download my CV
+                            </button>
+                        </Link> */}
+                        <Link href={EMAIL_LINK} style={{marginRight: '16px'}}>
+                            <button type="button"
+                                    className="py-2 px-2 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-border-default bg-bg-elevated text-text-secondary shadow-xs hover:bg-bg-highlight disabled:opacity-50 disabled:pointer-events-none">
+                                Request CV
                             </button>
                         </Link>
                         <Link href={EMAIL_LINK}>
@@ -190,6 +194,7 @@ const WorkExperience = () => (
         </h1>
         <div className="flex justify-center">
             <div className="grid grid-cols-1 gap-16 lg:w-1/2">
+                <WorkCard work={amperecloud()} key={amperecloud().title}/>
                 <WorkCard work={adnovumInternship()} key={adnovumInternship().title}/>
                 <WorkCard work={privateTutor()} key={privateTutor().title}/>
             </div>

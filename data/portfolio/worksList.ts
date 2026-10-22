@@ -1,3 +1,20 @@
+export function amperecloud(): IWork {
+    return {
+        title: 'Software Engineer At Amperecloud',
+        description: 'Worked 6 months as a software engineer in Berlin, Germany. Building microservices to accelerate the transition to renewable energies.',
+        dates: 'February 2026 – July 2026',
+        blogLink: '',
+        recommendationLink: '',
+        tags: [
+            'Typescript',
+            'WebDev'
+        ],
+        images: [
+            '/portfolio/internships/amperecloud.png',
+        ]
+    };
+}
+
 export function adnovumInternship(): IWork {
     return {
         title: 'Software Engineer At Adnovum',
@@ -20,7 +37,7 @@ export function privateTutor(): IWork {
         title: 'Private tutor',
         dates: 'January 2015 – May 2023',
         description: 'For over eight years, I had the privilege of tutoring more than 20 students in mathematics, physics, and sciences. What began as a simple way to help classmates grew into a meaningful part of my life. ' +
-            'Through sharing my passion for these subjects and watching my students gain confidence, clarity and curiosity I found meaningful joy. My approach was always guided by patience, compassion and this genuine wish to see them succeed, not just at school but also in life.',
+            'I shared my passion for these subjects and watched my students gain confidence, clarity and curiosity. My approach was always guided by patience, compassion and this genuine wish to see them succeed, not just at school but also in life.',
         blogLink: '',
         recommendationLink: '',
         tags: [],

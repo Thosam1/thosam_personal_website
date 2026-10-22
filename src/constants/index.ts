@@ -7,7 +7,7 @@ export const NAV_LINKS = [
 ];
 
 export const FULL_NAME = 'Thösam Norlha-Tsang'
-export const EMAIL = 'thosamthosamthosam@gmail.com'
+export const EMAIL = 'tnorlha@ethz.ch'
 
 export const YOUTUBE_LINK = 'https://www.youtube.com/channel/UCadaAVpUtRtVSfPPy7z5lXA'
 export const INSTAGRAM_LINK = 'https://www.instagram.com/tho_norlha/'
